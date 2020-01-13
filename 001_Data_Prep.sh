@@ -1,0 +1,2105 @@
+#!/usr/bin/bash
+
+# Step1: Removing Illumina adapter sequences.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load trimgalore
+trim_galore Single_cell_1_experiment1_sequenced_reads_Read1.fastq Single_cell_1_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_1_experiment2_sequenced_reads_Read1.fastq Single_cell_1_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_1_experiment3_sequenced_reads_Read1.fastq Single_cell_1_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_1_experiment4_sequenced_reads_Read1.fastq Single_cell_1_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_1_experiment5_sequenced_reads_Read1.fastq Single_cell_1_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_2_experiment1_sequenced_reads_Read1.fastq Single_cell_2_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_2_experiment2_sequenced_reads_Read1.fastq Single_cell_2_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_2_experiment3_sequenced_reads_Read1.fastq Single_cell_2_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_2_experiment4_sequenced_reads_Read1.fastq Single_cell_2_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_2_experiment5_sequenced_reads_Read1.fastq Single_cell_2_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_3_experiment1_sequenced_reads_Read1.fastq Single_cell_3_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_3_experiment2_sequenced_reads_Read1.fastq Single_cell_3_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_3_experiment3_sequenced_reads_Read1.fastq Single_cell_3_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_3_experiment4_sequenced_reads_Read1.fastq Single_cell_3_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_3_experiment5_sequenced_reads_Read1.fastq Single_cell_3_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_4_experiment1_sequenced_reads_Read1.fastq Single_cell_4_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_4_experiment2_sequenced_reads_Read1.fastq Single_cell_4_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_4_experiment3_sequenced_reads_Read1.fastq Single_cell_4_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_4_experiment4_sequenced_reads_Read1.fastq Single_cell_4_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_4_experiment5_sequenced_reads_Read1.fastq Single_cell_4_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_5_experiment1_sequenced_reads_Read1.fastq Single_cell_5_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_5_experiment2_sequenced_reads_Read1.fastq Single_cell_5_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_5_experiment3_sequenced_reads_Read1.fastq Single_cell_5_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_5_experiment4_sequenced_reads_Read1.fastq Single_cell_5_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_5_experiment5_sequenced_reads_Read1.fastq Single_cell_5_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_6_experiment1_sequenced_reads_Read1.fastq Single_cell_6_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_6_experiment2_sequenced_reads_Read1.fastq Single_cell_6_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_6_experiment3_sequenced_reads_Read1.fastq Single_cell_6_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_6_experiment4_sequenced_reads_Read1.fastq Single_cell_6_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_6_experiment5_sequenced_reads_Read1.fastq Single_cell_6_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_7_experiment1_sequenced_reads_Read1.fastq Single_cell_7_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_7_experiment2_sequenced_reads_Read1.fastq Single_cell_7_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_7_experiment3_sequenced_reads_Read1.fastq Single_cell_7_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_7_experiment4_sequenced_reads_Read1.fastq Single_cell_7_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_7_experiment5_sequenced_reads_Read1.fastq Single_cell_7_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_8_experiment1_sequenced_reads_Read1.fastq Single_cell_8_experiment1_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_8_experiment2_sequenced_reads_Read1.fastq Single_cell_8_experiment2_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_8_experiment3_sequenced_reads_Read1.fastq Single_cell_8_experiment3_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_8_experiment4_sequenced_reads_Read1.fastq Single_cell_8_experiment4_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+trim_galore Single_cell_8_experiment5_sequenced_reads_Read1.fastq Single_cell_8_experiment5_sequenced_reads_Read2.fastq --paired --illumina -e 0.2 --length 1
+
+# Step2: Demultiplex by antibody barcodes.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load flexbar
+flexbar -r Single_cell_1_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_1_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0000_1stExp_SC1_
+flexbar -r Single_cell_1_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_1_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0001_2ndExp_SC1_
+flexbar -r Single_cell_1_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_1_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0002_3rdExp_SC1_
+flexbar -r Single_cell_1_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_1_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0003_Med1_SC1_
+flexbar -r Single_cell_1_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_1_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0004_5hmC_SC1_
+flexbar -r Single_cell_2_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_2_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0005_1stExp_SC2_
+flexbar -r Single_cell_2_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_2_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0006_2ndExp_SC2_
+flexbar -r Single_cell_2_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_2_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0007_3rdExp_SC2_
+flexbar -r Single_cell_2_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_2_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0008_Med1_SC2_
+flexbar -r Single_cell_2_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_2_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0009_5hmC_SC2_
+flexbar -r Single_cell_3_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_3_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0010_1stExp_SC3_
+flexbar -r Single_cell_3_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_3_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0011_2ndExp_SC3_
+flexbar -r Single_cell_3_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_3_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0012_3rdExp_SC3_
+flexbar -r Single_cell_3_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_3_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0013_Med1_SC3_
+flexbar -r Single_cell_3_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_3_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0014_5hmC_SC3_
+flexbar -r Single_cell_4_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_4_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0015_1stExp_SC4_
+flexbar -r Single_cell_4_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_4_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0016_2ndExp_SC4_
+flexbar -r Single_cell_4_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_4_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0017_3rdExp_SC4_
+flexbar -r Single_cell_4_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_4_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0018_Med1_SC4_
+flexbar -r Single_cell_4_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_4_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0019_5hmC_SC4_
+flexbar -r Single_cell_5_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_5_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0020_1stExp_SC5_
+flexbar -r Single_cell_5_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_5_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0021_2ndExp_SC5_
+flexbar -r Single_cell_5_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_5_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0022_3rdExp_SC5_
+flexbar -r Single_cell_5_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_5_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0023_Med1_SC5_
+flexbar -r Single_cell_5_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_5_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0024_5hmC_SC5_
+flexbar -r Single_cell_6_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_6_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0025_1stExp_SC6_
+flexbar -r Single_cell_6_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_6_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0026_2ndExp_SC6_
+flexbar -r Single_cell_6_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_6_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0027_3rdExp_SC6_
+flexbar -r Single_cell_6_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_6_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0028_Med1_SC6_
+flexbar -r Single_cell_6_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_6_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0029_5hmC_SC6_
+flexbar -r Single_cell_7_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_7_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0030_1stExp_SC7_
+flexbar -r Single_cell_7_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_7_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0031_2ndExp_SC7_
+flexbar -r Single_cell_7_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_7_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0032_3rdExp_SC7_
+flexbar -r Single_cell_7_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_7_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0033_Med1_SC7_
+flexbar -r Single_cell_7_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_7_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0034_5hmC_SC7_
+flexbar -r Single_cell_8_experiment1_sequenced_reads_Read1_val_1.fq -p Single_cell_8_experiment1_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0035_1stExp_SC8_
+flexbar -r Single_cell_8_experiment2_sequenced_reads_Read1_val_1.fq -p Single_cell_8_experiment2_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0036_2ndExp_SC8_
+flexbar -r Single_cell_8_experiment3_sequenced_reads_Read1_val_1.fq -p Single_cell_8_experiment3_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0037_3rdExp_SC8_
+flexbar -r Single_cell_8_experiment4_sequenced_reads_Read1_val_1.fq -p Single_cell_8_experiment4_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0038_Med1_SC8_
+flexbar -r Single_cell_8_experiment5_sequenced_reads_Read1_val_1.fq -p Single_cell_8_experiment5_sequenced_reads_Read2_val_2.fq -b Step2_AbBC.fasta --barcode-trim-end ANY -bk -t a0039_5hmC_SC8_
+
+# Step3: Convert reverse complement sequences to forward sequences.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load fastxtoolkit
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0000_1stExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0001_2ndExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0002_3rdExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0003_Med1_SC1_barcode_Med1_RvComp.fastq -o a0003_Med1_SC1_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0004_5hmC_SC1_barcode_5hmC_RvComp.fastq -o a0004_5hmC_SC1_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0005_1stExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0006_2ndExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0007_3rdExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0008_Med1_SC2_barcode_Med1_RvComp.fastq -o a0008_Med1_SC2_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0009_5hmC_SC2_barcode_5hmC_RvComp.fastq -o a0009_5hmC_SC2_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0010_1stExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0011_2ndExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0012_3rdExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0013_Med1_SC3_barcode_Med1_RvComp.fastq -o a0013_Med1_SC3_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0014_5hmC_SC3_barcode_5hmC_RvComp.fastq -o a0014_5hmC_SC3_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0015_1stExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0016_2ndExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0017_3rdExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0018_Med1_SC4_barcode_Med1_RvComp.fastq -o a0018_Med1_SC4_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0019_5hmC_SC4_barcode_5hmC_RvComp.fastq -o a0019_5hmC_SC4_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0020_1stExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0021_2ndExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0022_3rdExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0023_Med1_SC5_barcode_Med1_RvComp.fastq -o a0023_Med1_SC5_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0024_5hmC_SC5_barcode_5hmC_RvComp.fastq -o a0024_5hmC_SC5_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0025_1stExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0026_2ndExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0027_3rdExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0028_Med1_SC6_barcode_Med1_RvComp.fastq -o a0028_Med1_SC6_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0029_5hmC_SC6_barcode_5hmC_RvComp.fastq -o a0029_5hmC_SC6_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0030_1stExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0031_2ndExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0032_3rdExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0033_Med1_SC7_barcode_Med1_RvComp.fastq -o a0033_Med1_SC7_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0034_5hmC_SC7_barcode_5hmC_RvComp.fastq -o a0034_5hmC_SC7_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0035_1stExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0036_2ndExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0037_3rdExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0038_Med1_SC8_barcode_Med1_RvComp.fastq -o a0038_Med1_SC8_barcode_Med1_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0039_5hmC_SC8_barcode_5hmC_RvComp.fastq -o a0039_5hmC_SC8_barcode_5hmC_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0000_1stExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0001_2ndExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0002_3rdExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0005_1stExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0006_2ndExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0007_3rdExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0010_1stExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0011_2ndExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0012_3rdExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0015_1stExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0016_2ndExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0017_3rdExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0020_1stExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0021_2ndExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0022_3rdExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0025_1stExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0026_2ndExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0027_3rdExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0030_1stExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0031_2ndExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0032_3rdExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0035_1stExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0036_2ndExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0037_3rdExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_IgG_RvComp.fastq -o a0000_1stExp_SC1_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_IgG_RvComp.fastq -o a0001_2ndExp_SC1_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_IgG_RvComp.fastq -o a0002_3rdExp_SC1_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0003_Med1_SC1_barcode_IgG_RvComp.fastq -o a0003_Med1_SC1_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0004_5hmC_SC1_barcode_IgG_RvComp.fastq -o a0004_5hmC_SC1_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_IgG_RvComp.fastq -o a0005_1stExp_SC2_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_IgG_RvComp.fastq -o a0006_2ndExp_SC2_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_IgG_RvComp.fastq -o a0007_3rdExp_SC2_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0008_Med1_SC2_barcode_IgG_RvComp.fastq -o a0008_Med1_SC2_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0009_5hmC_SC2_barcode_IgG_RvComp.fastq -o a0009_5hmC_SC2_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_IgG_RvComp.fastq -o a0010_1stExp_SC3_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_IgG_RvComp.fastq -o a0011_2ndExp_SC3_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_IgG_RvComp.fastq -o a0012_3rdExp_SC3_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0013_Med1_SC3_barcode_IgG_RvComp.fastq -o a0013_Med1_SC3_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0014_5hmC_SC3_barcode_IgG_RvComp.fastq -o a0014_5hmC_SC3_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_IgG_RvComp.fastq -o a0015_1stExp_SC4_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_IgG_RvComp.fastq -o a0016_2ndExp_SC4_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_IgG_RvComp.fastq -o a0017_3rdExp_SC4_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0018_Med1_SC4_barcode_IgG_RvComp.fastq -o a0018_Med1_SC4_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0019_5hmC_SC4_barcode_IgG_RvComp.fastq -o a0019_5hmC_SC4_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_IgG_RvComp.fastq -o a0020_1stExp_SC5_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_IgG_RvComp.fastq -o a0021_2ndExp_SC5_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_IgG_RvComp.fastq -o a0022_3rdExp_SC5_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0023_Med1_SC5_barcode_IgG_RvComp.fastq -o a0023_Med1_SC5_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0024_5hmC_SC5_barcode_IgG_RvComp.fastq -o a0024_5hmC_SC5_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_IgG_RvComp.fastq -o a0025_1stExp_SC6_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_IgG_RvComp.fastq -o a0026_2ndExp_SC6_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_IgG_RvComp.fastq -o a0027_3rdExp_SC6_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0028_Med1_SC6_barcode_IgG_RvComp.fastq -o a0028_Med1_SC6_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0029_5hmC_SC6_barcode_IgG_RvComp.fastq -o a0029_5hmC_SC6_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_IgG_RvComp.fastq -o a0030_1stExp_SC7_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_IgG_RvComp.fastq -o a0031_2ndExp_SC7_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_IgG_RvComp.fastq -o a0032_3rdExp_SC7_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0033_Med1_SC7_barcode_IgG_RvComp.fastq -o a0033_Med1_SC7_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0034_5hmC_SC7_barcode_IgG_RvComp.fastq -o a0034_5hmC_SC7_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_IgG_RvComp.fastq -o a0035_1stExp_SC8_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_IgG_RvComp.fastq -o a0036_2ndExp_SC8_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_IgG_RvComp.fastq -o a0037_3rdExp_SC8_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0038_Med1_SC8_barcode_IgG_RvComp.fastq -o a0038_Med1_SC8_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0039_5hmC_SC8_barcode_IgG_RvComp.fastq -o a0039_5hmC_SC8_barcode_IgG_RvComp-Fw_1.fastq
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0000_1stExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0001_2ndExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_H3K27ac_RvComp.fastq -o a0002_3rdExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0003_Med1_SC1_barcode_Med1_RvComp.fastq -o a0003_Med1_SC1_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0004_5hmC_SC1_barcode_5hmC_RvComp.fastq -o a0004_5hmC_SC1_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0005_1stExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0006_2ndExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_H3K27ac_RvComp.fastq -o a0007_3rdExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0008_Med1_SC2_barcode_Med1_RvComp.fastq -o a0008_Med1_SC2_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0009_5hmC_SC2_barcode_5hmC_RvComp.fastq -o a0009_5hmC_SC2_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0010_1stExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0011_2ndExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_H3K27ac_RvComp.fastq -o a0012_3rdExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0013_Med1_SC3_barcode_Med1_RvComp.fastq -o a0013_Med1_SC3_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0014_5hmC_SC3_barcode_5hmC_RvComp.fastq -o a0014_5hmC_SC3_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0015_1stExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0016_2ndExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_H3K27ac_RvComp.fastq -o a0017_3rdExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0018_Med1_SC4_barcode_Med1_RvComp.fastq -o a0018_Med1_SC4_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0019_5hmC_SC4_barcode_5hmC_RvComp.fastq -o a0019_5hmC_SC4_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0020_1stExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0021_2ndExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_H3K27ac_RvComp.fastq -o a0022_3rdExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0023_Med1_SC5_barcode_Med1_RvComp.fastq -o a0023_Med1_SC5_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0024_5hmC_SC5_barcode_5hmC_RvComp.fastq -o a0024_5hmC_SC5_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0025_1stExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0026_2ndExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_H3K27ac_RvComp.fastq -o a0027_3rdExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0028_Med1_SC6_barcode_Med1_RvComp.fastq -o a0028_Med1_SC6_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0029_5hmC_SC6_barcode_5hmC_RvComp.fastq -o a0029_5hmC_SC6_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0030_1stExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0031_2ndExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_H3K27ac_RvComp.fastq -o a0032_3rdExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0033_Med1_SC7_barcode_Med1_RvComp.fastq -o a0033_Med1_SC7_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0034_5hmC_SC7_barcode_5hmC_RvComp.fastq -o a0034_5hmC_SC7_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0035_1stExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0036_2ndExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_H3K27ac_RvComp.fastq -o a0037_3rdExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0038_Med1_SC8_barcode_Med1_RvComp.fastq -o a0038_Med1_SC8_barcode_Med1_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0039_5hmC_SC8_barcode_5hmC_RvComp.fastq -o a0039_5hmC_SC8_barcode_5hmC_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0000_1stExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0001_2ndExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_H3K27me3_RvComp.fastq -o a0002_3rdExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0005_1stExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0006_2ndExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_H3K27me3_RvComp.fastq -o a0007_3rdExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0010_1stExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0011_2ndExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_H3K27me3_RvComp.fastq -o a0012_3rdExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0015_1stExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0016_2ndExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_H3K27me3_RvComp.fastq -o a0017_3rdExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0020_1stExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0021_2ndExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_H3K27me3_RvComp.fastq -o a0022_3rdExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0025_1stExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0026_2ndExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_H3K27me3_RvComp.fastq -o a0027_3rdExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0030_1stExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0031_2ndExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_H3K27me3_RvComp.fastq -o a0032_3rdExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0035_1stExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0036_2ndExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_H3K27me3_RvComp.fastq -o a0037_3rdExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0000_1stExp_SC1_barcode_IgG_RvComp.fastq -o a0000_1stExp_SC1_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0001_2ndExp_SC1_barcode_IgG_RvComp.fastq -o a0001_2ndExp_SC1_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0002_3rdExp_SC1_barcode_IgG_RvComp.fastq -o a0002_3rdExp_SC1_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0003_Med1_SC1_barcode_IgG_RvComp.fastq -o a0003_Med1_SC1_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0004_5hmC_SC1_barcode_IgG_RvComp.fastq -o a0004_5hmC_SC1_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0005_1stExp_SC2_barcode_IgG_RvComp.fastq -o a0005_1stExp_SC2_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0006_2ndExp_SC2_barcode_IgG_RvComp.fastq -o a0006_2ndExp_SC2_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0007_3rdExp_SC2_barcode_IgG_RvComp.fastq -o a0007_3rdExp_SC2_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0008_Med1_SC2_barcode_IgG_RvComp.fastq -o a0008_Med1_SC2_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0009_5hmC_SC2_barcode_IgG_RvComp.fastq -o a0009_5hmC_SC2_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0010_1stExp_SC3_barcode_IgG_RvComp.fastq -o a0010_1stExp_SC3_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0011_2ndExp_SC3_barcode_IgG_RvComp.fastq -o a0011_2ndExp_SC3_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0012_3rdExp_SC3_barcode_IgG_RvComp.fastq -o a0012_3rdExp_SC3_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0013_Med1_SC3_barcode_IgG_RvComp.fastq -o a0013_Med1_SC3_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0014_5hmC_SC3_barcode_IgG_RvComp.fastq -o a0014_5hmC_SC3_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0015_1stExp_SC4_barcode_IgG_RvComp.fastq -o a0015_1stExp_SC4_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0016_2ndExp_SC4_barcode_IgG_RvComp.fastq -o a0016_2ndExp_SC4_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0017_3rdExp_SC4_barcode_IgG_RvComp.fastq -o a0017_3rdExp_SC4_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0018_Med1_SC4_barcode_IgG_RvComp.fastq -o a0018_Med1_SC4_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0019_5hmC_SC4_barcode_IgG_RvComp.fastq -o a0019_5hmC_SC4_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0020_1stExp_SC5_barcode_IgG_RvComp.fastq -o a0020_1stExp_SC5_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0021_2ndExp_SC5_barcode_IgG_RvComp.fastq -o a0021_2ndExp_SC5_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0022_3rdExp_SC5_barcode_IgG_RvComp.fastq -o a0022_3rdExp_SC5_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0023_Med1_SC5_barcode_IgG_RvComp.fastq -o a0023_Med1_SC5_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0024_5hmC_SC5_barcode_IgG_RvComp.fastq -o a0024_5hmC_SC5_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0025_1stExp_SC6_barcode_IgG_RvComp.fastq -o a0025_1stExp_SC6_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0026_2ndExp_SC6_barcode_IgG_RvComp.fastq -o a0026_2ndExp_SC6_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0027_3rdExp_SC6_barcode_IgG_RvComp.fastq -o a0027_3rdExp_SC6_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0028_Med1_SC6_barcode_IgG_RvComp.fastq -o a0028_Med1_SC6_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0029_5hmC_SC6_barcode_IgG_RvComp.fastq -o a0029_5hmC_SC6_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0030_1stExp_SC7_barcode_IgG_RvComp.fastq -o a0030_1stExp_SC7_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0031_2ndExp_SC7_barcode_IgG_RvComp.fastq -o a0031_2ndExp_SC7_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0032_3rdExp_SC7_barcode_IgG_RvComp.fastq -o a0032_3rdExp_SC7_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0033_Med1_SC7_barcode_IgG_RvComp.fastq -o a0033_Med1_SC7_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0034_5hmC_SC7_barcode_IgG_RvComp.fastq -o a0034_5hmC_SC7_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0035_1stExp_SC8_barcode_IgG_RvComp.fastq -o a0035_1stExp_SC8_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0036_2ndExp_SC8_barcode_IgG_RvComp.fastq -o a0036_2ndExp_SC8_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0037_3rdExp_SC8_barcode_IgG_RvComp.fastq -o a0037_3rdExp_SC8_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0038_Med1_SC8_barcode_IgG_RvComp.fastq -o a0038_Med1_SC8_barcode_IgG_RvComp-Fw_2.fastq
+fastx_reverse_complement -i a0039_5hmC_SC8_barcode_IgG_RvComp.fastq -o a0039_5hmC_SC8_barcode_IgG_RvComp-Fw_2.fastq
+
+# Step4: combine converted forward sequences in step3 and forward sequences generated in step2.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+cat a0000_1stExp_SC1_barcode_H3K27ac_Fw_1.fastq a0000_1stExp_SC1_barcode_H3K27ac_Fw_2.fastq a0000_1stExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq a0000_1stExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq >a0050_1stExp_SC1_bc_H3K27ac.fastq
+cat a0001_2ndExp_SC1_barcode_H3K27ac_Fw_1.fastq a0001_2ndExp_SC1_barcode_H3K27ac_Fw_2.fastq a0001_2ndExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq a0001_2ndExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq >a0051_2ndExp_SC1_bc_H3K27ac.fastq
+cat a0002_3rdExp_SC1_barcode_H3K27ac_Fw_1.fastq a0002_3rdExp_SC1_barcode_H3K27ac_Fw_2.fastq a0002_3rdExp_SC1_barcode_H3K27ac_RvComp-Fw_1.fastq a0002_3rdExp_SC1_barcode_H3K27ac_RvComp-Fw_2.fastq >a0052_3rdExp_SC1_bc_H3K27ac.fastq
+cat a0003_Med1_SC1_barcode_Med1_Fw_1.fastq a0003_Med1_SC1_barcode_Med1_Fw_2.fastq a0003_Med1_SC1_barcode_Med1_RvComp-Fw_1.fastq a0003_Med1_SC1_barcode_Med1_RvComp-Fw_2.fastq >a0053_Med1_SC1_bc_Med1.fastq
+cat a0004_5hmC_SC1_barcode_5hmC_Fw_1.fastq a0004_5hmC_SC1_barcode_5hmC_Fw_2.fastq a0004_5hmC_SC1_barcode_5hmC_RvComp-Fw_1.fastq a0004_5hmC_SC1_barcode_5hmC_RvComp-Fw_2.fastq >a0054_5hmC_SC1_bc_5hmC.fastq
+cat a0005_1stExp_SC2_barcode_H3K27ac_Fw_1.fastq a0005_1stExp_SC2_barcode_H3K27ac_Fw_2.fastq a0005_1stExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq a0005_1stExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq >a0055_1stExp_SC2_bc_H3K27ac.fastq
+cat a0006_2ndExp_SC2_barcode_H3K27ac_Fw_1.fastq a0006_2ndExp_SC2_barcode_H3K27ac_Fw_2.fastq a0006_2ndExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq a0006_2ndExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq >a0056_2ndExp_SC2_bc_H3K27ac.fastq
+cat a0007_3rdExp_SC2_barcode_H3K27ac_Fw_1.fastq a0007_3rdExp_SC2_barcode_H3K27ac_Fw_2.fastq a0007_3rdExp_SC2_barcode_H3K27ac_RvComp-Fw_1.fastq a0007_3rdExp_SC2_barcode_H3K27ac_RvComp-Fw_2.fastq >a0057_3rdExp_SC2_bc_H3K27ac.fastq
+cat a0008_Med1_SC2_barcode_Med1_Fw_1.fastq a0008_Med1_SC2_barcode_Med1_Fw_2.fastq a0008_Med1_SC2_barcode_Med1_RvComp-Fw_1.fastq a0008_Med1_SC2_barcode_Med1_RvComp-Fw_2.fastq >a0058_Med1_SC2_bc_Med1.fastq
+cat a0009_5hmC_SC2_barcode_5hmC_Fw_1.fastq a0009_5hmC_SC2_barcode_5hmC_Fw_2.fastq a0009_5hmC_SC2_barcode_5hmC_RvComp-Fw_1.fastq a0009_5hmC_SC2_barcode_5hmC_RvComp-Fw_2.fastq >a0059_5hmC_SC2_bc_5hmC.fastq
+cat a0010_1stExp_SC3_barcode_H3K27ac_Fw_1.fastq a0010_1stExp_SC3_barcode_H3K27ac_Fw_2.fastq a0010_1stExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq a0010_1stExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq >a0060_1stExp_SC3_bc_H3K27ac.fastq
+cat a0011_2ndExp_SC3_barcode_H3K27ac_Fw_1.fastq a0011_2ndExp_SC3_barcode_H3K27ac_Fw_2.fastq a0011_2ndExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq a0011_2ndExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq >a0061_2ndExp_SC3_bc_H3K27ac.fastq
+cat a0012_3rdExp_SC3_barcode_H3K27ac_Fw_1.fastq a0012_3rdExp_SC3_barcode_H3K27ac_Fw_2.fastq a0012_3rdExp_SC3_barcode_H3K27ac_RvComp-Fw_1.fastq a0012_3rdExp_SC3_barcode_H3K27ac_RvComp-Fw_2.fastq >a0062_3rdExp_SC3_bc_H3K27ac.fastq
+cat a0013_Med1_SC3_barcode_Med1_Fw_1.fastq a0013_Med1_SC3_barcode_Med1_Fw_2.fastq a0013_Med1_SC3_barcode_Med1_RvComp-Fw_1.fastq a0013_Med1_SC3_barcode_Med1_RvComp-Fw_2.fastq >a0063_Med1_SC3_bc_Med1.fastq
+cat a0014_5hmC_SC3_barcode_5hmC_Fw_1.fastq a0014_5hmC_SC3_barcode_5hmC_Fw_2.fastq a0014_5hmC_SC3_barcode_5hmC_RvComp-Fw_1.fastq a0014_5hmC_SC3_barcode_5hmC_RvComp-Fw_2.fastq >a0064_5hmC_SC3_bc_5hmC.fastq
+cat a0015_1stExp_SC4_barcode_H3K27ac_Fw_1.fastq a0015_1stExp_SC4_barcode_H3K27ac_Fw_2.fastq a0015_1stExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq a0015_1stExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq >a0065_1stExp_SC4_bc_H3K27ac.fastq
+cat a0016_2ndExp_SC4_barcode_H3K27ac_Fw_1.fastq a0016_2ndExp_SC4_barcode_H3K27ac_Fw_2.fastq a0016_2ndExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq a0016_2ndExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq >a0066_2ndExp_SC4_bc_H3K27ac.fastq
+cat a0017_3rdExp_SC4_barcode_H3K27ac_Fw_1.fastq a0017_3rdExp_SC4_barcode_H3K27ac_Fw_2.fastq a0017_3rdExp_SC4_barcode_H3K27ac_RvComp-Fw_1.fastq a0017_3rdExp_SC4_barcode_H3K27ac_RvComp-Fw_2.fastq >a0067_3rdExp_SC4_bc_H3K27ac.fastq
+cat a0018_Med1_SC4_barcode_Med1_Fw_1.fastq a0018_Med1_SC4_barcode_Med1_Fw_2.fastq a0018_Med1_SC4_barcode_Med1_RvComp-Fw_1.fastq a0018_Med1_SC4_barcode_Med1_RvComp-Fw_2.fastq >a0068_Med1_SC4_bc_Med1.fastq
+cat a0019_5hmC_SC4_barcode_5hmC_Fw_1.fastq a0019_5hmC_SC4_barcode_5hmC_Fw_2.fastq a0019_5hmC_SC4_barcode_5hmC_RvComp-Fw_1.fastq a0019_5hmC_SC4_barcode_5hmC_RvComp-Fw_2.fastq >a0069_5hmC_SC4_bc_5hmC.fastq
+cat a0020_1stExp_SC5_barcode_H3K27ac_Fw_1.fastq a0020_1stExp_SC5_barcode_H3K27ac_Fw_2.fastq a0020_1stExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq a0020_1stExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq >a0070_1stExp_SC5_bc_H3K27ac.fastq
+cat a0021_2ndExp_SC5_barcode_H3K27ac_Fw_1.fastq a0021_2ndExp_SC5_barcode_H3K27ac_Fw_2.fastq a0021_2ndExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq a0021_2ndExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq >a0071_2ndExp_SC5_bc_H3K27ac.fastq
+cat a0022_3rdExp_SC5_barcode_H3K27ac_Fw_1.fastq a0022_3rdExp_SC5_barcode_H3K27ac_Fw_2.fastq a0022_3rdExp_SC5_barcode_H3K27ac_RvComp-Fw_1.fastq a0022_3rdExp_SC5_barcode_H3K27ac_RvComp-Fw_2.fastq >a0072_3rdExp_SC5_bc_H3K27ac.fastq
+cat a0023_Med1_SC5_barcode_Med1_Fw_1.fastq a0023_Med1_SC5_barcode_Med1_Fw_2.fastq a0023_Med1_SC5_barcode_Med1_RvComp-Fw_1.fastq a0023_Med1_SC5_barcode_Med1_RvComp-Fw_2.fastq >a0073_Med1_SC5_bc_Med1.fastq
+cat a0024_5hmC_SC5_barcode_5hmC_Fw_1.fastq a0024_5hmC_SC5_barcode_5hmC_Fw_2.fastq a0024_5hmC_SC5_barcode_5hmC_RvComp-Fw_1.fastq a0024_5hmC_SC5_barcode_5hmC_RvComp-Fw_2.fastq >a0074_5hmC_SC5_bc_5hmC.fastq
+cat a0025_1stExp_SC6_barcode_H3K27ac_Fw_1.fastq a0025_1stExp_SC6_barcode_H3K27ac_Fw_2.fastq a0025_1stExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq a0025_1stExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq >a0075_1stExp_SC6_bc_H3K27ac.fastq
+cat a0026_2ndExp_SC6_barcode_H3K27ac_Fw_1.fastq a0026_2ndExp_SC6_barcode_H3K27ac_Fw_2.fastq a0026_2ndExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq a0026_2ndExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq >a0076_2ndExp_SC6_bc_H3K27ac.fastq
+cat a0027_3rdExp_SC6_barcode_H3K27ac_Fw_1.fastq a0027_3rdExp_SC6_barcode_H3K27ac_Fw_2.fastq a0027_3rdExp_SC6_barcode_H3K27ac_RvComp-Fw_1.fastq a0027_3rdExp_SC6_barcode_H3K27ac_RvComp-Fw_2.fastq >a0077_3rdExp_SC6_bc_H3K27ac.fastq
+cat a0028_Med1_SC6_barcode_Med1_Fw_1.fastq a0028_Med1_SC6_barcode_Med1_Fw_2.fastq a0028_Med1_SC6_barcode_Med1_RvComp-Fw_1.fastq a0028_Med1_SC6_barcode_Med1_RvComp-Fw_2.fastq >a0078_Med1_SC6_bc_Med1.fastq
+cat a0029_5hmC_SC6_barcode_5hmC_Fw_1.fastq a0029_5hmC_SC6_barcode_5hmC_Fw_2.fastq a0029_5hmC_SC6_barcode_5hmC_RvComp-Fw_1.fastq a0029_5hmC_SC6_barcode_5hmC_RvComp-Fw_2.fastq >a0079_5hmC_SC6_bc_5hmC.fastq
+cat a0030_1stExp_SC7_barcode_H3K27ac_Fw_1.fastq a0030_1stExp_SC7_barcode_H3K27ac_Fw_2.fastq a0030_1stExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq a0030_1stExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq >a0080_1stExp_SC7_bc_H3K27ac.fastq
+cat a0031_2ndExp_SC7_barcode_H3K27ac_Fw_1.fastq a0031_2ndExp_SC7_barcode_H3K27ac_Fw_2.fastq a0031_2ndExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq a0031_2ndExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq >a0081_2ndExp_SC7_bc_H3K27ac.fastq
+cat a0032_3rdExp_SC7_barcode_H3K27ac_Fw_1.fastq a0032_3rdExp_SC7_barcode_H3K27ac_Fw_2.fastq a0032_3rdExp_SC7_barcode_H3K27ac_RvComp-Fw_1.fastq a0032_3rdExp_SC7_barcode_H3K27ac_RvComp-Fw_2.fastq >a0082_3rdExp_SC7_bc_H3K27ac.fastq
+cat a0033_Med1_SC7_barcode_Med1_Fw_1.fastq a0033_Med1_SC7_barcode_Med1_Fw_2.fastq a0033_Med1_SC7_barcode_Med1_RvComp-Fw_1.fastq a0033_Med1_SC7_barcode_Med1_RvComp-Fw_2.fastq >a0083_Med1_SC7_bc_Med1.fastq
+cat a0034_5hmC_SC7_barcode_5hmC_Fw_1.fastq a0034_5hmC_SC7_barcode_5hmC_Fw_2.fastq a0034_5hmC_SC7_barcode_5hmC_RvComp-Fw_1.fastq a0034_5hmC_SC7_barcode_5hmC_RvComp-Fw_2.fastq >a0084_5hmC_SC7_bc_5hmC.fastq
+cat a0035_1stExp_SC8_barcode_H3K27ac_Fw_1.fastq a0035_1stExp_SC8_barcode_H3K27ac_Fw_2.fastq a0035_1stExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq a0035_1stExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq >a0085_1stExp_SC8_bc_H3K27ac.fastq
+cat a0036_2ndExp_SC8_barcode_H3K27ac_Fw_1.fastq a0036_2ndExp_SC8_barcode_H3K27ac_Fw_2.fastq a0036_2ndExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq a0036_2ndExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq >a0086_2ndExp_SC8_bc_H3K27ac.fastq
+cat a0037_3rdExp_SC8_barcode_H3K27ac_Fw_1.fastq a0037_3rdExp_SC8_barcode_H3K27ac_Fw_2.fastq a0037_3rdExp_SC8_barcode_H3K27ac_RvComp-Fw_1.fastq a0037_3rdExp_SC8_barcode_H3K27ac_RvComp-Fw_2.fastq >a0087_3rdExp_SC8_bc_H3K27ac.fastq
+cat a0038_Med1_SC8_barcode_Med1_Fw_1.fastq a0038_Med1_SC8_barcode_Med1_Fw_2.fastq a0038_Med1_SC8_barcode_Med1_RvComp-Fw_1.fastq a0038_Med1_SC8_barcode_Med1_RvComp-Fw_2.fastq >a0088_Med1_SC8_bc_Med1.fastq
+cat a0039_5hmC_SC8_barcode_5hmC_Fw_1.fastq a0039_5hmC_SC8_barcode_5hmC_Fw_2.fastq a0039_5hmC_SC8_barcode_5hmC_RvComp-Fw_1.fastq a0039_5hmC_SC8_barcode_5hmC_RvComp-Fw_2.fastq >a0089_5hmC_SC8_bc_5hmC.fastq
+cat a0000_1stExp_SC1_barcode_H3K27me3_Fw_1.fastq a0000_1stExp_SC1_barcode_H3K27me3_Fw_2.fastq a0000_1stExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq a0000_1stExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq >a0090_1stExp_SC1_bc_H3K27me3.fastq
+cat a0001_2ndExp_SC1_barcode_H3K27me3_Fw_1.fastq a0001_2ndExp_SC1_barcode_H3K27me3_Fw_2.fastq a0001_2ndExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq a0001_2ndExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq >a0091_2ndExp_SC1_bc_H3K27me3.fastq
+cat a0002_3rdExp_SC1_barcode_H3K27me3_Fw_1.fastq a0002_3rdExp_SC1_barcode_H3K27me3_Fw_2.fastq a0002_3rdExp_SC1_barcode_H3K27me3_RvComp-Fw_1.fastq a0002_3rdExp_SC1_barcode_H3K27me3_RvComp-Fw_2.fastq >a0092_3rdExp_SC1_bc_H3K27me3.fastq
+cat a0005_1stExp_SC2_barcode_H3K27me3_Fw_1.fastq a0005_1stExp_SC2_barcode_H3K27me3_Fw_2.fastq a0005_1stExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq a0005_1stExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq >a0093_1stExp_SC2_bc_H3K27me3.fastq
+cat a0006_2ndExp_SC2_barcode_H3K27me3_Fw_1.fastq a0006_2ndExp_SC2_barcode_H3K27me3_Fw_2.fastq a0006_2ndExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq a0006_2ndExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq >a0094_2ndExp_SC2_bc_H3K27me3.fastq
+cat a0007_3rdExp_SC2_barcode_H3K27me3_Fw_1.fastq a0007_3rdExp_SC2_barcode_H3K27me3_Fw_2.fastq a0007_3rdExp_SC2_barcode_H3K27me3_RvComp-Fw_1.fastq a0007_3rdExp_SC2_barcode_H3K27me3_RvComp-Fw_2.fastq >a0095_3rdExp_SC2_bc_H3K27me3.fastq
+cat a0010_1stExp_SC3_barcode_H3K27me3_Fw_1.fastq a0010_1stExp_SC3_barcode_H3K27me3_Fw_2.fastq a0010_1stExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq a0010_1stExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq >a0096_1stExp_SC3_bc_H3K27me3.fastq
+cat a0011_2ndExp_SC3_barcode_H3K27me3_Fw_1.fastq a0011_2ndExp_SC3_barcode_H3K27me3_Fw_2.fastq a0011_2ndExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq a0011_2ndExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq >a0097_2ndExp_SC3_bc_H3K27me3.fastq
+cat a0012_3rdExp_SC3_barcode_H3K27me3_Fw_1.fastq a0012_3rdExp_SC3_barcode_H3K27me3_Fw_2.fastq a0012_3rdExp_SC3_barcode_H3K27me3_RvComp-Fw_1.fastq a0012_3rdExp_SC3_barcode_H3K27me3_RvComp-Fw_2.fastq >a0098_3rdExp_SC3_bc_H3K27me3.fastq
+cat a0015_1stExp_SC4_barcode_H3K27me3_Fw_1.fastq a0015_1stExp_SC4_barcode_H3K27me3_Fw_2.fastq a0015_1stExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq a0015_1stExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq >a0099_1stExp_SC4_bc_H3K27me3.fastq
+cat a0016_2ndExp_SC4_barcode_H3K27me3_Fw_1.fastq a0016_2ndExp_SC4_barcode_H3K27me3_Fw_2.fastq a0016_2ndExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq a0016_2ndExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq >a0100_2ndExp_SC4_bc_H3K27me3.fastq
+cat a0017_3rdExp_SC4_barcode_H3K27me3_Fw_1.fastq a0017_3rdExp_SC4_barcode_H3K27me3_Fw_2.fastq a0017_3rdExp_SC4_barcode_H3K27me3_RvComp-Fw_1.fastq a0017_3rdExp_SC4_barcode_H3K27me3_RvComp-Fw_2.fastq >a0101_3rdExp_SC4_bc_H3K27me3.fastq
+cat a0020_1stExp_SC5_barcode_H3K27me3_Fw_1.fastq a0020_1stExp_SC5_barcode_H3K27me3_Fw_2.fastq a0020_1stExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq a0020_1stExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq >a0102_1stExp_SC5_bc_H3K27me3.fastq
+cat a0021_2ndExp_SC5_barcode_H3K27me3_Fw_1.fastq a0021_2ndExp_SC5_barcode_H3K27me3_Fw_2.fastq a0021_2ndExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq a0021_2ndExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq >a0103_2ndExp_SC5_bc_H3K27me3.fastq
+cat a0022_3rdExp_SC5_barcode_H3K27me3_Fw_1.fastq a0022_3rdExp_SC5_barcode_H3K27me3_Fw_2.fastq a0022_3rdExp_SC5_barcode_H3K27me3_RvComp-Fw_1.fastq a0022_3rdExp_SC5_barcode_H3K27me3_RvComp-Fw_2.fastq >a0104_3rdExp_SC5_bc_H3K27me3.fastq
+cat a0025_1stExp_SC6_barcode_H3K27me3_Fw_1.fastq a0025_1stExp_SC6_barcode_H3K27me3_Fw_2.fastq a0025_1stExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq a0025_1stExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq >a0105_1stExp_SC6_bc_H3K27me3.fastq
+cat a0026_2ndExp_SC6_barcode_H3K27me3_Fw_1.fastq a0026_2ndExp_SC6_barcode_H3K27me3_Fw_2.fastq a0026_2ndExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq a0026_2ndExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq >a0106_2ndExp_SC6_bc_H3K27me3.fastq
+cat a0027_3rdExp_SC6_barcode_H3K27me3_Fw_1.fastq a0027_3rdExp_SC6_barcode_H3K27me3_Fw_2.fastq a0027_3rdExp_SC6_barcode_H3K27me3_RvComp-Fw_1.fastq a0027_3rdExp_SC6_barcode_H3K27me3_RvComp-Fw_2.fastq >a0107_3rdExp_SC6_bc_H3K27me3.fastq
+cat a0030_1stExp_SC7_barcode_H3K27me3_Fw_1.fastq a0030_1stExp_SC7_barcode_H3K27me3_Fw_2.fastq a0030_1stExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq a0030_1stExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq >a0108_1stExp_SC7_bc_H3K27me3.fastq
+cat a0031_2ndExp_SC7_barcode_H3K27me3_Fw_1.fastq a0031_2ndExp_SC7_barcode_H3K27me3_Fw_2.fastq a0031_2ndExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq a0031_2ndExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq >a0109_2ndExp_SC7_bc_H3K27me3.fastq
+cat a0032_3rdExp_SC7_barcode_H3K27me3_Fw_1.fastq a0032_3rdExp_SC7_barcode_H3K27me3_Fw_2.fastq a0032_3rdExp_SC7_barcode_H3K27me3_RvComp-Fw_1.fastq a0032_3rdExp_SC7_barcode_H3K27me3_RvComp-Fw_2.fastq >a0110_3rdExp_SC7_bc_H3K27me3.fastq
+cat a0035_1stExp_SC8_barcode_H3K27me3_Fw_1.fastq a0035_1stExp_SC8_barcode_H3K27me3_Fw_2.fastq a0035_1stExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq a0035_1stExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq >a0111_1stExp_SC8_bc_H3K27me3.fastq
+cat a0036_2ndExp_SC8_barcode_H3K27me3_Fw_1.fastq a0036_2ndExp_SC8_barcode_H3K27me3_Fw_2.fastq a0036_2ndExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq a0036_2ndExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq >a0112_2ndExp_SC8_bc_H3K27me3.fastq
+cat a0037_3rdExp_SC8_barcode_H3K27me3_Fw_1.fastq a0037_3rdExp_SC8_barcode_H3K27me3_Fw_2.fastq a0037_3rdExp_SC8_barcode_H3K27me3_RvComp-Fw_1.fastq a0037_3rdExp_SC8_barcode_H3K27me3_RvComp-Fw_2.fastq >a0113_3rdExp_SC8_bc_H3K27me3.fastq
+cat a0000_1stExp_SC1_barcode_IgG_Fw_1.fastq a0000_1stExp_SC1_barcode_IgG_Fw_2.fastq a0000_1stExp_SC1_barcode_IgG_RvComp-Fw_1.fastq a0000_1stExp_SC1_barcode_IgG_RvComp-Fw_2.fastq >a0114_1stExp_SC1_bc_IgG.fastq
+cat a0001_2ndExp_SC1_barcode_IgG_Fw_1.fastq a0001_2ndExp_SC1_barcode_IgG_Fw_2.fastq a0001_2ndExp_SC1_barcode_IgG_RvComp-Fw_1.fastq a0001_2ndExp_SC1_barcode_IgG_RvComp-Fw_2.fastq >a0115_2ndExp_SC1_bc_IgG.fastq
+cat a0002_3rdExp_SC1_barcode_IgG_Fw_1.fastq a0002_3rdExp_SC1_barcode_IgG_Fw_2.fastq a0002_3rdExp_SC1_barcode_IgG_RvComp-Fw_1.fastq a0002_3rdExp_SC1_barcode_IgG_RvComp-Fw_2.fastq >a0116_3rdExp_SC1_bc_IgG.fastq
+cat a0003_Med1_SC1_barcode_IgG_Fw_1.fastq a0003_Med1_SC1_barcode_IgG_Fw_2.fastq a0003_Med1_SC1_barcode_IgG_RvComp-Fw_1.fastq a0003_Med1_SC1_barcode_IgG_RvComp-Fw_2.fastq >a0117_Med1_SC1_bc_IgG.fastq
+cat a0004_5hmC_SC1_barcode_IgG_Fw_1.fastq a0004_5hmC_SC1_barcode_IgG_Fw_2.fastq a0004_5hmC_SC1_barcode_IgG_RvComp-Fw_1.fastq a0004_5hmC_SC1_barcode_IgG_RvComp-Fw_2.fastq >a0118_5hmC_SC1_bc_IgG.fastq
+cat a0005_1stExp_SC2_barcode_IgG_Fw_1.fastq a0005_1stExp_SC2_barcode_IgG_Fw_2.fastq a0005_1stExp_SC2_barcode_IgG_RvComp-Fw_1.fastq a0005_1stExp_SC2_barcode_IgG_RvComp-Fw_2.fastq >a0119_1stExp_SC2_bc_IgG.fastq
+cat a0006_2ndExp_SC2_barcode_IgG_Fw_1.fastq a0006_2ndExp_SC2_barcode_IgG_Fw_2.fastq a0006_2ndExp_SC2_barcode_IgG_RvComp-Fw_1.fastq a0006_2ndExp_SC2_barcode_IgG_RvComp-Fw_2.fastq >a0120_2ndExp_SC2_bc_IgG.fastq
+cat a0007_3rdExp_SC2_barcode_IgG_Fw_1.fastq a0007_3rdExp_SC2_barcode_IgG_Fw_2.fastq a0007_3rdExp_SC2_barcode_IgG_RvComp-Fw_1.fastq a0007_3rdExp_SC2_barcode_IgG_RvComp-Fw_2.fastq >a0121_3rdExp_SC2_bc_IgG.fastq
+cat a0008_Med1_SC2_barcode_IgG_Fw_1.fastq a0008_Med1_SC2_barcode_IgG_Fw_2.fastq a0008_Med1_SC2_barcode_IgG_RvComp-Fw_1.fastq a0008_Med1_SC2_barcode_IgG_RvComp-Fw_2.fastq >a0122_Med1_SC2_bc_IgG.fastq
+cat a0009_5hmC_SC2_barcode_IgG_Fw_1.fastq a0009_5hmC_SC2_barcode_IgG_Fw_2.fastq a0009_5hmC_SC2_barcode_IgG_RvComp-Fw_1.fastq a0009_5hmC_SC2_barcode_IgG_RvComp-Fw_2.fastq >a0123_5hmC_SC2_bc_IgG.fastq
+cat a0010_1stExp_SC3_barcode_IgG_Fw_1.fastq a0010_1stExp_SC3_barcode_IgG_Fw_2.fastq a0010_1stExp_SC3_barcode_IgG_RvComp-Fw_1.fastq a0010_1stExp_SC3_barcode_IgG_RvComp-Fw_2.fastq >a0124_1stExp_SC3_bc_IgG.fastq
+cat a0011_2ndExp_SC3_barcode_IgG_Fw_1.fastq a0011_2ndExp_SC3_barcode_IgG_Fw_2.fastq a0011_2ndExp_SC3_barcode_IgG_RvComp-Fw_1.fastq a0011_2ndExp_SC3_barcode_IgG_RvComp-Fw_2.fastq >a0125_2ndExp_SC3_bc_IgG.fastq
+cat a0012_3rdExp_SC3_barcode_IgG_Fw_1.fastq a0012_3rdExp_SC3_barcode_IgG_Fw_2.fastq a0012_3rdExp_SC3_barcode_IgG_RvComp-Fw_1.fastq a0012_3rdExp_SC3_barcode_IgG_RvComp-Fw_2.fastq >a0126_3rdExp_SC3_bc_IgG.fastq
+cat a0013_Med1_SC3_barcode_IgG_Fw_1.fastq a0013_Med1_SC3_barcode_IgG_Fw_2.fastq a0013_Med1_SC3_barcode_IgG_RvComp-Fw_1.fastq a0013_Med1_SC3_barcode_IgG_RvComp-Fw_2.fastq >a0127_Med1_SC3_bc_IgG.fastq
+cat a0014_5hmC_SC3_barcode_IgG_Fw_1.fastq a0014_5hmC_SC3_barcode_IgG_Fw_2.fastq a0014_5hmC_SC3_barcode_IgG_RvComp-Fw_1.fastq a0014_5hmC_SC3_barcode_IgG_RvComp-Fw_2.fastq >a0128_5hmC_SC3_bc_IgG.fastq
+cat a0015_1stExp_SC4_barcode_IgG_Fw_1.fastq a0015_1stExp_SC4_barcode_IgG_Fw_2.fastq a0015_1stExp_SC4_barcode_IgG_RvComp-Fw_1.fastq a0015_1stExp_SC4_barcode_IgG_RvComp-Fw_2.fastq >a0129_1stExp_SC4_bc_IgG.fastq
+cat a0016_2ndExp_SC4_barcode_IgG_Fw_1.fastq a0016_2ndExp_SC4_barcode_IgG_Fw_2.fastq a0016_2ndExp_SC4_barcode_IgG_RvComp-Fw_1.fastq a0016_2ndExp_SC4_barcode_IgG_RvComp-Fw_2.fastq >a0130_2ndExp_SC4_bc_IgG.fastq
+cat a0017_3rdExp_SC4_barcode_IgG_Fw_1.fastq a0017_3rdExp_SC4_barcode_IgG_Fw_2.fastq a0017_3rdExp_SC4_barcode_IgG_RvComp-Fw_1.fastq a0017_3rdExp_SC4_barcode_IgG_RvComp-Fw_2.fastq >a0131_3rdExp_SC4_bc_IgG.fastq
+cat a0018_Med1_SC4_barcode_IgG_Fw_1.fastq a0018_Med1_SC4_barcode_IgG_Fw_2.fastq a0018_Med1_SC4_barcode_IgG_RvComp-Fw_1.fastq a0018_Med1_SC4_barcode_IgG_RvComp-Fw_2.fastq >a0132_Med1_SC4_bc_IgG.fastq
+cat a0019_5hmC_SC4_barcode_IgG_Fw_1.fastq a0019_5hmC_SC4_barcode_IgG_Fw_2.fastq a0019_5hmC_SC4_barcode_IgG_RvComp-Fw_1.fastq a0019_5hmC_SC4_barcode_IgG_RvComp-Fw_2.fastq >a0133_5hmC_SC4_bc_IgG.fastq
+cat a0020_1stExp_SC5_barcode_IgG_Fw_1.fastq a0020_1stExp_SC5_barcode_IgG_Fw_2.fastq a0020_1stExp_SC5_barcode_IgG_RvComp-Fw_1.fastq a0020_1stExp_SC5_barcode_IgG_RvComp-Fw_2.fastq >a0134_1stExp_SC5_bc_IgG.fastq
+cat a0021_2ndExp_SC5_barcode_IgG_Fw_1.fastq a0021_2ndExp_SC5_barcode_IgG_Fw_2.fastq a0021_2ndExp_SC5_barcode_IgG_RvComp-Fw_1.fastq a0021_2ndExp_SC5_barcode_IgG_RvComp-Fw_2.fastq >a0135_2ndExp_SC5_bc_IgG.fastq
+cat a0022_3rdExp_SC5_barcode_IgG_Fw_1.fastq a0022_3rdExp_SC5_barcode_IgG_Fw_2.fastq a0022_3rdExp_SC5_barcode_IgG_RvComp-Fw_1.fastq a0022_3rdExp_SC5_barcode_IgG_RvComp-Fw_2.fastq >a0136_3rdExp_SC5_bc_IgG.fastq
+cat a0023_Med1_SC5_barcode_IgG_Fw_1.fastq a0023_Med1_SC5_barcode_IgG_Fw_2.fastq a0023_Med1_SC5_barcode_IgG_RvComp-Fw_1.fastq a0023_Med1_SC5_barcode_IgG_RvComp-Fw_2.fastq >a0137_Med1_SC5_bc_IgG.fastq
+cat a0024_5hmC_SC5_barcode_IgG_Fw_1.fastq a0024_5hmC_SC5_barcode_IgG_Fw_2.fastq a0024_5hmC_SC5_barcode_IgG_RvComp-Fw_1.fastq a0024_5hmC_SC5_barcode_IgG_RvComp-Fw_2.fastq >a0138_5hmC_SC5_bc_IgG.fastq
+cat a0025_1stExp_SC6_barcode_IgG_Fw_1.fastq a0025_1stExp_SC6_barcode_IgG_Fw_2.fastq a0025_1stExp_SC6_barcode_IgG_RvComp-Fw_1.fastq a0025_1stExp_SC6_barcode_IgG_RvComp-Fw_2.fastq >a0139_1stExp_SC6_bc_IgG.fastq
+cat a0026_2ndExp_SC6_barcode_IgG_Fw_1.fastq a0026_2ndExp_SC6_barcode_IgG_Fw_2.fastq a0026_2ndExp_SC6_barcode_IgG_RvComp-Fw_1.fastq a0026_2ndExp_SC6_barcode_IgG_RvComp-Fw_2.fastq >a0140_2ndExp_SC6_bc_IgG.fastq
+cat a0027_3rdExp_SC6_barcode_IgG_Fw_1.fastq a0027_3rdExp_SC6_barcode_IgG_Fw_2.fastq a0027_3rdExp_SC6_barcode_IgG_RvComp-Fw_1.fastq a0027_3rdExp_SC6_barcode_IgG_RvComp-Fw_2.fastq >a0141_3rdExp_SC6_bc_IgG.fastq
+cat a0028_Med1_SC6_barcode_IgG_Fw_1.fastq a0028_Med1_SC6_barcode_IgG_Fw_2.fastq a0028_Med1_SC6_barcode_IgG_RvComp-Fw_1.fastq a0028_Med1_SC6_barcode_IgG_RvComp-Fw_2.fastq >a0142_Med1_SC6_bc_IgG.fastq
+cat a0029_5hmC_SC6_barcode_IgG_Fw_1.fastq a0029_5hmC_SC6_barcode_IgG_Fw_2.fastq a0029_5hmC_SC6_barcode_IgG_RvComp-Fw_1.fastq a0029_5hmC_SC6_barcode_IgG_RvComp-Fw_2.fastq >a0143_5hmC_SC6_bc_IgG.fastq
+cat a0030_1stExp_SC7_barcode_IgG_Fw_1.fastq a0030_1stExp_SC7_barcode_IgG_Fw_2.fastq a0030_1stExp_SC7_barcode_IgG_RvComp-Fw_1.fastq a0030_1stExp_SC7_barcode_IgG_RvComp-Fw_2.fastq >a0144_1stExp_SC7_bc_IgG.fastq
+cat a0031_2ndExp_SC7_barcode_IgG_Fw_1.fastq a0031_2ndExp_SC7_barcode_IgG_Fw_2.fastq a0031_2ndExp_SC7_barcode_IgG_RvComp-Fw_1.fastq a0031_2ndExp_SC7_barcode_IgG_RvComp-Fw_2.fastq >a0145_2ndExp_SC7_bc_IgG.fastq
+cat a0032_3rdExp_SC7_barcode_IgG_Fw_1.fastq a0032_3rdExp_SC7_barcode_IgG_Fw_2.fastq a0032_3rdExp_SC7_barcode_IgG_RvComp-Fw_1.fastq a0032_3rdExp_SC7_barcode_IgG_RvComp-Fw_2.fastq >a0146_3rdExp_SC7_bc_IgG.fastq
+cat a0033_Med1_SC7_barcode_IgG_Fw_1.fastq a0033_Med1_SC7_barcode_IgG_Fw_2.fastq a0033_Med1_SC7_barcode_IgG_RvComp-Fw_1.fastq a0033_Med1_SC7_barcode_IgG_RvComp-Fw_2.fastq >a0147_Med1_SC7_bc_IgG.fastq
+cat a0034_5hmC_SC7_barcode_IgG_Fw_1.fastq a0034_5hmC_SC7_barcode_IgG_Fw_2.fastq a0034_5hmC_SC7_barcode_IgG_RvComp-Fw_1.fastq a0034_5hmC_SC7_barcode_IgG_RvComp-Fw_2.fastq >a0148_5hmC_SC7_bc_IgG.fastq
+cat a0035_1stExp_SC8_barcode_IgG_Fw_1.fastq a0035_1stExp_SC8_barcode_IgG_Fw_2.fastq a0035_1stExp_SC8_barcode_IgG_RvComp-Fw_1.fastq a0035_1stExp_SC8_barcode_IgG_RvComp-Fw_2.fastq >a0149_1stExp_SC8_bc_IgG.fastq
+cat a0036_2ndExp_SC8_barcode_IgG_Fw_1.fastq a0036_2ndExp_SC8_barcode_IgG_Fw_2.fastq a0036_2ndExp_SC8_barcode_IgG_RvComp-Fw_1.fastq a0036_2ndExp_SC8_barcode_IgG_RvComp-Fw_2.fastq >a0150_2ndExp_SC8_bc_IgG.fastq
+cat a0037_3rdExp_SC8_barcode_IgG_Fw_1.fastq a0037_3rdExp_SC8_barcode_IgG_Fw_2.fastq a0037_3rdExp_SC8_barcode_IgG_RvComp-Fw_1.fastq a0037_3rdExp_SC8_barcode_IgG_RvComp-Fw_2.fastq >a0151_3rdExp_SC8_bc_IgG.fastq
+cat a0038_Med1_SC8_barcode_IgG_Fw_1.fastq a0038_Med1_SC8_barcode_IgG_Fw_2.fastq a0038_Med1_SC8_barcode_IgG_RvComp-Fw_1.fastq a0038_Med1_SC8_barcode_IgG_RvComp-Fw_2.fastq >a0152_Med1_SC8_bc_IgG.fastq
+cat a0039_5hmC_SC8_barcode_IgG_Fw_1.fastq a0039_5hmC_SC8_barcode_IgG_Fw_2.fastq a0039_5hmC_SC8_barcode_IgG_RvComp-Fw_1.fastq a0039_5hmC_SC8_barcode_IgG_RvComp-Fw_2.fastq >a0153_5hmC_SC8_bc_IgG.fastq
+
+# Step5: Removing left side of reads from sequences of antibody bacode-ligated sequence.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+flexbar -r a0050_1stExp_SC1_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0200_1stExp_SC1_bc_H3K27ac_
+flexbar -r a0051_2ndExp_SC1_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0201_2ndExp_SC1_bc_H3K27ac_
+flexbar -r a0052_3rdExp_SC1_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0202_3rdExp_SC1_bc_H3K27ac_
+flexbar -r a0053_Med1_SC1_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0203_Med1_SC1_bc_Med1_
+flexbar -r a0054_5hmC_SC1_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0204_5hmC_SC1_bc_5hmC_
+flexbar -r a0055_1stExp_SC2_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0205_1stExp_SC2_bc_H3K27ac_
+flexbar -r a0056_2ndExp_SC2_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0206_2ndExp_SC2_bc_H3K27ac_
+flexbar -r a0057_3rdExp_SC2_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0207_3rdExp_SC2_bc_H3K27ac_
+flexbar -r a0058_Med1_SC2_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0208_Med1_SC2_bc_Med1_
+flexbar -r a0059_5hmC_SC2_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0209_5hmC_SC2_bc_5hmC_
+flexbar -r a0060_1stExp_SC3_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0210_1stExp_SC3_bc_H3K27ac_
+flexbar -r a0061_2ndExp_SC3_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0211_2ndExp_SC3_bc_H3K27ac_
+flexbar -r a0062_3rdExp_SC3_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0212_3rdExp_SC3_bc_H3K27ac_
+flexbar -r a0063_Med1_SC3_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0213_Med1_SC3_bc_Med1_
+flexbar -r a0064_5hmC_SC3_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0214_5hmC_SC3_bc_5hmC_
+flexbar -r a0065_1stExp_SC4_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0215_1stExp_SC4_bc_H3K27ac_
+flexbar -r a0066_2ndExp_SC4_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0216_2ndExp_SC4_bc_H3K27ac_
+flexbar -r a0067_3rdExp_SC4_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0217_3rdExp_SC4_bc_H3K27ac_
+flexbar -r a0068_Med1_SC4_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0218_Med1_SC4_bc_Med1_
+flexbar -r a0069_5hmC_SC4_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0219_5hmC_SC4_bc_5hmC_
+flexbar -r a0070_1stExp_SC5_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0220_1stExp_SC5_bc_H3K27ac_
+flexbar -r a0071_2ndExp_SC5_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0221_2ndExp_SC5_bc_H3K27ac_
+flexbar -r a0072_3rdExp_SC5_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0222_3rdExp_SC5_bc_H3K27ac_
+flexbar -r a0073_Med1_SC5_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0223_Med1_SC5_bc_Med1_
+flexbar -r a0074_5hmC_SC5_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0224_5hmC_SC5_bc_5hmC_
+flexbar -r a0075_1stExp_SC6_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0225_1stExp_SC6_bc_H3K27ac_
+flexbar -r a0076_2ndExp_SC6_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0226_2ndExp_SC6_bc_H3K27ac_
+flexbar -r a0077_3rdExp_SC6_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0227_3rdExp_SC6_bc_H3K27ac_
+flexbar -r a0078_Med1_SC6_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0228_Med1_SC6_bc_Med1_
+flexbar -r a0079_5hmC_SC6_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0229_5hmC_SC6_bc_5hmC_
+flexbar -r a0080_1stExp_SC7_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0230_1stExp_SC7_bc_H3K27ac_
+flexbar -r a0081_2ndExp_SC7_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0231_2ndExp_SC7_bc_H3K27ac_
+flexbar -r a0082_3rdExp_SC7_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0232_3rdExp_SC7_bc_H3K27ac_
+flexbar -r a0083_Med1_SC7_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0233_Med1_SC7_bc_Med1_
+flexbar -r a0084_5hmC_SC7_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0234_5hmC_SC7_bc_5hmC_
+flexbar -r a0085_1stExp_SC8_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0235_1stExp_SC8_bc_H3K27ac_
+flexbar -r a0086_2ndExp_SC8_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0236_2ndExp_SC8_bc_H3K27ac_
+flexbar -r a0087_3rdExp_SC8_bc_H3K27ac.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0237_3rdExp_SC8_bc_H3K27ac_
+flexbar -r a0088_Med1_SC8_bc_Med1.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0238_Med1_SC8_bc_Med1_
+flexbar -r a0089_5hmC_SC8_bc_5hmC.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0239_5hmC_SC8_bc_5hmC_
+flexbar -r a0090_1stExp_SC1_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0240_1stExp_SC1_bc_H3K27me3_
+flexbar -r a0091_2ndExp_SC1_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0241_2ndExp_SC1_bc_H3K27me3_
+flexbar -r a0092_3rdExp_SC1_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0242_3rdExp_SC1_bc_H3K27me3_
+flexbar -r a0093_1stExp_SC2_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0243_1stExp_SC2_bc_H3K27me3_
+flexbar -r a0094_2ndExp_SC2_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0244_2ndExp_SC2_bc_H3K27me3_
+flexbar -r a0095_3rdExp_SC2_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0245_3rdExp_SC2_bc_H3K27me3_
+flexbar -r a0096_1stExp_SC3_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0246_1stExp_SC3_bc_H3K27me3_
+flexbar -r a0097_2ndExp_SC3_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0247_2ndExp_SC3_bc_H3K27me3_
+flexbar -r a0098_3rdExp_SC3_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0248_3rdExp_SC3_bc_H3K27me3_
+flexbar -r a0099_1stExp_SC4_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0249_1stExp_SC4_bc_H3K27me3_
+flexbar -r a0100_2ndExp_SC4_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0250_2ndExp_SC4_bc_H3K27me3_
+flexbar -r a0101_3rdExp_SC4_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0251_3rdExp_SC4_bc_H3K27me3_
+flexbar -r a0102_1stExp_SC5_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0252_1stExp_SC5_bc_H3K27me3_
+flexbar -r a0103_2ndExp_SC5_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0253_2ndExp_SC5_bc_H3K27me3_
+flexbar -r a0104_3rdExp_SC5_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0254_3rdExp_SC5_bc_H3K27me3_
+flexbar -r a0105_1stExp_SC6_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0255_1stExp_SC6_bc_H3K27me3_
+flexbar -r a0106_2ndExp_SC6_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0256_2ndExp_SC6_bc_H3K27me3_
+flexbar -r a0107_3rdExp_SC6_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0257_3rdExp_SC6_bc_H3K27me3_
+flexbar -r a0108_1stExp_SC7_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0258_1stExp_SC7_bc_H3K27me3_
+flexbar -r a0109_2ndExp_SC7_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0259_2ndExp_SC7_bc_H3K27me3_
+flexbar -r a0110_3rdExp_SC7_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0260_3rdExp_SC7_bc_H3K27me3_
+flexbar -r a0111_1stExp_SC8_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0261_1stExp_SC8_bc_H3K27me3_
+flexbar -r a0112_2ndExp_SC8_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0262_2ndExp_SC8_bc_H3K27me3_
+flexbar -r a0113_3rdExp_SC8_bc_H3K27me3.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0263_3rdExp_SC8_bc_H3K27me3_
+flexbar -r a0114_1stExp_SC1_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0264_1stExp_SC1_bc_IgG_
+flexbar -r a0115_2ndExp_SC1_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0265_2ndExp_SC1_bc_IgG_
+flexbar -r a0116_3rdExp_SC1_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0266_3rdExp_SC1_bc_IgG_
+flexbar -r a0117_Med1_SC1_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0267_Med1_SC1_bc_IgG_
+flexbar -r a0118_5hmC_SC1_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0268_5hmC_SC1_bc_IgG_
+flexbar -r a0119_1stExp_SC2_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0269_1stExp_SC2_bc_IgG_
+flexbar -r a0120_2ndExp_SC2_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0270_2ndExp_SC2_bc_IgG_
+flexbar -r a0121_3rdExp_SC2_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0271_3rdExp_SC2_bc_IgG_
+flexbar -r a0122_Med1_SC2_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0272_Med1_SC2_bc_IgG_
+flexbar -r a0123_5hmC_SC2_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0273_5hmC_SC2_bc_IgG_
+flexbar -r a0124_1stExp_SC3_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0274_1stExp_SC3_bc_IgG_
+flexbar -r a0125_2ndExp_SC3_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0275_2ndExp_SC3_bc_IgG_
+flexbar -r a0126_3rdExp_SC3_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0276_3rdExp_SC3_bc_IgG_
+flexbar -r a0127_Med1_SC3_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0277_Med1_SC3_bc_IgG_
+flexbar -r a0128_5hmC_SC3_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0278_5hmC_SC3_bc_IgG_
+flexbar -r a0129_1stExp_SC4_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0279_1stExp_SC4_bc_IgG_
+flexbar -r a0130_2ndExp_SC4_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0280_2ndExp_SC4_bc_IgG_
+flexbar -r a0131_3rdExp_SC4_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0281_3rdExp_SC4_bc_IgG_
+flexbar -r a0132_Med1_SC4_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0282_Med1_SC4_bc_IgG_
+flexbar -r a0133_5hmC_SC4_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0283_5hmC_SC4_bc_IgG_
+flexbar -r a0134_1stExp_SC5_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0284_1stExp_SC5_bc_IgG_
+flexbar -r a0135_2ndExp_SC5_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0285_2ndExp_SC5_bc_IgG_
+flexbar -r a0136_3rdExp_SC5_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0286_3rdExp_SC5_bc_IgG_
+flexbar -r a0137_Med1_SC5_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0287_Med1_SC5_bc_IgG_
+flexbar -r a0138_5hmC_SC5_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0288_5hmC_SC5_bc_IgG_
+flexbar -r a0139_1stExp_SC6_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0289_1stExp_SC6_bc_IgG_
+flexbar -r a0140_2ndExp_SC6_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0290_2ndExp_SC6_bc_IgG_
+flexbar -r a0141_3rdExp_SC6_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0291_3rdExp_SC6_bc_IgG_
+flexbar -r a0142_Med1_SC6_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0292_Med1_SC6_bc_IgG_
+flexbar -r a0143_5hmC_SC6_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0293_5hmC_SC6_bc_IgG_
+flexbar -r a0144_1stExp_SC7_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0294_1stExp_SC7_bc_IgG_
+flexbar -r a0145_2ndExp_SC7_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0295_2ndExp_SC7_bc_IgG_
+flexbar -r a0146_3rdExp_SC7_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0296_3rdExp_SC7_bc_IgG_
+flexbar -r a0147_Med1_SC7_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0297_Med1_SC7_bc_IgG_
+flexbar -r a0148_5hmC_SC7_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0298_5hmC_SC7_bc_IgG_
+flexbar -r a0149_1stExp_SC8_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0299_1stExp_SC8_bc_IgG_
+flexbar -r a0150_2ndExp_SC8_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0300_2ndExp_SC8_bc_IgG_
+flexbar -r a0151_3rdExp_SC8_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0301_3rdExp_SC8_bc_IgG_
+flexbar -r a0152_Med1_SC8_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0302_Med1_SC8_bc_IgG_
+flexbar -r a0153_5hmC_SC8_bc_IgG.fastq -b Step5_AbBC_LigL-LigR.fasta --barcode-trim-end LEFT -t a0303_5hmC_SC8_bc_IgG_
+
+# Step6: Remove right side of reads from sequences of cell barcodes.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+flexbar -r a0200_1stExp_SC1_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0400_1stExp_SC1_bc_H3K27ac_
+flexbar -r a0201_2ndExp_SC1_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0401_2ndExp_SC1_bc_H3K27ac_
+flexbar -r a0202_3rdExp_SC1_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0402_3rdExp_SC1_bc_H3K27ac_
+flexbar -r a0203_Med1_SC1_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0403_Med1_SC1_bc_Med1_
+flexbar -r a0204_5hmC_SC1_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0404_5hmC_SC1_bc_5hmC_
+flexbar -r a0205_1stExp_SC2_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0405_1stExp_SC2_bc_H3K27ac_
+flexbar -r a0206_2ndExp_SC2_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0406_2ndExp_SC2_bc_H3K27ac_
+flexbar -r a0207_3rdExp_SC2_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0407_3rdExp_SC2_bc_H3K27ac_
+flexbar -r a0208_Med1_SC2_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0408_Med1_SC2_bc_Med1_
+flexbar -r a0209_5hmC_SC2_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0409_5hmC_SC2_bc_5hmC_
+flexbar -r a0210_1stExp_SC3_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0410_1stExp_SC3_bc_H3K27ac_
+flexbar -r a0211_2ndExp_SC3_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0411_2ndExp_SC3_bc_H3K27ac_
+flexbar -r a0212_3rdExp_SC3_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0412_3rdExp_SC3_bc_H3K27ac_
+flexbar -r a0213_Med1_SC3_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0413_Med1_SC3_bc_Med1_
+flexbar -r a0214_5hmC_SC3_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0414_5hmC_SC3_bc_5hmC_
+flexbar -r a0215_1stExp_SC4_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0415_1stExp_SC4_bc_H3K27ac_
+flexbar -r a0216_2ndExp_SC4_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0416_2ndExp_SC4_bc_H3K27ac_
+flexbar -r a0217_3rdExp_SC4_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0417_3rdExp_SC4_bc_H3K27ac_
+flexbar -r a0218_Med1_SC4_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0418_Med1_SC4_bc_Med1_
+flexbar -r a0219_5hmC_SC4_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0419_5hmC_SC4_bc_5hmC_
+flexbar -r a0220_1stExp_SC5_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0420_1stExp_SC5_bc_H3K27ac_
+flexbar -r a0221_2ndExp_SC5_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0421_2ndExp_SC5_bc_H3K27ac_
+flexbar -r a0222_3rdExp_SC5_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0422_3rdExp_SC5_bc_H3K27ac_
+flexbar -r a0223_Med1_SC5_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0423_Med1_SC5_bc_Med1_
+flexbar -r a0224_5hmC_SC5_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0424_5hmC_SC5_bc_5hmC_
+flexbar -r a0225_1stExp_SC6_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0425_1stExp_SC6_bc_H3K27ac_
+flexbar -r a0226_2ndExp_SC6_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0426_2ndExp_SC6_bc_H3K27ac_
+flexbar -r a0227_3rdExp_SC6_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0427_3rdExp_SC6_bc_H3K27ac_
+flexbar -r a0228_Med1_SC6_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0428_Med1_SC6_bc_Med1_
+flexbar -r a0229_5hmC_SC6_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0429_5hmC_SC6_bc_5hmC_
+flexbar -r a0230_1stExp_SC7_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0430_1stExp_SC7_bc_H3K27ac_
+flexbar -r a0231_2ndExp_SC7_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0431_2ndExp_SC7_bc_H3K27ac_
+flexbar -r a0232_3rdExp_SC7_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0432_3rdExp_SC7_bc_H3K27ac_
+flexbar -r a0233_Med1_SC7_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0433_Med1_SC7_bc_Med1_
+flexbar -r a0234_5hmC_SC7_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0434_5hmC_SC7_bc_5hmC_
+flexbar -r a0235_1stExp_SC8_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0435_1stExp_SC8_bc_H3K27ac_
+flexbar -r a0236_2ndExp_SC8_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0436_2ndExp_SC8_bc_H3K27ac_
+flexbar -r a0237_3rdExp_SC8_bc_H3K27ac_barcode_H3K27ac-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0437_3rdExp_SC8_bc_H3K27ac_
+flexbar -r a0238_Med1_SC8_bc_Med1_barcode_Med1-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0438_Med1_SC8_bc_Med1_
+flexbar -r a0239_5hmC_SC8_bc_5hmC_barcode_5hmC-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0439_5hmC_SC8_bc_5hmC_
+flexbar -r a0240_1stExp_SC1_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0440_1stExp_SC1_bc_H3K27me3_
+flexbar -r a0241_2ndExp_SC1_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0441_2ndExp_SC1_bc_H3K27me3_
+flexbar -r a0242_3rdExp_SC1_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0442_3rdExp_SC1_bc_H3K27me3_
+flexbar -r a0243_1stExp_SC2_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0443_1stExp_SC2_bc_H3K27me3_
+flexbar -r a0244_2ndExp_SC2_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0444_2ndExp_SC2_bc_H3K27me3_
+flexbar -r a0245_3rdExp_SC2_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0445_3rdExp_SC2_bc_H3K27me3_
+flexbar -r a0246_1stExp_SC3_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0446_1stExp_SC3_bc_H3K27me3_
+flexbar -r a0247_2ndExp_SC3_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0447_2ndExp_SC3_bc_H3K27me3_
+flexbar -r a0248_3rdExp_SC3_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0448_3rdExp_SC3_bc_H3K27me3_
+flexbar -r a0249_1stExp_SC4_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0449_1stExp_SC4_bc_H3K27me3_
+flexbar -r a0250_2ndExp_SC4_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0450_2ndExp_SC4_bc_H3K27me3_
+flexbar -r a0251_3rdExp_SC4_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0451_3rdExp_SC4_bc_H3K27me3_
+flexbar -r a0252_1stExp_SC5_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0452_1stExp_SC5_bc_H3K27me3_
+flexbar -r a0253_2ndExp_SC5_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0453_2ndExp_SC5_bc_H3K27me3_
+flexbar -r a0254_3rdExp_SC5_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0454_3rdExp_SC5_bc_H3K27me3_
+flexbar -r a0255_1stExp_SC6_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0455_1stExp_SC6_bc_H3K27me3_
+flexbar -r a0256_2ndExp_SC6_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0456_2ndExp_SC6_bc_H3K27me3_
+flexbar -r a0257_3rdExp_SC6_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0457_3rdExp_SC6_bc_H3K27me3_
+flexbar -r a0258_1stExp_SC7_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0458_1stExp_SC7_bc_H3K27me3_
+flexbar -r a0259_2ndExp_SC7_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0459_2ndExp_SC7_bc_H3K27me3_
+flexbar -r a0260_3rdExp_SC7_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0460_3rdExp_SC7_bc_H3K27me3_
+flexbar -r a0261_1stExp_SC8_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0461_1stExp_SC8_bc_H3K27me3_
+flexbar -r a0262_2ndExp_SC8_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0462_2ndExp_SC8_bc_H3K27me3_
+flexbar -r a0263_3rdExp_SC8_bc_H3K27me3_barcode_H3K27me3-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0463_3rdExp_SC8_bc_H3K27me3_
+flexbar -r a0264_1stExp_SC1_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0464_1stExp_SC1_bc_IgG_
+flexbar -r a0265_2ndExp_SC1_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0465_2ndExp_SC1_bc_IgG_
+flexbar -r a0266_3rdExp_SC1_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0466_3rdExp_SC1_bc_IgG_
+flexbar -r a0267_Med1_SC1_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0467_Med1_SC1_bc_IgG_
+flexbar -r a0268_5hmC_SC1_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0468_5hmC_SC1_bc_IgG_
+flexbar -r a0269_1stExp_SC2_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0469_1stExp_SC2_bc_IgG_
+flexbar -r a0270_2ndExp_SC2_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0470_2ndExp_SC2_bc_IgG_
+flexbar -r a0271_3rdExp_SC2_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0471_3rdExp_SC2_bc_IgG_
+flexbar -r a0272_Med1_SC2_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0472_Med1_SC2_bc_IgG_
+flexbar -r a0273_5hmC_SC2_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0473_5hmC_SC2_bc_IgG_
+flexbar -r a0274_1stExp_SC3_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0474_1stExp_SC3_bc_IgG_
+flexbar -r a0275_2ndExp_SC3_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0475_2ndExp_SC3_bc_IgG_
+flexbar -r a0276_3rdExp_SC3_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0476_3rdExp_SC3_bc_IgG_
+flexbar -r a0277_Med1_SC3_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0477_Med1_SC3_bc_IgG_
+flexbar -r a0278_5hmC_SC3_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0478_5hmC_SC3_bc_IgG_
+flexbar -r a0279_1stExp_SC4_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0479_1stExp_SC4_bc_IgG_
+flexbar -r a0280_2ndExp_SC4_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0480_2ndExp_SC4_bc_IgG_
+flexbar -r a0281_3rdExp_SC4_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0481_3rdExp_SC4_bc_IgG_
+flexbar -r a0282_Med1_SC4_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0482_Med1_SC4_bc_IgG_
+flexbar -r a0283_5hmC_SC4_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0483_5hmC_SC4_bc_IgG_
+flexbar -r a0284_1stExp_SC5_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0484_1stExp_SC5_bc_IgG_
+flexbar -r a0285_2ndExp_SC5_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0485_2ndExp_SC5_bc_IgG_
+flexbar -r a0286_3rdExp_SC5_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0486_3rdExp_SC5_bc_IgG_
+flexbar -r a0287_Med1_SC5_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0487_Med1_SC5_bc_IgG_
+flexbar -r a0288_5hmC_SC5_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0488_5hmC_SC5_bc_IgG_
+flexbar -r a0289_1stExp_SC6_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0489_1stExp_SC6_bc_IgG_
+flexbar -r a0290_2ndExp_SC6_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0490_2ndExp_SC6_bc_IgG_
+flexbar -r a0291_3rdExp_SC6_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0491_3rdExp_SC6_bc_IgG_
+flexbar -r a0292_Med1_SC6_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0492_Med1_SC6_bc_IgG_
+flexbar -r a0293_5hmC_SC6_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0493_5hmC_SC6_bc_IgG_
+flexbar -r a0294_1stExp_SC7_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0494_1stExp_SC7_bc_IgG_
+flexbar -r a0295_2ndExp_SC7_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0495_2ndExp_SC7_bc_IgG_
+flexbar -r a0296_3rdExp_SC7_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0496_3rdExp_SC7_bc_IgG_
+flexbar -r a0297_Med1_SC7_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0497_Med1_SC7_bc_IgG_
+flexbar -r a0298_5hmC_SC7_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0498_5hmC_SC7_bc_IgG_
+flexbar -r a0299_1stExp_SC8_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0499_1stExp_SC8_bc_IgG_
+flexbar -r a0300_2ndExp_SC8_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0500_2ndExp_SC8_bc_IgG_
+flexbar -r a0301_3rdExp_SC8_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0501_3rdExp_SC8_bc_IgG_
+flexbar -r a0302_Med1_SC8_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0502_Med1_SC8_bc_IgG_
+flexbar -r a0303_5hmC_SC8_bc_IgG_barcode_IgG-LigL-LigR.fastq -b Step6_CellBC.fasta --barcode-trim-end RIGHT -t a0503_5hmC_SC8_bc_IgG_
+
+# Step7: Assign 8 nt of the random primer as a unique molecular identifier.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load umitools
+umi_tools extract --stdin a0400_1stExp_SC1_bc_H3K27ac_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0600_UMI_1stExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0401_2ndExp_SC1_bc_H3K27ac_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0601_UMI_2ndExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0402_3rdExp_SC1_bc_H3K27ac_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0602_UMI_3rdExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0403_Med1_SC1_bc_Med1_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0603_UMI_Med1_SC1_bc_Med1.fastq
+umi_tools extract --stdin a0404_5hmC_SC1_bc_5hmC_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0604_UMI_5hmC_SC1_bc_5hmC.fastq
+umi_tools extract --stdin a0405_1stExp_SC2_bc_H3K27ac_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0605_UMI_1stExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0406_2ndExp_SC2_bc_H3K27ac_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0606_UMI_2ndExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0407_3rdExp_SC2_bc_H3K27ac_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0607_UMI_3rdExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0408_Med1_SC2_bc_Med1_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0608_UMI_Med1_SC2_bc_Med1.fastq
+umi_tools extract --stdin a0409_5hmC_SC2_bc_5hmC_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0609_UMI_5hmC_SC2_bc_5hmC.fastq
+umi_tools extract --stdin a0410_1stExp_SC3_bc_H3K27ac_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0610_UMI_1stExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0411_2ndExp_SC3_bc_H3K27ac_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0611_UMI_2ndExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0412_3rdExp_SC3_bc_H3K27ac_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0612_UMI_3rdExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0413_Med1_SC3_bc_Med1_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0613_UMI_Med1_SC3_bc_Med1.fastq
+umi_tools extract --stdin a0414_5hmC_SC3_bc_5hmC_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0614_UMI_5hmC_SC3_bc_5hmC.fastq
+umi_tools extract --stdin a0415_1stExp_SC4_bc_H3K27ac_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0615_UMI_1stExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0416_2ndExp_SC4_bc_H3K27ac_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0616_UMI_2ndExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0417_3rdExp_SC4_bc_H3K27ac_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0617_UMI_3rdExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0418_Med1_SC4_bc_Med1_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0618_UMI_Med1_SC4_bc_Med1.fastq
+umi_tools extract --stdin a0419_5hmC_SC4_bc_5hmC_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0619_UMI_5hmC_SC4_bc_5hmC.fastq
+umi_tools extract --stdin a0420_1stExp_SC5_bc_H3K27ac_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0620_UMI_1stExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0421_2ndExp_SC5_bc_H3K27ac_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0621_UMI_2ndExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0422_3rdExp_SC5_bc_H3K27ac_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0622_UMI_3rdExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0423_Med1_SC5_bc_Med1_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0623_UMI_Med1_SC5_bc_Med1.fastq
+umi_tools extract --stdin a0424_5hmC_SC5_bc_5hmC_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0624_UMI_5hmC_SC5_bc_5hmC.fastq
+umi_tools extract --stdin a0425_1stExp_SC6_bc_H3K27ac_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0625_UMI_1stExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0426_2ndExp_SC6_bc_H3K27ac_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0626_UMI_2ndExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0427_3rdExp_SC6_bc_H3K27ac_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0627_UMI_3rdExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0428_Med1_SC6_bc_Med1_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0628_UMI_Med1_SC6_bc_Med1.fastq
+umi_tools extract --stdin a0429_5hmC_SC6_bc_5hmC_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0629_UMI_5hmC_SC6_bc_5hmC.fastq
+umi_tools extract --stdin a0430_1stExp_SC7_bc_H3K27ac_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0630_UMI_1stExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0431_2ndExp_SC7_bc_H3K27ac_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0631_UMI_2ndExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0432_3rdExp_SC7_bc_H3K27ac_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0632_UMI_3rdExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0433_Med1_SC7_bc_Med1_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0633_UMI_Med1_SC7_bc_Med1.fastq
+umi_tools extract --stdin a0434_5hmC_SC7_bc_5hmC_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0634_UMI_5hmC_SC7_bc_5hmC.fastq
+umi_tools extract --stdin a0435_1stExp_SC8_bc_H3K27ac_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0635_UMI_1stExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0436_2ndExp_SC8_bc_H3K27ac_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0636_UMI_2ndExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0437_3rdExp_SC8_bc_H3K27ac_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0637_UMI_3rdExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0438_Med1_SC8_bc_Med1_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0638_UMI_Med1_SC8_bc_Med1.fastq
+umi_tools extract --stdin a0439_5hmC_SC8_bc_5hmC_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0639_UMI_5hmC_SC8_bc_5hmC.fastq
+umi_tools extract --stdin a0440_1stExp_SC1_bc_H3K27me3_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0640_UMI_1stExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0441_2ndExp_SC1_bc_H3K27me3_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0641_UMI_2ndExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0442_3rdExp_SC1_bc_H3K27me3_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0642_UMI_3rdExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0443_1stExp_SC2_bc_H3K27me3_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0643_UMI_1stExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0444_2ndExp_SC2_bc_H3K27me3_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0644_UMI_2ndExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0445_3rdExp_SC2_bc_H3K27me3_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0645_UMI_3rdExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0446_1stExp_SC3_bc_H3K27me3_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0646_UMI_1stExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0447_2ndExp_SC3_bc_H3K27me3_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0647_UMI_2ndExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0448_3rdExp_SC3_bc_H3K27me3_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0648_UMI_3rdExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0449_1stExp_SC4_bc_H3K27me3_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0649_UMI_1stExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0450_2ndExp_SC4_bc_H3K27me3_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0650_UMI_2ndExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0451_3rdExp_SC4_bc_H3K27me3_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0651_UMI_3rdExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0452_1stExp_SC5_bc_H3K27me3_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0652_UMI_1stExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0453_2ndExp_SC5_bc_H3K27me3_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0653_UMI_2ndExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0454_3rdExp_SC5_bc_H3K27me3_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0654_UMI_3rdExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0455_1stExp_SC6_bc_H3K27me3_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0655_UMI_1stExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0456_2ndExp_SC6_bc_H3K27me3_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0656_UMI_2ndExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0457_3rdExp_SC6_bc_H3K27me3_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0657_UMI_3rdExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0458_1stExp_SC7_bc_H3K27me3_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0658_UMI_1stExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0459_2ndExp_SC7_bc_H3K27me3_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0659_UMI_2ndExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0460_3rdExp_SC7_bc_H3K27me3_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0660_UMI_3rdExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0461_1stExp_SC8_bc_H3K27me3_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0661_UMI_1stExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0462_2ndExp_SC8_bc_H3K27me3_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0662_UMI_2ndExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0463_3rdExp_SC8_bc_H3K27me3_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0663_UMI_3rdExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0464_1stExp_SC1_bc_IgG_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0664_UMI_1stExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0465_2ndExp_SC1_bc_IgG_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0665_UMI_2ndExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0466_3rdExp_SC1_bc_IgG_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0666_UMI_3rdExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0467_Med1_SC1_bc_IgG_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0667_UMI_Med1_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0468_5hmC_SC1_bc_IgG_barcode_CellBC001_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0668_UMI_5hmC_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0469_1stExp_SC2_bc_IgG_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0669_UMI_1stExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0470_2ndExp_SC2_bc_IgG_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0670_UMI_2ndExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0471_3rdExp_SC2_bc_IgG_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0671_UMI_3rdExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0472_Med1_SC2_bc_IgG_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0672_UMI_Med1_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0473_5hmC_SC2_bc_IgG_barcode_CellBC002_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0673_UMI_5hmC_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0474_1stExp_SC3_bc_IgG_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0674_UMI_1stExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0475_2ndExp_SC3_bc_IgG_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0675_UMI_2ndExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0476_3rdExp_SC3_bc_IgG_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0676_UMI_3rdExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0477_Med1_SC3_bc_IgG_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0677_UMI_Med1_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0478_5hmC_SC3_bc_IgG_barcode_CellBC003_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0678_UMI_5hmC_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0479_1stExp_SC4_bc_IgG_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0679_UMI_1stExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0480_2ndExp_SC4_bc_IgG_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0680_UMI_2ndExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0481_3rdExp_SC4_bc_IgG_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0681_UMI_3rdExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0482_Med1_SC4_bc_IgG_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0682_UMI_Med1_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0483_5hmC_SC4_bc_IgG_barcode_CellBC004_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0683_UMI_5hmC_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0484_1stExp_SC5_bc_IgG_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0684_UMI_1stExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0485_2ndExp_SC5_bc_IgG_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0685_UMI_2ndExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0486_3rdExp_SC5_bc_IgG_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0686_UMI_3rdExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0487_Med1_SC5_bc_IgG_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0687_UMI_Med1_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0488_5hmC_SC5_bc_IgG_barcode_CellBC005_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0688_UMI_5hmC_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0489_1stExp_SC6_bc_IgG_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0689_UMI_1stExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0490_2ndExp_SC6_bc_IgG_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0690_UMI_2ndExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0491_3rdExp_SC6_bc_IgG_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0691_UMI_3rdExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0492_Med1_SC6_bc_IgG_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0692_UMI_Med1_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0493_5hmC_SC6_bc_IgG_barcode_CellBC006_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0693_UMI_5hmC_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0494_1stExp_SC7_bc_IgG_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0694_UMI_1stExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0495_2ndExp_SC7_bc_IgG_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0695_UMI_2ndExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0496_3rdExp_SC7_bc_IgG_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0696_UMI_3rdExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0497_Med1_SC7_bc_IgG_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0697_UMI_Med1_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0498_5hmC_SC7_bc_IgG_barcode_CellBC007_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0698_UMI_5hmC_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0499_1stExp_SC8_bc_IgG_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0699_UMI_1stExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0500_2ndExp_SC8_bc_IgG_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0700_UMI_2ndExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0501_3rdExp_SC8_bc_IgG_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0701_UMI_3rdExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0502_Med1_SC8_bc_IgG_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0702_UMI_Med1_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0503_5hmC_SC8_bc_IgG_barcode_CellBC008_Fw.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0703_UMI_5hmC_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0400_1stExp_SC1_bc_H3K27ac_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0704_UMI_1stExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0401_2ndExp_SC1_bc_H3K27ac_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0705_UMI_2ndExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0402_3rdExp_SC1_bc_H3K27ac_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0706_UMI_3rdExp_SC1_bc_H3K27ac.fastq
+umi_tools extract --stdin a0403_Med1_SC1_bc_Med1_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0707_UMI_Med1_SC1_bc_Med1.fastq
+umi_tools extract --stdin a0404_5hmC_SC1_bc_5hmC_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0708_UMI_5hmC_SC1_bc_5hmC.fastq
+umi_tools extract --stdin a0405_1stExp_SC2_bc_H3K27ac_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0709_UMI_1stExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0406_2ndExp_SC2_bc_H3K27ac_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0710_UMI_2ndExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0407_3rdExp_SC2_bc_H3K27ac_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0711_UMI_3rdExp_SC2_bc_H3K27ac.fastq
+umi_tools extract --stdin a0408_Med1_SC2_bc_Med1_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0712_UMI_Med1_SC2_bc_Med1.fastq
+umi_tools extract --stdin a0409_5hmC_SC2_bc_5hmC_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0713_UMI_5hmC_SC2_bc_5hmC.fastq
+umi_tools extract --stdin a0410_1stExp_SC3_bc_H3K27ac_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0714_UMI_1stExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0411_2ndExp_SC3_bc_H3K27ac_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0715_UMI_2ndExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0412_3rdExp_SC3_bc_H3K27ac_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0716_UMI_3rdExp_SC3_bc_H3K27ac.fastq
+umi_tools extract --stdin a0413_Med1_SC3_bc_Med1_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0717_UMI_Med1_SC3_bc_Med1.fastq
+umi_tools extract --stdin a0414_5hmC_SC3_bc_5hmC_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0718_UMI_5hmC_SC3_bc_5hmC.fastq
+umi_tools extract --stdin a0415_1stExp_SC4_bc_H3K27ac_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0719_UMI_1stExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0416_2ndExp_SC4_bc_H3K27ac_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0720_UMI_2ndExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0417_3rdExp_SC4_bc_H3K27ac_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0721_UMI_3rdExp_SC4_bc_H3K27ac.fastq
+umi_tools extract --stdin a0418_Med1_SC4_bc_Med1_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0722_UMI_Med1_SC4_bc_Med1.fastq
+umi_tools extract --stdin a0419_5hmC_SC4_bc_5hmC_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0723_UMI_5hmC_SC4_bc_5hmC.fastq
+umi_tools extract --stdin a0420_1stExp_SC5_bc_H3K27ac_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0724_UMI_1stExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0421_2ndExp_SC5_bc_H3K27ac_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0725_UMI_2ndExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0422_3rdExp_SC5_bc_H3K27ac_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0726_UMI_3rdExp_SC5_bc_H3K27ac.fastq
+umi_tools extract --stdin a0423_Med1_SC5_bc_Med1_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0727_UMI_Med1_SC5_bc_Med1.fastq
+umi_tools extract --stdin a0424_5hmC_SC5_bc_5hmC_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0728_UMI_5hmC_SC5_bc_5hmC.fastq
+umi_tools extract --stdin a0425_1stExp_SC6_bc_H3K27ac_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0729_UMI_1stExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0426_2ndExp_SC6_bc_H3K27ac_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0730_UMI_2ndExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0427_3rdExp_SC6_bc_H3K27ac_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0731_UMI_3rdExp_SC6_bc_H3K27ac.fastq
+umi_tools extract --stdin a0428_Med1_SC6_bc_Med1_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0732_UMI_Med1_SC6_bc_Med1.fastq
+umi_tools extract --stdin a0429_5hmC_SC6_bc_5hmC_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0733_UMI_5hmC_SC6_bc_5hmC.fastq
+umi_tools extract --stdin a0430_1stExp_SC7_bc_H3K27ac_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0734_UMI_1stExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0431_2ndExp_SC7_bc_H3K27ac_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0735_UMI_2ndExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0432_3rdExp_SC7_bc_H3K27ac_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0736_UMI_3rdExp_SC7_bc_H3K27ac.fastq
+umi_tools extract --stdin a0433_Med1_SC7_bc_Med1_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0737_UMI_Med1_SC7_bc_Med1.fastq
+umi_tools extract --stdin a0434_5hmC_SC7_bc_5hmC_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0738_UMI_5hmC_SC7_bc_5hmC.fastq
+umi_tools extract --stdin a0435_1stExp_SC8_bc_H3K27ac_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0739_UMI_1stExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0436_2ndExp_SC8_bc_H3K27ac_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0740_UMI_2ndExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0437_3rdExp_SC8_bc_H3K27ac_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0741_UMI_3rdExp_SC8_bc_H3K27ac.fastq
+umi_tools extract --stdin a0438_Med1_SC8_bc_Med1_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0742_UMI_Med1_SC8_bc_Med1.fastq
+umi_tools extract --stdin a0439_5hmC_SC8_bc_5hmC_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0743_UMI_5hmC_SC8_bc_5hmC.fastq
+umi_tools extract --stdin a0440_1stExp_SC1_bc_H3K27me3_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0744_UMI_1stExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0441_2ndExp_SC1_bc_H3K27me3_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0745_UMI_2ndExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0442_3rdExp_SC1_bc_H3K27me3_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0746_UMI_3rdExp_SC1_bc_H3K27me3.fastq
+umi_tools extract --stdin a0443_1stExp_SC2_bc_H3K27me3_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0747_UMI_1stExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0444_2ndExp_SC2_bc_H3K27me3_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0748_UMI_2ndExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0445_3rdExp_SC2_bc_H3K27me3_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0749_UMI_3rdExp_SC2_bc_H3K27me3.fastq
+umi_tools extract --stdin a0446_1stExp_SC3_bc_H3K27me3_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0750_UMI_1stExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0447_2ndExp_SC3_bc_H3K27me3_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0751_UMI_2ndExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0448_3rdExp_SC3_bc_H3K27me3_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0752_UMI_3rdExp_SC3_bc_H3K27me3.fastq
+umi_tools extract --stdin a0449_1stExp_SC4_bc_H3K27me3_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0753_UMI_1stExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0450_2ndExp_SC4_bc_H3K27me3_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0754_UMI_2ndExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0451_3rdExp_SC4_bc_H3K27me3_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0755_UMI_3rdExp_SC4_bc_H3K27me3.fastq
+umi_tools extract --stdin a0452_1stExp_SC5_bc_H3K27me3_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0756_UMI_1stExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0453_2ndExp_SC5_bc_H3K27me3_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0757_UMI_2ndExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0454_3rdExp_SC5_bc_H3K27me3_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0758_UMI_3rdExp_SC5_bc_H3K27me3.fastq
+umi_tools extract --stdin a0455_1stExp_SC6_bc_H3K27me3_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0759_UMI_1stExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0456_2ndExp_SC6_bc_H3K27me3_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0760_UMI_2ndExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0457_3rdExp_SC6_bc_H3K27me3_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0761_UMI_3rdExp_SC6_bc_H3K27me3.fastq
+umi_tools extract --stdin a0458_1stExp_SC7_bc_H3K27me3_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0762_UMI_1stExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0459_2ndExp_SC7_bc_H3K27me3_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0763_UMI_2ndExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0460_3rdExp_SC7_bc_H3K27me3_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0764_UMI_3rdExp_SC7_bc_H3K27me3.fastq
+umi_tools extract --stdin a0461_1stExp_SC8_bc_H3K27me3_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0765_UMI_1stExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0462_2ndExp_SC8_bc_H3K27me3_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0766_UMI_2ndExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0463_3rdExp_SC8_bc_H3K27me3_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0767_UMI_3rdExp_SC8_bc_H3K27me3.fastq
+umi_tools extract --stdin a0464_1stExp_SC1_bc_IgG_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0768_UMI_1stExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0465_2ndExp_SC1_bc_IgG_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0769_UMI_2ndExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0466_3rdExp_SC1_bc_IgG_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0770_UMI_3rdExp_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0467_Med1_SC1_bc_IgG_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0771_UMI_Med1_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0468_5hmC_SC1_bc_IgG_barcode_CellBC001_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0772_UMI_5hmC_SC1_bc_IgG.fastq
+umi_tools extract --stdin a0469_1stExp_SC2_bc_IgG_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0773_UMI_1stExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0470_2ndExp_SC2_bc_IgG_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0774_UMI_2ndExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0471_3rdExp_SC2_bc_IgG_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0775_UMI_3rdExp_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0472_Med1_SC2_bc_IgG_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0776_UMI_Med1_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0473_5hmC_SC2_bc_IgG_barcode_CellBC002_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0777_UMI_5hmC_SC2_bc_IgG.fastq
+umi_tools extract --stdin a0474_1stExp_SC3_bc_IgG_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0778_UMI_1stExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0475_2ndExp_SC3_bc_IgG_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0779_UMI_2ndExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0476_3rdExp_SC3_bc_IgG_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0780_UMI_3rdExp_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0477_Med1_SC3_bc_IgG_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0781_UMI_Med1_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0478_5hmC_SC3_bc_IgG_barcode_CellBC003_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0782_UMI_5hmC_SC3_bc_IgG.fastq
+umi_tools extract --stdin a0479_1stExp_SC4_bc_IgG_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0783_UMI_1stExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0480_2ndExp_SC4_bc_IgG_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0784_UMI_2ndExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0481_3rdExp_SC4_bc_IgG_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0785_UMI_3rdExp_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0482_Med1_SC4_bc_IgG_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0786_UMI_Med1_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0483_5hmC_SC4_bc_IgG_barcode_CellBC004_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0787_UMI_5hmC_SC4_bc_IgG.fastq
+umi_tools extract --stdin a0484_1stExp_SC5_bc_IgG_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0788_UMI_1stExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0485_2ndExp_SC5_bc_IgG_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0789_UMI_2ndExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0486_3rdExp_SC5_bc_IgG_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0790_UMI_3rdExp_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0487_Med1_SC5_bc_IgG_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0791_UMI_Med1_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0488_5hmC_SC5_bc_IgG_barcode_CellBC005_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0792_UMI_5hmC_SC5_bc_IgG.fastq
+umi_tools extract --stdin a0489_1stExp_SC6_bc_IgG_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0793_UMI_1stExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0490_2ndExp_SC6_bc_IgG_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0794_UMI_2ndExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0491_3rdExp_SC6_bc_IgG_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0795_UMI_3rdExp_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0492_Med1_SC6_bc_IgG_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0796_UMI_Med1_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0493_5hmC_SC6_bc_IgG_barcode_CellBC006_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0797_UMI_5hmC_SC6_bc_IgG.fastq
+umi_tools extract --stdin a0494_1stExp_SC7_bc_IgG_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0798_UMI_1stExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0495_2ndExp_SC7_bc_IgG_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0799_UMI_2ndExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0496_3rdExp_SC7_bc_IgG_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0800_UMI_3rdExp_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0497_Med1_SC7_bc_IgG_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0801_UMI_Med1_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0498_5hmC_SC7_bc_IgG_barcode_CellBC007_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0802_UMI_5hmC_SC7_bc_IgG.fastq
+umi_tools extract --stdin a0499_1stExp_SC8_bc_IgG_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0803_UMI_1stExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0500_2ndExp_SC8_bc_IgG_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0804_UMI_2ndExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0501_3rdExp_SC8_bc_IgG_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0805_UMI_3rdExp_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0502_Med1_SC8_bc_IgG_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0806_UMI_Med1_SC8_bc_IgG.fastq
+umi_tools extract --stdin a0503_5hmC_SC8_bc_IgG_barcode_CellBC008_RvComp.fastq --bc-pattern='(?P<umi_1>.{8})' --extract-method=regex --stdout a0807_UMI_5hmC_SC8_bc_IgG.fastq
+
+# Step8: Map the reads to the genome.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load bowtie
+export BOWTIE2_INDEXES=/fdb/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/Bowtie2Index 
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0600_UMI_1stExp_SC1_bc_H3K27ac.fastq -S a1000_UMI_1stExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0601_UMI_2ndExp_SC1_bc_H3K27ac.fastq -S a1001_UMI_2ndExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0602_UMI_3rdExp_SC1_bc_H3K27ac.fastq -S a1002_UMI_3rdExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0603_UMI_Med1_SC1_bc_Med1.fastq -S a1003_UMI_Med1_SC1_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0604_UMI_5hmC_SC1_bc_5hmC.fastq -S a1004_UMI_5hmC_SC1_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0605_UMI_1stExp_SC2_bc_H3K27ac.fastq -S a1005_UMI_1stExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0606_UMI_2ndExp_SC2_bc_H3K27ac.fastq -S a1006_UMI_2ndExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0607_UMI_3rdExp_SC2_bc_H3K27ac.fastq -S a1007_UMI_3rdExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0608_UMI_Med1_SC2_bc_Med1.fastq -S a1008_UMI_Med1_SC2_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0609_UMI_5hmC_SC2_bc_5hmC.fastq -S a1009_UMI_5hmC_SC2_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0610_UMI_1stExp_SC3_bc_H3K27ac.fastq -S a1010_UMI_1stExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0611_UMI_2ndExp_SC3_bc_H3K27ac.fastq -S a1011_UMI_2ndExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0612_UMI_3rdExp_SC3_bc_H3K27ac.fastq -S a1012_UMI_3rdExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0613_UMI_Med1_SC3_bc_Med1.fastq -S a1013_UMI_Med1_SC3_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0614_UMI_5hmC_SC3_bc_5hmC.fastq -S a1014_UMI_5hmC_SC3_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0615_UMI_1stExp_SC4_bc_H3K27ac.fastq -S a1015_UMI_1stExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0616_UMI_2ndExp_SC4_bc_H3K27ac.fastq -S a1016_UMI_2ndExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0617_UMI_3rdExp_SC4_bc_H3K27ac.fastq -S a1017_UMI_3rdExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0618_UMI_Med1_SC4_bc_Med1.fastq -S a1018_UMI_Med1_SC4_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0619_UMI_5hmC_SC4_bc_5hmC.fastq -S a1019_UMI_5hmC_SC4_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0620_UMI_1stExp_SC5_bc_H3K27ac.fastq -S a1020_UMI_1stExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0621_UMI_2ndExp_SC5_bc_H3K27ac.fastq -S a1021_UMI_2ndExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0622_UMI_3rdExp_SC5_bc_H3K27ac.fastq -S a1022_UMI_3rdExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0623_UMI_Med1_SC5_bc_Med1.fastq -S a1023_UMI_Med1_SC5_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0624_UMI_5hmC_SC5_bc_5hmC.fastq -S a1024_UMI_5hmC_SC5_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0625_UMI_1stExp_SC6_bc_H3K27ac.fastq -S a1025_UMI_1stExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0626_UMI_2ndExp_SC6_bc_H3K27ac.fastq -S a1026_UMI_2ndExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0627_UMI_3rdExp_SC6_bc_H3K27ac.fastq -S a1027_UMI_3rdExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0628_UMI_Med1_SC6_bc_Med1.fastq -S a1028_UMI_Med1_SC6_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0629_UMI_5hmC_SC6_bc_5hmC.fastq -S a1029_UMI_5hmC_SC6_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0630_UMI_1stExp_SC7_bc_H3K27ac.fastq -S a1030_UMI_1stExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0631_UMI_2ndExp_SC7_bc_H3K27ac.fastq -S a1031_UMI_2ndExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0632_UMI_3rdExp_SC7_bc_H3K27ac.fastq -S a1032_UMI_3rdExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0633_UMI_Med1_SC7_bc_Med1.fastq -S a1033_UMI_Med1_SC7_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0634_UMI_5hmC_SC7_bc_5hmC.fastq -S a1034_UMI_5hmC_SC7_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0635_UMI_1stExp_SC8_bc_H3K27ac.fastq -S a1035_UMI_1stExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0636_UMI_2ndExp_SC8_bc_H3K27ac.fastq -S a1036_UMI_2ndExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0637_UMI_3rdExp_SC8_bc_H3K27ac.fastq -S a1037_UMI_3rdExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0638_UMI_Med1_SC8_bc_Med1.fastq -S a1038_UMI_Med1_SC8_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0639_UMI_5hmC_SC8_bc_5hmC.fastq -S a1039_UMI_5hmC_SC8_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0640_UMI_1stExp_SC1_bc_H3K27me3.fastq -S a1040_UMI_1stExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0641_UMI_2ndExp_SC1_bc_H3K27me3.fastq -S a1041_UMI_2ndExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0642_UMI_3rdExp_SC1_bc_H3K27me3.fastq -S a1042_UMI_3rdExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0643_UMI_1stExp_SC2_bc_H3K27me3.fastq -S a1043_UMI_1stExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0644_UMI_2ndExp_SC2_bc_H3K27me3.fastq -S a1044_UMI_2ndExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0645_UMI_3rdExp_SC2_bc_H3K27me3.fastq -S a1045_UMI_3rdExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0646_UMI_1stExp_SC3_bc_H3K27me3.fastq -S a1046_UMI_1stExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0647_UMI_2ndExp_SC3_bc_H3K27me3.fastq -S a1047_UMI_2ndExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0648_UMI_3rdExp_SC3_bc_H3K27me3.fastq -S a1048_UMI_3rdExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0649_UMI_1stExp_SC4_bc_H3K27me3.fastq -S a1049_UMI_1stExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0650_UMI_2ndExp_SC4_bc_H3K27me3.fastq -S a1050_UMI_2ndExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0651_UMI_3rdExp_SC4_bc_H3K27me3.fastq -S a1051_UMI_3rdExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0652_UMI_1stExp_SC5_bc_H3K27me3.fastq -S a1052_UMI_1stExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0653_UMI_2ndExp_SC5_bc_H3K27me3.fastq -S a1053_UMI_2ndExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0654_UMI_3rdExp_SC5_bc_H3K27me3.fastq -S a1054_UMI_3rdExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0655_UMI_1stExp_SC6_bc_H3K27me3.fastq -S a1055_UMI_1stExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0656_UMI_2ndExp_SC6_bc_H3K27me3.fastq -S a1056_UMI_2ndExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0657_UMI_3rdExp_SC6_bc_H3K27me3.fastq -S a1057_UMI_3rdExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0658_UMI_1stExp_SC7_bc_H3K27me3.fastq -S a1058_UMI_1stExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0659_UMI_2ndExp_SC7_bc_H3K27me3.fastq -S a1059_UMI_2ndExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0660_UMI_3rdExp_SC7_bc_H3K27me3.fastq -S a1060_UMI_3rdExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0661_UMI_1stExp_SC8_bc_H3K27me3.fastq -S a1061_UMI_1stExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0662_UMI_2ndExp_SC8_bc_H3K27me3.fastq -S a1062_UMI_2ndExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0663_UMI_3rdExp_SC8_bc_H3K27me3.fastq -S a1063_UMI_3rdExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0664_UMI_1stExp_SC1_bc_IgG.fastq -S a1064_UMI_1stExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0665_UMI_2ndExp_SC1_bc_IgG.fastq -S a1065_UMI_2ndExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0666_UMI_3rdExp_SC1_bc_IgG.fastq -S a1066_UMI_3rdExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0667_UMI_Med1_SC1_bc_IgG.fastq -S a1067_UMI_Med1_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0668_UMI_5hmC_SC1_bc_IgG.fastq -S a1068_UMI_5hmC_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0669_UMI_1stExp_SC2_bc_IgG.fastq -S a1069_UMI_1stExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0670_UMI_2ndExp_SC2_bc_IgG.fastq -S a1070_UMI_2ndExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0671_UMI_3rdExp_SC2_bc_IgG.fastq -S a1071_UMI_3rdExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0672_UMI_Med1_SC2_bc_IgG.fastq -S a1072_UMI_Med1_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0673_UMI_5hmC_SC2_bc_IgG.fastq -S a1073_UMI_5hmC_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0674_UMI_1stExp_SC3_bc_IgG.fastq -S a1074_UMI_1stExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0675_UMI_2ndExp_SC3_bc_IgG.fastq -S a1075_UMI_2ndExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0676_UMI_3rdExp_SC3_bc_IgG.fastq -S a1076_UMI_3rdExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0677_UMI_Med1_SC3_bc_IgG.fastq -S a1077_UMI_Med1_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0678_UMI_5hmC_SC3_bc_IgG.fastq -S a1078_UMI_5hmC_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0679_UMI_1stExp_SC4_bc_IgG.fastq -S a1079_UMI_1stExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0680_UMI_2ndExp_SC4_bc_IgG.fastq -S a1080_UMI_2ndExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0681_UMI_3rdExp_SC4_bc_IgG.fastq -S a1081_UMI_3rdExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0682_UMI_Med1_SC4_bc_IgG.fastq -S a1082_UMI_Med1_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0683_UMI_5hmC_SC4_bc_IgG.fastq -S a1083_UMI_5hmC_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0684_UMI_1stExp_SC5_bc_IgG.fastq -S a1084_UMI_1stExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0685_UMI_2ndExp_SC5_bc_IgG.fastq -S a1085_UMI_2ndExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0686_UMI_3rdExp_SC5_bc_IgG.fastq -S a1086_UMI_3rdExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0687_UMI_Med1_SC5_bc_IgG.fastq -S a1087_UMI_Med1_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0688_UMI_5hmC_SC5_bc_IgG.fastq -S a1088_UMI_5hmC_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0689_UMI_1stExp_SC6_bc_IgG.fastq -S a1089_UMI_1stExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0690_UMI_2ndExp_SC6_bc_IgG.fastq -S a1090_UMI_2ndExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0691_UMI_3rdExp_SC6_bc_IgG.fastq -S a1091_UMI_3rdExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0692_UMI_Med1_SC6_bc_IgG.fastq -S a1092_UMI_Med1_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0693_UMI_5hmC_SC6_bc_IgG.fastq -S a1093_UMI_5hmC_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0694_UMI_1stExp_SC7_bc_IgG.fastq -S a1094_UMI_1stExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0695_UMI_2ndExp_SC7_bc_IgG.fastq -S a1095_UMI_2ndExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0696_UMI_3rdExp_SC7_bc_IgG.fastq -S a1096_UMI_3rdExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0697_UMI_Med1_SC7_bc_IgG.fastq -S a1097_UMI_Med1_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0698_UMI_5hmC_SC7_bc_IgG.fastq -S a1098_UMI_5hmC_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0699_UMI_1stExp_SC8_bc_IgG.fastq -S a1099_UMI_1stExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0700_UMI_2ndExp_SC8_bc_IgG.fastq -S a1100_UMI_2ndExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0701_UMI_3rdExp_SC8_bc_IgG.fastq -S a1101_UMI_3rdExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0702_UMI_Med1_SC8_bc_IgG.fastq -S a1102_UMI_Med1_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0703_UMI_5hmC_SC8_bc_IgG.fastq -S a1103_UMI_5hmC_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0704_UMI_1stExp_SC1_bc_H3K27ac.fastq -S a1104_UMI_1stExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0705_UMI_2ndExp_SC1_bc_H3K27ac.fastq -S a1105_UMI_2ndExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0706_UMI_3rdExp_SC1_bc_H3K27ac.fastq -S a1106_UMI_3rdExp_SC1_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0707_UMI_Med1_SC1_bc_Med1.fastq -S a1107_UMI_Med1_SC1_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0708_UMI_5hmC_SC1_bc_5hmC.fastq -S a1108_UMI_5hmC_SC1_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0709_UMI_1stExp_SC2_bc_H3K27ac.fastq -S a1109_UMI_1stExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0710_UMI_2ndExp_SC2_bc_H3K27ac.fastq -S a1110_UMI_2ndExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0711_UMI_3rdExp_SC2_bc_H3K27ac.fastq -S a1111_UMI_3rdExp_SC2_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0712_UMI_Med1_SC2_bc_Med1.fastq -S a1112_UMI_Med1_SC2_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0713_UMI_5hmC_SC2_bc_5hmC.fastq -S a1113_UMI_5hmC_SC2_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0714_UMI_1stExp_SC3_bc_H3K27ac.fastq -S a1114_UMI_1stExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0715_UMI_2ndExp_SC3_bc_H3K27ac.fastq -S a1115_UMI_2ndExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0716_UMI_3rdExp_SC3_bc_H3K27ac.fastq -S a1116_UMI_3rdExp_SC3_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0717_UMI_Med1_SC3_bc_Med1.fastq -S a1117_UMI_Med1_SC3_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0718_UMI_5hmC_SC3_bc_5hmC.fastq -S a1118_UMI_5hmC_SC3_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0719_UMI_1stExp_SC4_bc_H3K27ac.fastq -S a1119_UMI_1stExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0720_UMI_2ndExp_SC4_bc_H3K27ac.fastq -S a1120_UMI_2ndExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0721_UMI_3rdExp_SC4_bc_H3K27ac.fastq -S a1121_UMI_3rdExp_SC4_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0722_UMI_Med1_SC4_bc_Med1.fastq -S a1122_UMI_Med1_SC4_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0723_UMI_5hmC_SC4_bc_5hmC.fastq -S a1123_UMI_5hmC_SC4_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0724_UMI_1stExp_SC5_bc_H3K27ac.fastq -S a1124_UMI_1stExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0725_UMI_2ndExp_SC5_bc_H3K27ac.fastq -S a1125_UMI_2ndExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0726_UMI_3rdExp_SC5_bc_H3K27ac.fastq -S a1126_UMI_3rdExp_SC5_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0727_UMI_Med1_SC5_bc_Med1.fastq -S a1127_UMI_Med1_SC5_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0728_UMI_5hmC_SC5_bc_5hmC.fastq -S a1128_UMI_5hmC_SC5_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0729_UMI_1stExp_SC6_bc_H3K27ac.fastq -S a1129_UMI_1stExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0730_UMI_2ndExp_SC6_bc_H3K27ac.fastq -S a1130_UMI_2ndExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0731_UMI_3rdExp_SC6_bc_H3K27ac.fastq -S a1131_UMI_3rdExp_SC6_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0732_UMI_Med1_SC6_bc_Med1.fastq -S a1132_UMI_Med1_SC6_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0733_UMI_5hmC_SC6_bc_5hmC.fastq -S a1133_UMI_5hmC_SC6_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0734_UMI_1stExp_SC7_bc_H3K27ac.fastq -S a1134_UMI_1stExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0735_UMI_2ndExp_SC7_bc_H3K27ac.fastq -S a1135_UMI_2ndExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0736_UMI_3rdExp_SC7_bc_H3K27ac.fastq -S a1136_UMI_3rdExp_SC7_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0737_UMI_Med1_SC7_bc_Med1.fastq -S a1137_UMI_Med1_SC7_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0738_UMI_5hmC_SC7_bc_5hmC.fastq -S a1138_UMI_5hmC_SC7_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0739_UMI_1stExp_SC8_bc_H3K27ac.fastq -S a1139_UMI_1stExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0740_UMI_2ndExp_SC8_bc_H3K27ac.fastq -S a1140_UMI_2ndExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0741_UMI_3rdExp_SC8_bc_H3K27ac.fastq -S a1141_UMI_3rdExp_SC8_bc_H3K27ac.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0742_UMI_Med1_SC8_bc_Med1.fastq -S a1142_UMI_Med1_SC8_bc_Med1.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0743_UMI_5hmC_SC8_bc_5hmC.fastq -S a1143_UMI_5hmC_SC8_bc_5hmC.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0744_UMI_1stExp_SC1_bc_H3K27me3.fastq -S a1144_UMI_1stExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0745_UMI_2ndExp_SC1_bc_H3K27me3.fastq -S a1145_UMI_2ndExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0746_UMI_3rdExp_SC1_bc_H3K27me3.fastq -S a1146_UMI_3rdExp_SC1_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0747_UMI_1stExp_SC2_bc_H3K27me3.fastq -S a1147_UMI_1stExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0748_UMI_2ndExp_SC2_bc_H3K27me3.fastq -S a1148_UMI_2ndExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0749_UMI_3rdExp_SC2_bc_H3K27me3.fastq -S a1149_UMI_3rdExp_SC2_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0750_UMI_1stExp_SC3_bc_H3K27me3.fastq -S a1150_UMI_1stExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0751_UMI_2ndExp_SC3_bc_H3K27me3.fastq -S a1151_UMI_2ndExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0752_UMI_3rdExp_SC3_bc_H3K27me3.fastq -S a1152_UMI_3rdExp_SC3_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0753_UMI_1stExp_SC4_bc_H3K27me3.fastq -S a1153_UMI_1stExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0754_UMI_2ndExp_SC4_bc_H3K27me3.fastq -S a1154_UMI_2ndExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0755_UMI_3rdExp_SC4_bc_H3K27me3.fastq -S a1155_UMI_3rdExp_SC4_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0756_UMI_1stExp_SC5_bc_H3K27me3.fastq -S a1156_UMI_1stExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0757_UMI_2ndExp_SC5_bc_H3K27me3.fastq -S a1157_UMI_2ndExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0758_UMI_3rdExp_SC5_bc_H3K27me3.fastq -S a1158_UMI_3rdExp_SC5_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0759_UMI_1stExp_SC6_bc_H3K27me3.fastq -S a1159_UMI_1stExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0760_UMI_2ndExp_SC6_bc_H3K27me3.fastq -S a1160_UMI_2ndExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0761_UMI_3rdExp_SC6_bc_H3K27me3.fastq -S a1161_UMI_3rdExp_SC6_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0762_UMI_1stExp_SC7_bc_H3K27me3.fastq -S a1162_UMI_1stExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0763_UMI_2ndExp_SC7_bc_H3K27me3.fastq -S a1163_UMI_2ndExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0764_UMI_3rdExp_SC7_bc_H3K27me3.fastq -S a1164_UMI_3rdExp_SC7_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0765_UMI_1stExp_SC8_bc_H3K27me3.fastq -S a1165_UMI_1stExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0766_UMI_2ndExp_SC8_bc_H3K27me3.fastq -S a1166_UMI_2ndExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0767_UMI_3rdExp_SC8_bc_H3K27me3.fastq -S a1167_UMI_3rdExp_SC8_bc_H3K27me3.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0768_UMI_1stExp_SC1_bc_IgG.fastq -S a1168_UMI_1stExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0769_UMI_2ndExp_SC1_bc_IgG.fastq -S a1169_UMI_2ndExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0770_UMI_3rdExp_SC1_bc_IgG.fastq -S a1170_UMI_3rdExp_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0771_UMI_Med1_SC1_bc_IgG.fastq -S a1171_UMI_Med1_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0772_UMI_5hmC_SC1_bc_IgG.fastq -S a1172_UMI_5hmC_SC1_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0773_UMI_1stExp_SC2_bc_IgG.fastq -S a1173_UMI_1stExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0774_UMI_2ndExp_SC2_bc_IgG.fastq -S a1174_UMI_2ndExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0775_UMI_3rdExp_SC2_bc_IgG.fastq -S a1175_UMI_3rdExp_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0776_UMI_Med1_SC2_bc_IgG.fastq -S a1176_UMI_Med1_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0777_UMI_5hmC_SC2_bc_IgG.fastq -S a1177_UMI_5hmC_SC2_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0778_UMI_1stExp_SC3_bc_IgG.fastq -S a1178_UMI_1stExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0779_UMI_2ndExp_SC3_bc_IgG.fastq -S a1179_UMI_2ndExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0780_UMI_3rdExp_SC3_bc_IgG.fastq -S a1180_UMI_3rdExp_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0781_UMI_Med1_SC3_bc_IgG.fastq -S a1181_UMI_Med1_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0782_UMI_5hmC_SC3_bc_IgG.fastq -S a1182_UMI_5hmC_SC3_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0783_UMI_1stExp_SC4_bc_IgG.fastq -S a1183_UMI_1stExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0784_UMI_2ndExp_SC4_bc_IgG.fastq -S a1184_UMI_2ndExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0785_UMI_3rdExp_SC4_bc_IgG.fastq -S a1185_UMI_3rdExp_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0786_UMI_Med1_SC4_bc_IgG.fastq -S a1186_UMI_Med1_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0787_UMI_5hmC_SC4_bc_IgG.fastq -S a1187_UMI_5hmC_SC4_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0788_UMI_1stExp_SC5_bc_IgG.fastq -S a1188_UMI_1stExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0789_UMI_2ndExp_SC5_bc_IgG.fastq -S a1189_UMI_2ndExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0790_UMI_3rdExp_SC5_bc_IgG.fastq -S a1190_UMI_3rdExp_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0791_UMI_Med1_SC5_bc_IgG.fastq -S a1191_UMI_Med1_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0792_UMI_5hmC_SC5_bc_IgG.fastq -S a1192_UMI_5hmC_SC5_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0793_UMI_1stExp_SC6_bc_IgG.fastq -S a1193_UMI_1stExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0794_UMI_2ndExp_SC6_bc_IgG.fastq -S a1194_UMI_2ndExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0795_UMI_3rdExp_SC6_bc_IgG.fastq -S a1195_UMI_3rdExp_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0796_UMI_Med1_SC6_bc_IgG.fastq -S a1196_UMI_Med1_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0797_UMI_5hmC_SC6_bc_IgG.fastq -S a1197_UMI_5hmC_SC6_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0798_UMI_1stExp_SC7_bc_IgG.fastq -S a1198_UMI_1stExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0799_UMI_2ndExp_SC7_bc_IgG.fastq -S a1199_UMI_2ndExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0800_UMI_3rdExp_SC7_bc_IgG.fastq -S a1200_UMI_3rdExp_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0801_UMI_Med1_SC7_bc_IgG.fastq -S a1201_UMI_Med1_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0802_UMI_5hmC_SC7_bc_IgG.fastq -S a1202_UMI_5hmC_SC7_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0803_UMI_1stExp_SC8_bc_IgG.fastq -S a1203_UMI_1stExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0804_UMI_2ndExp_SC8_bc_IgG.fastq -S a1204_UMI_2ndExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0805_UMI_3rdExp_SC8_bc_IgG.fastq -S a1205_UMI_3rdExp_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0806_UMI_Med1_SC8_bc_IgG.fastq -S a1206_UMI_Med1_SC8_bc_IgG.sam
+bowtie2 --very-sensitive-local --local -p 16 -x genome --score-min G,3,5 -U a0807_UMI_5hmC_SC8_bc_IgG.fastq -S a1207_UMI_5hmC_SC8_bc_IgG.sam
+
+# Step9: Remove mapped reads, which have Q score (q>1).
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+module load samtools
+samtools view -q1 a1000_UMI_1stExp_SC1_bc_H3K27ac.sam -h -o a1400_UMI_1stExp_SC1_bc_H3K27ac.sam
+samtools view -q1  a1001_UMI_2ndExp_SC1_bc_H3K27ac.sam -h -o a1401_UMI_2ndExp_SC1_bc_H3K27ac.sam
+samtools view -q1 a1002_UMI_3rdExp_SC1_bc_H3K27ac.sam -h -o a1402_UMI_3rdExp_SC1_bc_H3K27ac.sam
+samtools view -q1 a1003_UMI_Med1_SC1_bc_Med1.sam -h -o a1403_UMI_Med1_SC1_bc_Med1.sam
+samtools view -q1 a1004_UMI_5hmC_SC1_bc_5hmC.sam -h -o a1404_UMI_5hmC_SC1_bc_5hmC.sam
+samtools view -q1 a1005_UMI_1stExp_SC2_bc_H3K27ac.sam -h -o a1405_UMI_1stExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1006_UMI_2ndExp_SC2_bc_H3K27ac.sam -h -o a1406_UMI_2ndExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1007_UMI_3rdExp_SC2_bc_H3K27ac.sam -h -o a1407_UMI_3rdExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1008_UMI_Med1_SC2_bc_Med1.sam -h -o a1408_UMI_Med1_SC2_bc_Med1.sam
+samtools view -q1 a1009_UMI_5hmC_SC2_bc_5hmC.sam -h -o a1409_UMI_5hmC_SC2_bc_5hmC.sam
+samtools view -q1 a1010_UMI_1stExp_SC3_bc_H3K27ac.sam -h -o a1410_UMI_1stExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1011_UMI_2ndExp_SC3_bc_H3K27ac.sam -h -o a1411_UMI_2ndExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1012_UMI_3rdExp_SC3_bc_H3K27ac.sam -h -o a1412_UMI_3rdExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1013_UMI_Med1_SC3_bc_Med1.sam -h -o a1413_UMI_Med1_SC3_bc_Med1.sam
+samtools view -q1 a1014_UMI_5hmC_SC3_bc_5hmC.sam -h -o a1414_UMI_5hmC_SC3_bc_5hmC.sam
+samtools view -q1 a1015_UMI_1stExp_SC4_bc_H3K27ac.sam -h -o a1415_UMI_1stExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1016_UMI_2ndExp_SC4_bc_H3K27ac.sam -h -o a1416_UMI_2ndExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1017_UMI_3rdExp_SC4_bc_H3K27ac.sam -h -o a1417_UMI_3rdExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1018_UMI_Med1_SC4_bc_Med1.sam -h -o a1418_UMI_Med1_SC4_bc_Med1.sam
+samtools view -q1 a1019_UMI_5hmC_SC4_bc_5hmC.sam -h -o a1419_UMI_5hmC_SC4_bc_5hmC.sam
+samtools view -q1 a1020_UMI_1stExp_SC5_bc_H3K27ac.sam -h -o a1420_UMI_1stExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1021_UMI_2ndExp_SC5_bc_H3K27ac.sam -h -o a1421_UMI_2ndExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1022_UMI_3rdExp_SC5_bc_H3K27ac.sam -h -o a1422_UMI_3rdExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1023_UMI_Med1_SC5_bc_Med1.sam -h -o a1423_UMI_Med1_SC5_bc_Med1.sam
+samtools view -q1 a1024_UMI_5hmC_SC5_bc_5hmC.sam -h -o a1424_UMI_5hmC_SC5_bc_5hmC.sam
+samtools view -q1 a1025_UMI_1stExp_SC6_bc_H3K27ac.sam -h -o a1425_UMI_1stExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1026_UMI_2ndExp_SC6_bc_H3K27ac.sam -h -o a1426_UMI_2ndExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1027_UMI_3rdExp_SC6_bc_H3K27ac.sam -h -o a1427_UMI_3rdExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1028_UMI_Med1_SC6_bc_Med1.sam -h -o a1428_UMI_Med1_SC6_bc_Med1.sam
+samtools view -q1 a1029_UMI_5hmC_SC6_bc_5hmC.sam -h -o a1429_UMI_5hmC_SC6_bc_5hmC.sam
+samtools view -q1 a1030_UMI_1stExp_SC7_bc_H3K27ac.sam -h -o a1430_UMI_1stExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1031_UMI_2ndExp_SC7_bc_H3K27ac.sam -h -o a1431_UMI_2ndExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1032_UMI_3rdExp_SC7_bc_H3K27ac.sam -h -o a1432_UMI_3rdExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1033_UMI_Med1_SC7_bc_Med1.sam -h -o a1433_UMI_Med1_SC7_bc_Med1.sam
+samtools view -q1 a1034_UMI_5hmC_SC7_bc_5hmC.sam -h -o a1434_UMI_5hmC_SC7_bc_5hmC.sam
+samtools view -q1 a1035_UMI_1stExp_SC8_bc_H3K27ac.sam -h -o a1435_UMI_1stExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1036_UMI_2ndExp_SC8_bc_H3K27ac.sam -h -o a1436_UMI_2ndExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1037_UMI_3rdExp_SC8_bc_H3K27ac.sam -h -o a1437_UMI_3rdExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1038_UMI_Med1_SC8_bc_Med1.sam -h -o a1438_UMI_Med1_SC8_bc_Med1.sam
+samtools view -q1 a1039_UMI_5hmC_SC8_bc_5hmC.sam -h -o a1439_UMI_5hmC_SC8_bc_5hmC.sam
+samtools view -q1 a1040_UMI_1stExp_SC1_bc_H3K27me3.sam -h -o a1440_UMI_1stExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1041_UMI_2ndExp_SC1_bc_H3K27me3.sam -h -o a1441_UMI_2ndExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1042_UMI_3rdExp_SC1_bc_H3K27me3.sam -h -o a1442_UMI_3rdExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1043_UMI_1stExp_SC2_bc_H3K27me3.sam -h -o a1443_UMI_1stExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1044_UMI_2ndExp_SC2_bc_H3K27me3.sam -h -o a1444_UMI_2ndExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1045_UMI_3rdExp_SC2_bc_H3K27me3.sam -h -o a1445_UMI_3rdExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1046_UMI_1stExp_SC3_bc_H3K27me3.sam -h -o a1446_UMI_1stExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1047_UMI_2ndExp_SC3_bc_H3K27me3.sam -h -o a1447_UMI_2ndExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1048_UMI_3rdExp_SC3_bc_H3K27me3.sam -h -o a1448_UMI_3rdExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1049_UMI_1stExp_SC4_bc_H3K27me3.sam -h -o a1449_UMI_1stExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1050_UMI_2ndExp_SC4_bc_H3K27me3.sam -h -o a1450_UMI_2ndExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1051_UMI_3rdExp_SC4_bc_H3K27me3.sam -h -o a1451_UMI_3rdExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1052_UMI_1stExp_SC5_bc_H3K27me3.sam -h -o a1452_UMI_1stExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1053_UMI_2ndExp_SC5_bc_H3K27me3.sam -h -o a1453_UMI_2ndExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1054_UMI_3rdExp_SC5_bc_H3K27me3.sam -h -o a1454_UMI_3rdExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1055_UMI_1stExp_SC6_bc_H3K27me3.sam -h -o a1455_UMI_1stExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1056_UMI_2ndExp_SC6_bc_H3K27me3.sam -h -o a1456_UMI_2ndExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1057_UMI_3rdExp_SC6_bc_H3K27me3.sam -h -o a1457_UMI_3rdExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1058_UMI_1stExp_SC7_bc_H3K27me3.sam -h -o a1458_UMI_1stExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1059_UMI_2ndExp_SC7_bc_H3K27me3.sam -h -o a1459_UMI_2ndExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1060_UMI_3rdExp_SC7_bc_H3K27me3.sam -h -o a1460_UMI_3rdExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1061_UMI_1stExp_SC8_bc_H3K27me3.sam -h -o a1461_UMI_1stExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1062_UMI_2ndExp_SC8_bc_H3K27me3.sam -h -o a1462_UMI_2ndExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1063_UMI_3rdExp_SC8_bc_H3K27me3.sam -h -o a1463_UMI_3rdExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1064_UMI_1stExp_SC1_bc_IgG.sam -h -o a1464_UMI_1stExp_SC1_bc_IgG.sam
+samtools view -q1 a1065_UMI_2ndExp_SC1_bc_IgG.sam -h -o a1465_UMI_2ndExp_SC1_bc_IgG.sam
+samtools view -q1 a1066_UMI_3rdExp_SC1_bc_IgG.sam -h -o a1466_UMI_3rdExp_SC1_bc_IgG.sam
+samtools view -q1 a1067_UMI_Med1_SC1_bc_IgG.sam -h -o a1467_UMI_Med1_SC1_bc_IgG.sam
+samtools view -q1 a1068_UMI_5hmC_SC1_bc_IgG.sam -h -o a1468_UMI_5hmC_SC1_bc_IgG.sam
+samtools view -q1 a1069_UMI_1stExp_SC2_bc_IgG.sam -h -o a1469_UMI_1stExp_SC2_bc_IgG.sam
+samtools view -q1 a1070_UMI_2ndExp_SC2_bc_IgG.sam -h -o a1470_UMI_2ndExp_SC2_bc_IgG.sam
+samtools view -q1 a1071_UMI_3rdExp_SC2_bc_IgG.sam -h -o a1471_UMI_3rdExp_SC2_bc_IgG.sam
+samtools view -q1 a1072_UMI_Med1_SC2_bc_IgG.sam -h -o a1472_UMI_Med1_SC2_bc_IgG.sam
+samtools view -q1 a1073_UMI_5hmC_SC2_bc_IgG.sam -h -o a1473_UMI_5hmC_SC2_bc_IgG.sam
+samtools view -q1 a1074_UMI_1stExp_SC3_bc_IgG.sam -h -o a1474_UMI_1stExp_SC3_bc_IgG.sam
+samtools view -q1 a1075_UMI_2ndExp_SC3_bc_IgG.sam -h -o a1475_UMI_2ndExp_SC3_bc_IgG.sam
+samtools view -q1 a1076_UMI_3rdExp_SC3_bc_IgG.sam -h -o a1476_UMI_3rdExp_SC3_bc_IgG.sam
+samtools view -q1 a1077_UMI_Med1_SC3_bc_IgG.sam -h -o a1477_UMI_Med1_SC3_bc_IgG.sam
+samtools view -q1 a1078_UMI_5hmC_SC3_bc_IgG.sam -h -o a1478_UMI_5hmC_SC3_bc_IgG.sam
+samtools view -q1 a1079_UMI_1stExp_SC4_bc_IgG.sam -h -o a1479_UMI_1stExp_SC4_bc_IgG.sam
+samtools view -q1 a1080_UMI_2ndExp_SC4_bc_IgG.sam -h -o a1480_UMI_2ndExp_SC4_bc_IgG.sam
+samtools view -q1 a1081_UMI_3rdExp_SC4_bc_IgG.sam -h -o a1481_UMI_3rdExp_SC4_bc_IgG.sam
+samtools view -q1 a1082_UMI_Med1_SC4_bc_IgG.sam -h -o a1482_UMI_Med1_SC4_bc_IgG.sam
+samtools view -q1 a1083_UMI_5hmC_SC4_bc_IgG.sam -h -o a1483_UMI_5hmC_SC4_bc_IgG.sam
+samtools view -q1 a1084_UMI_1stExp_SC5_bc_IgG.sam -h -o a1484_UMI_1stExp_SC5_bc_IgG.sam
+samtools view -q1 a1085_UMI_2ndExp_SC5_bc_IgG.sam -h -o a1485_UMI_2ndExp_SC5_bc_IgG.sam
+samtools view -q1 a1086_UMI_3rdExp_SC5_bc_IgG.sam -h -o a1486_UMI_3rdExp_SC5_bc_IgG.sam
+samtools view -q1 a1087_UMI_Med1_SC5_bc_IgG.sam -h -o a1487_UMI_Med1_SC5_bc_IgG.sam
+samtools view -q1 a1088_UMI_5hmC_SC5_bc_IgG.sam -h -o a1488_UMI_5hmC_SC5_bc_IgG.sam
+samtools view -q1 a1089_UMI_1stExp_SC6_bc_IgG.sam -h -o a1489_UMI_1stExp_SC6_bc_IgG.sam
+samtools view -q1 a1090_UMI_2ndExp_SC6_bc_IgG.sam -h -o a1490_UMI_2ndExp_SC6_bc_IgG.sam
+samtools view -q1 a1091_UMI_3rdExp_SC6_bc_IgG.sam -h -o a1491_UMI_3rdExp_SC6_bc_IgG.sam
+samtools view -q1 a1092_UMI_Med1_SC6_bc_IgG.sam -h -o a1492_UMI_Med1_SC6_bc_IgG.sam
+samtools view -q1 a1093_UMI_5hmC_SC6_bc_IgG.sam -h -o a1493_UMI_5hmC_SC6_bc_IgG.sam
+samtools view -q1 a1094_UMI_1stExp_SC7_bc_IgG.sam -h -o a1494_UMI_1stExp_SC7_bc_IgG.sam
+samtools view -q1 a1095_UMI_2ndExp_SC7_bc_IgG.sam -h -o a1495_UMI_2ndExp_SC7_bc_IgG.sam
+samtools view -q1 a1096_UMI_3rdExp_SC7_bc_IgG.sam -h -o a1496_UMI_3rdExp_SC7_bc_IgG.sam
+samtools view -q1 a1097_UMI_Med1_SC7_bc_IgG.sam -h -o a1497_UMI_Med1_SC7_bc_IgG.sam
+samtools view -q1 a1098_UMI_5hmC_SC7_bc_IgG.sam -h -o a1498_UMI_5hmC_SC7_bc_IgG.sam
+samtools view -q1 a1099_UMI_1stExp_SC8_bc_IgG.sam -h -o a1499_UMI_1stExp_SC8_bc_IgG.sam
+samtools view -q1 a1100_UMI_2ndExp_SC8_bc_IgG.sam -h -o a1500_UMI_2ndExp_SC8_bc_IgG.sam
+samtools view -q1 a1101_UMI_3rdExp_SC8_bc_IgG.sam -h -o a1501_UMI_3rdExp_SC8_bc_IgG.sam
+samtools view -q1 a1102_UMI_Med1_SC8_bc_IgG.sam -h -o a1502_UMI_Med1_SC8_bc_IgG.sam
+samtools view -q1 a1103_UMI_5hmC_SC8_bc_IgG.sam -h -o a1503_UMI_5hmC_SC8_bc_IgG.sam
+samtools view -q1 a1104_UMI_1stExp_SC1_bc_H3K27ac.sam -h -o a1504_UMI_1stExp_SC1_bc_H3K27ac.sam
+samtools view -q1 a1105_UMI_2ndExp_SC1_bc_H3K27ac.sam -h -o a1505_UMI_2ndExp_SC1_bc_H3K27ac.sam
+samtools view -q1 a1106_UMI_3rdExp_SC1_bc_H3K27ac.sam -h -o a1506_UMI_3rdExp_SC1_bc_H3K27ac.sam
+samtools view -q1 a1107_UMI_Med1_SC1_bc_Med1.sam -h -o a1507_UMI_Med1_SC1_bc_Med1.sam
+samtools view -q1 a1108_UMI_5hmC_SC1_bc_5hmC.sam -h -o a1508_UMI_5hmC_SC1_bc_5hmC.sam
+samtools view -q1 a1109_UMI_1stExp_SC2_bc_H3K27ac.sam -h -o a1509_UMI_1stExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1110_UMI_2ndExp_SC2_bc_H3K27ac.sam -h -o a1510_UMI_2ndExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1111_UMI_3rdExp_SC2_bc_H3K27ac.sam -h -o a1511_UMI_3rdExp_SC2_bc_H3K27ac.sam
+samtools view -q1 a1112_UMI_Med1_SC2_bc_Med1.sam -h -o a1512_UMI_Med1_SC2_bc_Med1.sam
+samtools view -q1 a1113_UMI_5hmC_SC2_bc_5hmC.sam -h -o a1513_UMI_5hmC_SC2_bc_5hmC.sam
+samtools view -q1 a1114_UMI_1stExp_SC3_bc_H3K27ac.sam -h -o a1514_UMI_1stExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1115_UMI_2ndExp_SC3_bc_H3K27ac.sam -h -o a1515_UMI_2ndExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1116_UMI_3rdExp_SC3_bc_H3K27ac.sam -h -o a1516_UMI_3rdExp_SC3_bc_H3K27ac.sam
+samtools view -q1 a1117_UMI_Med1_SC3_bc_Med1.sam -h -o a1517_UMI_Med1_SC3_bc_Med1.sam
+samtools view -q1 a1118_UMI_5hmC_SC3_bc_5hmC.sam -h -o a1518_UMI_5hmC_SC3_bc_5hmC.sam
+samtools view -q1 a1119_UMI_1stExp_SC4_bc_H3K27ac.sam -h -o a1519_UMI_1stExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1120_UMI_2ndExp_SC4_bc_H3K27ac.sam -h -o a1520_UMI_2ndExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1121_UMI_3rdExp_SC4_bc_H3K27ac.sam -h -o a1521_UMI_3rdExp_SC4_bc_H3K27ac.sam
+samtools view -q1 a1122_UMI_Med1_SC4_bc_Med1.sam -h -o a1522_UMI_Med1_SC4_bc_Med1.sam
+samtools view -q1 a1123_UMI_5hmC_SC4_bc_5hmC.sam -h -o a1523_UMI_5hmC_SC4_bc_5hmC.sam
+samtools view -q1 a1124_UMI_1stExp_SC5_bc_H3K27ac.sam -h -o a1524_UMI_1stExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1125_UMI_2ndExp_SC5_bc_H3K27ac.sam -h -o a1525_UMI_2ndExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1126_UMI_3rdExp_SC5_bc_H3K27ac.sam -h -o a1526_UMI_3rdExp_SC5_bc_H3K27ac.sam
+samtools view -q1 a1127_UMI_Med1_SC5_bc_Med1.sam -h -o a1527_UMI_Med1_SC5_bc_Med1.sam
+samtools view -q1 a1128_UMI_5hmC_SC5_bc_5hmC.sam -h -o a1528_UMI_5hmC_SC5_bc_5hmC.sam
+samtools view -q1 a1129_UMI_1stExp_SC6_bc_H3K27ac.sam -h -o a1529_UMI_1stExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1130_UMI_2ndExp_SC6_bc_H3K27ac.sam -h -o a1530_UMI_2ndExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1131_UMI_3rdExp_SC6_bc_H3K27ac.sam -h -o a1531_UMI_3rdExp_SC6_bc_H3K27ac.sam
+samtools view -q1 a1132_UMI_Med1_SC6_bc_Med1.sam -h -o a1532_UMI_Med1_SC6_bc_Med1.sam
+samtools view -q1 a1133_UMI_5hmC_SC6_bc_5hmC.sam -h -o a1533_UMI_5hmC_SC6_bc_5hmC.sam
+samtools view -q1 a1134_UMI_1stExp_SC7_bc_H3K27ac.sam -h -o a1534_UMI_1stExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1135_UMI_2ndExp_SC7_bc_H3K27ac.sam -h -o a1535_UMI_2ndExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1136_UMI_3rdExp_SC7_bc_H3K27ac.sam -h -o a1536_UMI_3rdExp_SC7_bc_H3K27ac.sam
+samtools view -q1 a1137_UMI_Med1_SC7_bc_Med1.sam -h -o a1537_UMI_Med1_SC7_bc_Med1.sam
+samtools view -q1 a1138_UMI_5hmC_SC7_bc_5hmC.sam -h -o a1538_UMI_5hmC_SC7_bc_5hmC.sam
+samtools view -q1 a1139_UMI_1stExp_SC8_bc_H3K27ac.sam -h -o a1539_UMI_1stExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1140_UMI_2ndExp_SC8_bc_H3K27ac.sam -h -o a1540_UMI_2ndExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1141_UMI_3rdExp_SC8_bc_H3K27ac.sam -h -o a1541_UMI_3rdExp_SC8_bc_H3K27ac.sam
+samtools view -q1 a1142_UMI_Med1_SC8_bc_Med1.sam -h -o a1542_UMI_Med1_SC8_bc_Med1.sam
+samtools view -q1 a1143_UMI_5hmC_SC8_bc_5hmC.sam -h -o a1543_UMI_5hmC_SC8_bc_5hmC.sam
+samtools view -q1 a1144_UMI_1stExp_SC1_bc_H3K27me3.sam -h -o a1544_UMI_1stExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1145_UMI_2ndExp_SC1_bc_H3K27me3.sam -h -o a1545_UMI_2ndExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1146_UMI_3rdExp_SC1_bc_H3K27me3.sam -h -o a1546_UMI_3rdExp_SC1_bc_H3K27me3.sam
+samtools view -q1 a1147_UMI_1stExp_SC2_bc_H3K27me3.sam -h -o a1547_UMI_1stExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1148_UMI_2ndExp_SC2_bc_H3K27me3.sam -h -o a1548_UMI_2ndExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1149_UMI_3rdExp_SC2_bc_H3K27me3.sam -h -o a1549_UMI_3rdExp_SC2_bc_H3K27me3.sam
+samtools view -q1 a1150_UMI_1stExp_SC3_bc_H3K27me3.sam -h -o a1550_UMI_1stExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1151_UMI_2ndExp_SC3_bc_H3K27me3.sam -h -o a1551_UMI_2ndExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1152_UMI_3rdExp_SC3_bc_H3K27me3.sam -h -o a1552_UMI_3rdExp_SC3_bc_H3K27me3.sam
+samtools view -q1 a1153_UMI_1stExp_SC4_bc_H3K27me3.sam -h -o a1553_UMI_1stExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1154_UMI_2ndExp_SC4_bc_H3K27me3.sam -h -o a1554_UMI_2ndExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1155_UMI_3rdExp_SC4_bc_H3K27me3.sam -h -o a1555_UMI_3rdExp_SC4_bc_H3K27me3.sam
+samtools view -q1 a1156_UMI_1stExp_SC5_bc_H3K27me3.sam -h -o a1556_UMI_1stExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1157_UMI_2ndExp_SC5_bc_H3K27me3.sam -h -o a1557_UMI_2ndExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1158_UMI_3rdExp_SC5_bc_H3K27me3.sam -h -o a1558_UMI_3rdExp_SC5_bc_H3K27me3.sam
+samtools view -q1 a1159_UMI_1stExp_SC6_bc_H3K27me3.sam -h -o a1559_UMI_1stExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1160_UMI_2ndExp_SC6_bc_H3K27me3.sam -h -o a1560_UMI_2ndExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1161_UMI_3rdExp_SC6_bc_H3K27me3.sam -h -o a1561_UMI_3rdExp_SC6_bc_H3K27me3.sam
+samtools view -q1 a1162_UMI_1stExp_SC7_bc_H3K27me3.sam -h -o a1562_UMI_1stExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1163_UMI_2ndExp_SC7_bc_H3K27me3.sam -h -o a1563_UMI_2ndExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1164_UMI_3rdExp_SC7_bc_H3K27me3.sam -h -o a1564_UMI_3rdExp_SC7_bc_H3K27me3.sam
+samtools view -q1 a1165_UMI_1stExp_SC8_bc_H3K27me3.sam -h -o a1565_UMI_1stExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1166_UMI_2ndExp_SC8_bc_H3K27me3.sam -h -o a1566_UMI_2ndExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1167_UMI_3rdExp_SC8_bc_H3K27me3.sam -h -o a1567_UMI_3rdExp_SC8_bc_H3K27me3.sam
+samtools view -q1 a1168_UMI_1stExp_SC1_bc_IgG.sam -h -o a1568_UMI_1stExp_SC1_bc_IgG.sam
+samtools view -q1 a1169_UMI_2ndExp_SC1_bc_IgG.sam -h -o a1569_UMI_2ndExp_SC1_bc_IgG.sam
+samtools view -q1 a1170_UMI_3rdExp_SC1_bc_IgG.sam -h -o a1570_UMI_3rdExp_SC1_bc_IgG.sam
+samtools view -q1 a1171_UMI_Med1_SC1_bc_IgG.sam -h -o a1571_UMI_Med1_SC1_bc_IgG.sam
+samtools view -q1 a1172_UMI_5hmC_SC1_bc_IgG.sam -h -o a1572_UMI_5hmC_SC1_bc_IgG.sam
+samtools view -q1 a1173_UMI_1stExp_SC2_bc_IgG.sam -h -o a1573_UMI_1stExp_SC2_bc_IgG.sam
+samtools view -q1 a1174_UMI_2ndExp_SC2_bc_IgG.sam -h -o a1574_UMI_2ndExp_SC2_bc_IgG.sam
+samtools view -q1 a1175_UMI_3rdExp_SC2_bc_IgG.sam -h -o a1575_UMI_3rdExp_SC2_bc_IgG.sam
+samtools view -q1 a1176_UMI_Med1_SC2_bc_IgG.sam -h -o a1576_UMI_Med1_SC2_bc_IgG.sam
+samtools view -q1 a1177_UMI_5hmC_SC2_bc_IgG.sam -h -o a1577_UMI_5hmC_SC2_bc_IgG.sam
+samtools view -q1 a1178_UMI_1stExp_SC3_bc_IgG.sam -h -o a1578_UMI_1stExp_SC3_bc_IgG.sam
+samtools view -q1 a1179_UMI_2ndExp_SC3_bc_IgG.sam -h -o a1579_UMI_2ndExp_SC3_bc_IgG.sam
+samtools view -q1 a1180_UMI_3rdExp_SC3_bc_IgG.sam -h -o a1580_UMI_3rdExp_SC3_bc_IgG.sam
+samtools view -q1 a1181_UMI_Med1_SC3_bc_IgG.sam -h -o a1581_UMI_Med1_SC3_bc_IgG.sam
+samtools view -q1 a1182_UMI_5hmC_SC3_bc_IgG.sam -h -o a1582_UMI_5hmC_SC3_bc_IgG.sam
+samtools view -q1 a1183_UMI_1stExp_SC4_bc_IgG.sam -h -o a1583_UMI_1stExp_SC4_bc_IgG.sam
+samtools view -q1 a1184_UMI_2ndExp_SC4_bc_IgG.sam -h -o a1584_UMI_2ndExp_SC4_bc_IgG.sam
+samtools view -q1 a1185_UMI_3rdExp_SC4_bc_IgG.sam -h -o a1585_UMI_3rdExp_SC4_bc_IgG.sam
+samtools view -q1 a1186_UMI_Med1_SC4_bc_IgG.sam -h -o a1586_UMI_Med1_SC4_bc_IgG.sam
+samtools view -q1 a1187_UMI_5hmC_SC4_bc_IgG.sam -h -o a1587_UMI_5hmC_SC4_bc_IgG.sam
+samtools view -q1 a1188_UMI_1stExp_SC5_bc_IgG.sam -h -o a1588_UMI_1stExp_SC5_bc_IgG.sam
+samtools view -q1 a1189_UMI_2ndExp_SC5_bc_IgG.sam -h -o a1589_UMI_2ndExp_SC5_bc_IgG.sam
+samtools view -q1 a1190_UMI_3rdExp_SC5_bc_IgG.sam -h -o a1590_UMI_3rdExp_SC5_bc_IgG.sam
+samtools view -q1 a1191_UMI_Med1_SC5_bc_IgG.sam -h -o a1591_UMI_Med1_SC5_bc_IgG.sam
+samtools view -q1 a1192_UMI_5hmC_SC5_bc_IgG.sam -h -o a1592_UMI_5hmC_SC5_bc_IgG.sam
+samtools view -q1 a1193_UMI_1stExp_SC6_bc_IgG.sam -h -o a1593_UMI_1stExp_SC6_bc_IgG.sam
+samtools view -q1 a1194_UMI_2ndExp_SC6_bc_IgG.sam -h -o a1594_UMI_2ndExp_SC6_bc_IgG.sam
+samtools view -q1 a1195_UMI_3rdExp_SC6_bc_IgG.sam -h -o a1595_UMI_3rdExp_SC6_bc_IgG.sam
+samtools view -q1 a1196_UMI_Med1_SC6_bc_IgG.sam -h -o a1596_UMI_Med1_SC6_bc_IgG.sam
+samtools view -q1 a1197_UMI_5hmC_SC6_bc_IgG.sam -h -o a1597_UMI_5hmC_SC6_bc_IgG.sam
+samtools view -q1 a1198_UMI_1stExp_SC7_bc_IgG.sam -h -o a1598_UMI_1stExp_SC7_bc_IgG.sam
+samtools view -q1 a1199_UMI_2ndExp_SC7_bc_IgG.sam -h -o a1599_UMI_2ndExp_SC7_bc_IgG.sam
+samtools view -q1 a1200_UMI_3rdExp_SC7_bc_IgG.sam -h -o a1600_UMI_3rdExp_SC7_bc_IgG.sam
+samtools view -q1 a1201_UMI_Med1_SC7_bc_IgG.sam -h -o a1601_UMI_Med1_SC7_bc_IgG.sam
+samtools view -q1 a1202_UMI_5hmC_SC7_bc_IgG.sam -h -o a1602_UMI_5hmC_SC7_bc_IgG.sam
+samtools view -q1 a1203_UMI_1stExp_SC8_bc_IgG.sam -h -o a1603_UMI_1stExp_SC8_bc_IgG.sam
+samtools view -q1 a1204_UMI_2ndExp_SC8_bc_IgG.sam -h -o a1604_UMI_2ndExp_SC8_bc_IgG.sam
+samtools view -q1 a1205_UMI_3rdExp_SC8_bc_IgG.sam -h -o a1605_UMI_3rdExp_SC8_bc_IgG.sam
+samtools view -q1 a1206_UMI_Med1_SC8_bc_IgG.sam -h -o a1606_UMI_Med1_SC8_bc_IgG.sam
+samtools view -q1 a1207_UMI_5hmC_SC8_bc_IgG.sam -h -o a1607_UMI_5hmC_SC8_bc_IgG.sam
+
+# Step10: The SAM files were converted to BAM files.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+samtools view -bS a1400_UMI_1stExp_SC1_bc_H3K27ac.sam >a1800_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1401_UMI_2ndExp_SC1_bc_H3K27ac.sam >a1801_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1402_UMI_3rdExp_SC1_bc_H3K27ac.sam >a1802_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1403_UMI_Med1_SC1_bc_Med1.sam >a1803_UMI_Med1_SC1_bc_Med1.bam
+samtools view -bS a1404_UMI_5hmC_SC1_bc_5hmC.sam >a1804_UMI_5hmC_SC1_bc_5hmC.bam
+samtools view -bS a1405_UMI_1stExp_SC2_bc_H3K27ac.sam >a1805_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1406_UMI_2ndExp_SC2_bc_H3K27ac.sam >a1806_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1407_UMI_3rdExp_SC2_bc_H3K27ac.sam >a1807_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1408_UMI_Med1_SC2_bc_Med1.sam >a1808_UMI_Med1_SC2_bc_Med1.bam
+samtools view -bS a1409_UMI_5hmC_SC2_bc_5hmC.sam >a1809_UMI_5hmC_SC2_bc_5hmC.bam
+samtools view -bS a1410_UMI_1stExp_SC3_bc_H3K27ac.sam >a1810_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1411_UMI_2ndExp_SC3_bc_H3K27ac.sam >a1811_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1412_UMI_3rdExp_SC3_bc_H3K27ac.sam >a1812_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1413_UMI_Med1_SC3_bc_Med1.sam >a1813_UMI_Med1_SC3_bc_Med1.bam
+samtools view -bS a1414_UMI_5hmC_SC3_bc_5hmC.sam >a1814_UMI_5hmC_SC3_bc_5hmC.bam
+samtools view -bS a1415_UMI_1stExp_SC4_bc_H3K27ac.sam >a1815_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1416_UMI_2ndExp_SC4_bc_H3K27ac.sam >a1816_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1417_UMI_3rdExp_SC4_bc_H3K27ac.sam >a1817_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1418_UMI_Med1_SC4_bc_Med1.sam >a1818_UMI_Med1_SC4_bc_Med1.bam
+samtools view -bS a1419_UMI_5hmC_SC4_bc_5hmC.sam >a1819_UMI_5hmC_SC4_bc_5hmC.bam
+samtools view -bS a1420_UMI_1stExp_SC5_bc_H3K27ac.sam >a1820_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1421_UMI_2ndExp_SC5_bc_H3K27ac.sam >a1821_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1422_UMI_3rdExp_SC5_bc_H3K27ac.sam >a1822_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1423_UMI_Med1_SC5_bc_Med1.sam >a1823_UMI_Med1_SC5_bc_Med1.bam
+samtools view -bS a1424_UMI_5hmC_SC5_bc_5hmC.sam >a1824_UMI_5hmC_SC5_bc_5hmC.bam
+samtools view -bS a1425_UMI_1stExp_SC6_bc_H3K27ac.sam >a1825_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1426_UMI_2ndExp_SC6_bc_H3K27ac.sam >a1826_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1427_UMI_3rdExp_SC6_bc_H3K27ac.sam >a1827_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1428_UMI_Med1_SC6_bc_Med1.sam >a1828_UMI_Med1_SC6_bc_Med1.bam
+samtools view -bS a1429_UMI_5hmC_SC6_bc_5hmC.sam >a1829_UMI_5hmC_SC6_bc_5hmC.bam
+samtools view -bS a1430_UMI_1stExp_SC7_bc_H3K27ac.sam >a1830_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1431_UMI_2ndExp_SC7_bc_H3K27ac.sam >a1831_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1432_UMI_3rdExp_SC7_bc_H3K27ac.sam >a1832_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1433_UMI_Med1_SC7_bc_Med1.sam >a1833_UMI_Med1_SC7_bc_Med1.bam
+samtools view -bS a1434_UMI_5hmC_SC7_bc_5hmC.sam >a1834_UMI_5hmC_SC7_bc_5hmC.bam
+samtools view -bS a1435_UMI_1stExp_SC8_bc_H3K27ac.sam >a1835_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1436_UMI_2ndExp_SC8_bc_H3K27ac.sam >a1836_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1437_UMI_3rdExp_SC8_bc_H3K27ac.sam >a1837_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1438_UMI_Med1_SC8_bc_Med1.sam >a1838_UMI_Med1_SC8_bc_Med1.bam
+samtools view -bS a1439_UMI_5hmC_SC8_bc_5hmC.sam >a1839_UMI_5hmC_SC8_bc_5hmC.bam
+samtools view -bS a1440_UMI_1stExp_SC1_bc_H3K27me3.sam >a1840_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1441_UMI_2ndExp_SC1_bc_H3K27me3.sam >a1841_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1442_UMI_3rdExp_SC1_bc_H3K27me3.sam >a1842_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1443_UMI_1stExp_SC2_bc_H3K27me3.sam >a1843_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1444_UMI_2ndExp_SC2_bc_H3K27me3.sam >a1844_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1445_UMI_3rdExp_SC2_bc_H3K27me3.sam >a1845_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1446_UMI_1stExp_SC3_bc_H3K27me3.sam >a1846_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1447_UMI_2ndExp_SC3_bc_H3K27me3.sam >a1847_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1448_UMI_3rdExp_SC3_bc_H3K27me3.sam >a1848_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1449_UMI_1stExp_SC4_bc_H3K27me3.sam >a1849_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1450_UMI_2ndExp_SC4_bc_H3K27me3.sam >a1850_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1451_UMI_3rdExp_SC4_bc_H3K27me3.sam >a1851_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1452_UMI_1stExp_SC5_bc_H3K27me3.sam >a1852_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1453_UMI_2ndExp_SC5_bc_H3K27me3.sam >a1853_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1454_UMI_3rdExp_SC5_bc_H3K27me3.sam >a1854_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1455_UMI_1stExp_SC6_bc_H3K27me3.sam >a1855_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1456_UMI_2ndExp_SC6_bc_H3K27me3.sam >a1856_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1457_UMI_3rdExp_SC6_bc_H3K27me3.sam >a1857_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1458_UMI_1stExp_SC7_bc_H3K27me3.sam >a1858_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1459_UMI_2ndExp_SC7_bc_H3K27me3.sam >a1859_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1460_UMI_3rdExp_SC7_bc_H3K27me3.sam >a1860_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1461_UMI_1stExp_SC8_bc_H3K27me3.sam >a1861_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1462_UMI_2ndExp_SC8_bc_H3K27me3.sam >a1862_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1463_UMI_3rdExp_SC8_bc_H3K27me3.sam >a1863_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1464_UMI_1stExp_SC1_bc_IgG.sam >a1864_UMI_1stExp_SC1_bc_IgG.bam
+samtools view -bS a1465_UMI_2ndExp_SC1_bc_IgG.sam >a1865_UMI_2ndExp_SC1_bc_IgG.bam
+samtools view -bS a1466_UMI_3rdExp_SC1_bc_IgG.sam >a1866_UMI_3rdExp_SC1_bc_IgG.bam
+samtools view -bS a1467_UMI_Med1_SC1_bc_IgG.sam >a1867_UMI_Med1_SC1_bc_IgG.bam
+samtools view -bS a1468_UMI_5hmC_SC1_bc_IgG.sam >a1868_UMI_5hmC_SC1_bc_IgG.bam
+samtools view -bS a1469_UMI_1stExp_SC2_bc_IgG.sam >a1869_UMI_1stExp_SC2_bc_IgG.bam
+samtools view -bS a1470_UMI_2ndExp_SC2_bc_IgG.sam >a1870_UMI_2ndExp_SC2_bc_IgG.bam
+samtools view -bS a1471_UMI_3rdExp_SC2_bc_IgG.sam >a1871_UMI_3rdExp_SC2_bc_IgG.bam
+samtools view -bS a1472_UMI_Med1_SC2_bc_IgG.sam >a1872_UMI_Med1_SC2_bc_IgG.bam
+samtools view -bS a1473_UMI_5hmC_SC2_bc_IgG.sam >a1873_UMI_5hmC_SC2_bc_IgG.bam
+samtools view -bS a1474_UMI_1stExp_SC3_bc_IgG.sam >a1874_UMI_1stExp_SC3_bc_IgG.bam
+samtools view -bS a1475_UMI_2ndExp_SC3_bc_IgG.sam >a1875_UMI_2ndExp_SC3_bc_IgG.bam
+samtools view -bS a1476_UMI_3rdExp_SC3_bc_IgG.sam >a1876_UMI_3rdExp_SC3_bc_IgG.bam
+samtools view -bS a1477_UMI_Med1_SC3_bc_IgG.sam >a1877_UMI_Med1_SC3_bc_IgG.bam
+samtools view -bS a1478_UMI_5hmC_SC3_bc_IgG.sam >a1878_UMI_5hmC_SC3_bc_IgG.bam
+samtools view -bS a1479_UMI_1stExp_SC4_bc_IgG.sam >a1879_UMI_1stExp_SC4_bc_IgG.bam
+samtools view -bS a1480_UMI_2ndExp_SC4_bc_IgG.sam >a1880_UMI_2ndExp_SC4_bc_IgG.bam
+samtools view -bS a1481_UMI_3rdExp_SC4_bc_IgG.sam >a1881_UMI_3rdExp_SC4_bc_IgG.bam
+samtools view -bS a1482_UMI_Med1_SC4_bc_IgG.sam >a1882_UMI_Med1_SC4_bc_IgG.bam
+samtools view -bS a1483_UMI_5hmC_SC4_bc_IgG.sam >a1883_UMI_5hmC_SC4_bc_IgG.bam
+samtools view -bS a1484_UMI_1stExp_SC5_bc_IgG.sam >a1884_UMI_1stExp_SC5_bc_IgG.bam
+samtools view -bS a1485_UMI_2ndExp_SC5_bc_IgG.sam >a1885_UMI_2ndExp_SC5_bc_IgG.bam
+samtools view -bS a1486_UMI_3rdExp_SC5_bc_IgG.sam >a1886_UMI_3rdExp_SC5_bc_IgG.bam
+samtools view -bS a1487_UMI_Med1_SC5_bc_IgG.sam >a1887_UMI_Med1_SC5_bc_IgG.bam
+samtools view -bS a1488_UMI_5hmC_SC5_bc_IgG.sam >a1888_UMI_5hmC_SC5_bc_IgG.bam
+samtools view -bS a1489_UMI_1stExp_SC6_bc_IgG.sam >a1889_UMI_1stExp_SC6_bc_IgG.bam
+samtools view -bS a1490_UMI_2ndExp_SC6_bc_IgG.sam >a1890_UMI_2ndExp_SC6_bc_IgG.bam
+samtools view -bS a1491_UMI_3rdExp_SC6_bc_IgG.sam >a1891_UMI_3rdExp_SC6_bc_IgG.bam
+samtools view -bS a1492_UMI_Med1_SC6_bc_IgG.sam >a1892_UMI_Med1_SC6_bc_IgG.bam
+samtools view -bS a1493_UMI_5hmC_SC6_bc_IgG.sam >a1893_UMI_5hmC_SC6_bc_IgG.bam
+samtools view -bS a1494_UMI_1stExp_SC7_bc_IgG.sam >a1894_UMI_1stExp_SC7_bc_IgG.bam
+samtools view -bS a1495_UMI_2ndExp_SC7_bc_IgG.sam >a1895_UMI_2ndExp_SC7_bc_IgG.bam
+samtools view -bS a1496_UMI_3rdExp_SC7_bc_IgG.sam >a1896_UMI_3rdExp_SC7_bc_IgG.bam
+samtools view -bS a1497_UMI_Med1_SC7_bc_IgG.sam >a1897_UMI_Med1_SC7_bc_IgG.bam
+samtools view -bS a1498_UMI_5hmC_SC7_bc_IgG.sam >a1898_UMI_5hmC_SC7_bc_IgG.bam
+samtools view -bS a1499_UMI_1stExp_SC8_bc_IgG.sam >a1899_UMI_1stExp_SC8_bc_IgG.bam
+samtools view -bS a1500_UMI_2ndExp_SC8_bc_IgG.sam >a1900_UMI_2ndExp_SC8_bc_IgG.bam
+samtools view -bS a1501_UMI_3rdExp_SC8_bc_IgG.sam >a1901_UMI_3rdExp_SC8_bc_IgG.bam
+samtools view -bS a1502_UMI_Med1_SC8_bc_IgG.sam >a1902_UMI_Med1_SC8_bc_IgG.bam
+samtools view -bS a1503_UMI_5hmC_SC8_bc_IgG.sam >a1903_UMI_5hmC_SC8_bc_IgG.bam
+samtools view -bS a1504_UMI_1stExp_SC1_bc_H3K27ac.sam >a1904_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1505_UMI_2ndExp_SC1_bc_H3K27ac.sam >a1905_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1506_UMI_3rdExp_SC1_bc_H3K27ac.sam >a1906_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools view -bS a1507_UMI_Med1_SC1_bc_Med1.sam >a1907_UMI_Med1_SC1_bc_Med1.bam
+samtools view -bS a1508_UMI_5hmC_SC1_bc_5hmC.sam >a1908_UMI_5hmC_SC1_bc_5hmC.bam
+samtools view -bS a1509_UMI_1stExp_SC2_bc_H3K27ac.sam >a1909_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1510_UMI_2ndExp_SC2_bc_H3K27ac.sam >a1910_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1511_UMI_3rdExp_SC2_bc_H3K27ac.sam >a1911_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools view -bS a1512_UMI_Med1_SC2_bc_Med1.sam >a1912_UMI_Med1_SC2_bc_Med1.bam
+samtools view -bS a1513_UMI_5hmC_SC2_bc_5hmC.sam >a1913_UMI_5hmC_SC2_bc_5hmC.bam
+samtools view -bS a1514_UMI_1stExp_SC3_bc_H3K27ac.sam >a1914_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1515_UMI_2ndExp_SC3_bc_H3K27ac.sam >a1915_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1516_UMI_3rdExp_SC3_bc_H3K27ac.sam >a1916_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools view -bS a1517_UMI_Med1_SC3_bc_Med1.sam >a1917_UMI_Med1_SC3_bc_Med1.bam
+samtools view -bS a1518_UMI_5hmC_SC3_bc_5hmC.sam >a1918_UMI_5hmC_SC3_bc_5hmC.bam
+samtools view -bS a1519_UMI_1stExp_SC4_bc_H3K27ac.sam >a1919_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1520_UMI_2ndExp_SC4_bc_H3K27ac.sam >a1920_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1521_UMI_3rdExp_SC4_bc_H3K27ac.sam >a1921_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools view -bS a1522_UMI_Med1_SC4_bc_Med1.sam >a1922_UMI_Med1_SC4_bc_Med1.bam
+samtools view -bS a1523_UMI_5hmC_SC4_bc_5hmC.sam >a1923_UMI_5hmC_SC4_bc_5hmC.bam
+samtools view -bS a1524_UMI_1stExp_SC5_bc_H3K27ac.sam >a1924_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1525_UMI_2ndExp_SC5_bc_H3K27ac.sam >a1925_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1526_UMI_3rdExp_SC5_bc_H3K27ac.sam >a1926_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools view -bS a1527_UMI_Med1_SC5_bc_Med1.sam >a1927_UMI_Med1_SC5_bc_Med1.bam
+samtools view -bS a1528_UMI_5hmC_SC5_bc_5hmC.sam >a1928_UMI_5hmC_SC5_bc_5hmC.bam
+samtools view -bS a1529_UMI_1stExp_SC6_bc_H3K27ac.sam >a1929_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1530_UMI_2ndExp_SC6_bc_H3K27ac.sam >a1930_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1531_UMI_3rdExp_SC6_bc_H3K27ac.sam >a1931_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools view -bS a1532_UMI_Med1_SC6_bc_Med1.sam >a1932_UMI_Med1_SC6_bc_Med1.bam
+samtools view -bS a1533_UMI_5hmC_SC6_bc_5hmC.sam >a1933_UMI_5hmC_SC6_bc_5hmC.bam
+samtools view -bS a1534_UMI_1stExp_SC7_bc_H3K27ac.sam >a1934_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1535_UMI_2ndExp_SC7_bc_H3K27ac.sam >a1935_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1536_UMI_3rdExp_SC7_bc_H3K27ac.sam >a1936_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools view -bS a1537_UMI_Med1_SC7_bc_Med1.sam >a1937_UMI_Med1_SC7_bc_Med1.bam
+samtools view -bS a1538_UMI_5hmC_SC7_bc_5hmC.sam >a1938_UMI_5hmC_SC7_bc_5hmC.bam
+samtools view -bS a1539_UMI_1stExp_SC8_bc_H3K27ac.sam >a1939_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1540_UMI_2ndExp_SC8_bc_H3K27ac.sam >a1940_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1541_UMI_3rdExp_SC8_bc_H3K27ac.sam >a1941_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools view -bS a1542_UMI_Med1_SC8_bc_Med1.sam >a1942_UMI_Med1_SC8_bc_Med1.bam
+samtools view -bS a1543_UMI_5hmC_SC8_bc_5hmC.sam >a1943_UMI_5hmC_SC8_bc_5hmC.bam
+samtools view -bS a1544_UMI_1stExp_SC1_bc_H3K27me3.sam >a1944_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1545_UMI_2ndExp_SC1_bc_H3K27me3.sam >a1945_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1546_UMI_3rdExp_SC1_bc_H3K27me3.sam >a1946_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools view -bS a1547_UMI_1stExp_SC2_bc_H3K27me3.sam >a1947_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1548_UMI_2ndExp_SC2_bc_H3K27me3.sam >a1948_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1549_UMI_3rdExp_SC2_bc_H3K27me3.sam >a1949_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools view -bS a1550_UMI_1stExp_SC3_bc_H3K27me3.sam >a1950_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1551_UMI_2ndExp_SC3_bc_H3K27me3.sam >a1951_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1552_UMI_3rdExp_SC3_bc_H3K27me3.sam >a1952_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools view -bS a1553_UMI_1stExp_SC4_bc_H3K27me3.sam >a1953_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1554_UMI_2ndExp_SC4_bc_H3K27me3.sam >a1954_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1555_UMI_3rdExp_SC4_bc_H3K27me3.sam >a1955_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools view -bS a1556_UMI_1stExp_SC5_bc_H3K27me3.sam >a1956_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1557_UMI_2ndExp_SC5_bc_H3K27me3.sam >a1957_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1558_UMI_3rdExp_SC5_bc_H3K27me3.sam >a1958_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools view -bS a1559_UMI_1stExp_SC6_bc_H3K27me3.sam >a1959_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1560_UMI_2ndExp_SC6_bc_H3K27me3.sam >a1960_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1561_UMI_3rdExp_SC6_bc_H3K27me3.sam >a1961_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools view -bS a1562_UMI_1stExp_SC7_bc_H3K27me3.sam >a1962_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1563_UMI_2ndExp_SC7_bc_H3K27me3.sam >a1963_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1564_UMI_3rdExp_SC7_bc_H3K27me3.sam >a1964_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools view -bS a1565_UMI_1stExp_SC8_bc_H3K27me3.sam >a1965_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1566_UMI_2ndExp_SC8_bc_H3K27me3.sam >a1966_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1567_UMI_3rdExp_SC8_bc_H3K27me3.sam >a1967_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools view -bS a1568_UMI_1stExp_SC1_bc_IgG.sam >a1968_UMI_1stExp_SC1_bc_IgG.bam
+samtools view -bS a1569_UMI_2ndExp_SC1_bc_IgG.sam >a1969_UMI_2ndExp_SC1_bc_IgG.bam
+samtools view -bS a1570_UMI_3rdExp_SC1_bc_IgG.sam >a1970_UMI_3rdExp_SC1_bc_IgG.bam
+samtools view -bS a1571_UMI_Med1_SC1_bc_IgG.sam >a1971_UMI_Med1_SC1_bc_IgG.bam
+samtools view -bS a1572_UMI_5hmC_SC1_bc_IgG.sam >a1972_UMI_5hmC_SC1_bc_IgG.bam
+samtools view -bS a1573_UMI_1stExp_SC2_bc_IgG.sam >a1973_UMI_1stExp_SC2_bc_IgG.bam
+samtools view -bS a1574_UMI_2ndExp_SC2_bc_IgG.sam >a1974_UMI_2ndExp_SC2_bc_IgG.bam
+samtools view -bS a1575_UMI_3rdExp_SC2_bc_IgG.sam >a1975_UMI_3rdExp_SC2_bc_IgG.bam
+samtools view -bS a1576_UMI_Med1_SC2_bc_IgG.sam >a1976_UMI_Med1_SC2_bc_IgG.bam
+samtools view -bS a1577_UMI_5hmC_SC2_bc_IgG.sam >a1977_UMI_5hmC_SC2_bc_IgG.bam
+samtools view -bS a1578_UMI_1stExp_SC3_bc_IgG.sam >a1978_UMI_1stExp_SC3_bc_IgG.bam
+samtools view -bS a1579_UMI_2ndExp_SC3_bc_IgG.sam >a1979_UMI_2ndExp_SC3_bc_IgG.bam
+samtools view -bS a1580_UMI_3rdExp_SC3_bc_IgG.sam >a1980_UMI_3rdExp_SC3_bc_IgG.bam
+samtools view -bS a1581_UMI_Med1_SC3_bc_IgG.sam >a1981_UMI_Med1_SC3_bc_IgG.bam
+samtools view -bS a1582_UMI_5hmC_SC3_bc_IgG.sam >a1982_UMI_5hmC_SC3_bc_IgG.bam
+samtools view -bS a1583_UMI_1stExp_SC4_bc_IgG.sam >a1983_UMI_1stExp_SC4_bc_IgG.bam
+samtools view -bS a1584_UMI_2ndExp_SC4_bc_IgG.sam >a1984_UMI_2ndExp_SC4_bc_IgG.bam
+samtools view -bS a1585_UMI_3rdExp_SC4_bc_IgG.sam >a1985_UMI_3rdExp_SC4_bc_IgG.bam
+samtools view -bS a1586_UMI_Med1_SC4_bc_IgG.sam >a1986_UMI_Med1_SC4_bc_IgG.bam
+samtools view -bS a1587_UMI_5hmC_SC4_bc_IgG.sam >a1987_UMI_5hmC_SC4_bc_IgG.bam
+samtools view -bS a1588_UMI_1stExp_SC5_bc_IgG.sam >a1988_UMI_1stExp_SC5_bc_IgG.bam
+samtools view -bS a1589_UMI_2ndExp_SC5_bc_IgG.sam >a1989_UMI_2ndExp_SC5_bc_IgG.bam
+samtools view -bS a1590_UMI_3rdExp_SC5_bc_IgG.sam >a1990_UMI_3rdExp_SC5_bc_IgG.bam
+samtools view -bS a1591_UMI_Med1_SC5_bc_IgG.sam >a1991_UMI_Med1_SC5_bc_IgG.bam
+samtools view -bS a1592_UMI_5hmC_SC5_bc_IgG.sam >a1992_UMI_5hmC_SC5_bc_IgG.bam
+samtools view -bS a1593_UMI_1stExp_SC6_bc_IgG.sam >a1993_UMI_1stExp_SC6_bc_IgG.bam
+samtools view -bS a1594_UMI_2ndExp_SC6_bc_IgG.sam >a1994_UMI_2ndExp_SC6_bc_IgG.bam
+samtools view -bS a1595_UMI_3rdExp_SC6_bc_IgG.sam >a1995_UMI_3rdExp_SC6_bc_IgG.bam
+samtools view -bS a1596_UMI_Med1_SC6_bc_IgG.sam >a1996_UMI_Med1_SC6_bc_IgG.bam
+samtools view -bS a1597_UMI_5hmC_SC6_bc_IgG.sam >a1997_UMI_5hmC_SC6_bc_IgG.bam
+samtools view -bS a1598_UMI_1stExp_SC7_bc_IgG.sam >a1998_UMI_1stExp_SC7_bc_IgG.bam
+samtools view -bS a1599_UMI_2ndExp_SC7_bc_IgG.sam >a1999_UMI_2ndExp_SC7_bc_IgG.bam
+samtools view -bS a1600_UMI_3rdExp_SC7_bc_IgG.sam >a2000_UMI_3rdExp_SC7_bc_IgG.bam
+samtools view -bS a1601_UMI_Med1_SC7_bc_IgG.sam >a2001_UMI_Med1_SC7_bc_IgG.bam
+samtools view -bS a1602_UMI_5hmC_SC7_bc_IgG.sam >a2002_UMI_5hmC_SC7_bc_IgG.bam
+samtools view -bS a1603_UMI_1stExp_SC8_bc_IgG.sam >a2003_UMI_1stExp_SC8_bc_IgG.bam
+samtools view -bS a1604_UMI_2ndExp_SC8_bc_IgG.sam >a2004_UMI_2ndExp_SC8_bc_IgG.bam
+samtools view -bS a1605_UMI_3rdExp_SC8_bc_IgG.sam >a2005_UMI_3rdExp_SC8_bc_IgG.bam
+samtools view -bS a1606_UMI_Med1_SC8_bc_IgG.sam >a2006_UMI_Med1_SC8_bc_IgG.bam
+samtools view -bS a1607_UMI_5hmC_SC8_bc_IgG.sam >a2007_UMI_5hmC_SC8_bc_IgG.bam
+
+# Step11:
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+samtools sort a1800_UMI_1stExp_SC1_bc_H3K27ac.bam -o a2100_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools sort a1801_UMI_2ndExp_SC1_bc_H3K27ac.bam -o a2101_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools sort a1802_UMI_3rdExp_SC1_bc_H3K27ac.bam -o a2102_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools sort a1803_UMI_Med1_SC1_bc_Med1.bam -o a2103_Sorted_UMI_Med1_SC1_bc_Med1.bam
+samtools sort a1804_UMI_5hmC_SC1_bc_5hmC.bam -o a2104_Sorted_UMI_5hmC_SC1_bc_5hmC.bam
+samtools sort a1805_UMI_1stExp_SC2_bc_H3K27ac.bam -o a2105_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools sort a1806_UMI_2ndExp_SC2_bc_H3K27ac.bam -o a2106_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools sort a1807_UMI_3rdExp_SC2_bc_H3K27ac.bam -o a2107_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools sort a1808_UMI_Med1_SC2_bc_Med1.bam -o a2108_Sorted_UMI_Med1_SC2_bc_Med1.bam
+samtools sort a1809_UMI_5hmC_SC2_bc_5hmC.bam -o a2109_Sorted_UMI_5hmC_SC2_bc_5hmC.bam
+samtools sort a1810_UMI_1stExp_SC3_bc_H3K27ac.bam -o a2110_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools sort a1811_UMI_2ndExp_SC3_bc_H3K27ac.bam -o a2111_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools sort a1812_UMI_3rdExp_SC3_bc_H3K27ac.bam -o a2112_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools sort a1813_UMI_Med1_SC3_bc_Med1.bam -o a2113_Sorted_UMI_Med1_SC3_bc_Med1.bam
+samtools sort a1814_UMI_5hmC_SC3_bc_5hmC.bam -o a2114_Sorted_UMI_5hmC_SC3_bc_5hmC.bam
+samtools sort a1815_UMI_1stExp_SC4_bc_H3K27ac.bam -o a2115_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools sort a1816_UMI_2ndExp_SC4_bc_H3K27ac.bam -o a2116_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools sort a1817_UMI_3rdExp_SC4_bc_H3K27ac.bam -o a2117_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools sort a1818_UMI_Med1_SC4_bc_Med1.bam -o a2118_Sorted_UMI_Med1_SC4_bc_Med1.bam
+samtools sort a1819_UMI_5hmC_SC4_bc_5hmC.bam -o a2119_Sorted_UMI_5hmC_SC4_bc_5hmC.bam
+samtools sort a1820_UMI_1stExp_SC5_bc_H3K27ac.bam -o a2120_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools sort a1821_UMI_2ndExp_SC5_bc_H3K27ac.bam -o a2121_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools sort a1822_UMI_3rdExp_SC5_bc_H3K27ac.bam -o a2122_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools sort a1823_UMI_Med1_SC5_bc_Med1.bam -o a2123_Sorted_UMI_Med1_SC5_bc_Med1.bam
+samtools sort a1824_UMI_5hmC_SC5_bc_5hmC.bam -o a2124_Sorted_UMI_5hmC_SC5_bc_5hmC.bam
+samtools sort a1825_UMI_1stExp_SC6_bc_H3K27ac.bam -o a2125_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools sort a1826_UMI_2ndExp_SC6_bc_H3K27ac.bam -o a2126_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools sort a1827_UMI_3rdExp_SC6_bc_H3K27ac.bam -o a2127_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools sort a1828_UMI_Med1_SC6_bc_Med1.bam -o a2128_Sorted_UMI_Med1_SC6_bc_Med1.bam
+samtools sort a1829_UMI_5hmC_SC6_bc_5hmC.bam -o a2129_Sorted_UMI_5hmC_SC6_bc_5hmC.bam
+samtools sort a1830_UMI_1stExp_SC7_bc_H3K27ac.bam -o a2130_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools sort a1831_UMI_2ndExp_SC7_bc_H3K27ac.bam -o a2131_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools sort a1832_UMI_3rdExp_SC7_bc_H3K27ac.bam -o a2132_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools sort a1833_UMI_Med1_SC7_bc_Med1.bam -o a2133_Sorted_UMI_Med1_SC7_bc_Med1.bam
+samtools sort a1834_UMI_5hmC_SC7_bc_5hmC.bam -o a2134_Sorted_UMI_5hmC_SC7_bc_5hmC.bam
+samtools sort a1835_UMI_1stExp_SC8_bc_H3K27ac.bam -o a2135_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools sort a1836_UMI_2ndExp_SC8_bc_H3K27ac.bam -o a2136_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools sort a1837_UMI_3rdExp_SC8_bc_H3K27ac.bam -o a2137_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools sort a1838_UMI_Med1_SC8_bc_Med1.bam -o a2138_Sorted_UMI_Med1_SC8_bc_Med1.bam
+samtools sort a1839_UMI_5hmC_SC8_bc_5hmC.bam -o a2139_Sorted_UMI_5hmC_SC8_bc_5hmC.bam
+samtools sort a1840_UMI_1stExp_SC1_bc_H3K27me3.bam -o a2140_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools sort a1841_UMI_2ndExp_SC1_bc_H3K27me3.bam -o a2141_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools sort a1842_UMI_3rdExp_SC1_bc_H3K27me3.bam -o a2142_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools sort a1843_UMI_1stExp_SC2_bc_H3K27me3.bam -o a2143_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools sort a1844_UMI_2ndExp_SC2_bc_H3K27me3.bam -o a2144_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools sort a1845_UMI_3rdExp_SC2_bc_H3K27me3.bam -o a2145_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools sort a1846_UMI_1stExp_SC3_bc_H3K27me3.bam -o a2146_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools sort a1847_UMI_2ndExp_SC3_bc_H3K27me3.bam -o a2147_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools sort a1848_UMI_3rdExp_SC3_bc_H3K27me3.bam -o a2148_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools sort a1849_UMI_1stExp_SC4_bc_H3K27me3.bam -o a2149_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools sort a1850_UMI_2ndExp_SC4_bc_H3K27me3.bam -o a2150_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools sort a1851_UMI_3rdExp_SC4_bc_H3K27me3.bam -o a2151_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools sort a1852_UMI_1stExp_SC5_bc_H3K27me3.bam -o a2152_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools sort a1853_UMI_2ndExp_SC5_bc_H3K27me3.bam -o a2153_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools sort a1854_UMI_3rdExp_SC5_bc_H3K27me3.bam -o a2154_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools sort a1855_UMI_1stExp_SC6_bc_H3K27me3.bam -o a2155_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools sort a1856_UMI_2ndExp_SC6_bc_H3K27me3.bam -o a2156_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools sort a1857_UMI_3rdExp_SC6_bc_H3K27me3.bam -o a2157_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools sort a1858_UMI_1stExp_SC7_bc_H3K27me3.bam -o a2158_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools sort a1859_UMI_2ndExp_SC7_bc_H3K27me3.bam -o a2159_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools sort a1860_UMI_3rdExp_SC7_bc_H3K27me3.bam -o a2160_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools sort a1861_UMI_1stExp_SC8_bc_H3K27me3.bam -o a2161_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools sort a1862_UMI_2ndExp_SC8_bc_H3K27me3.bam -o a2162_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools sort a1863_UMI_3rdExp_SC8_bc_H3K27me3.bam -o a2163_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools sort a1864_UMI_1stExp_SC1_bc_IgG.bam -o a2164_Sorted_UMI_1stExp_SC1_bc_IgG.bam
+samtools sort a1865_UMI_2ndExp_SC1_bc_IgG.bam -o a2165_Sorted_UMI_2ndExp_SC1_bc_IgG.bam
+samtools sort a1866_UMI_3rdExp_SC1_bc_IgG.bam -o a2166_Sorted_UMI_3rdExp_SC1_bc_IgG.bam
+samtools sort a1867_UMI_Med1_SC1_bc_IgG.bam -o a2167_Sorted_UMI_Med1_SC1_bc_IgG.bam
+samtools sort a1868_UMI_5hmC_SC1_bc_IgG.bam -o a2168_Sorted_UMI_5hmC_SC1_bc_IgG.bam
+samtools sort a1869_UMI_1stExp_SC2_bc_IgG.bam -o a2169_Sorted_UMI_1stExp_SC2_bc_IgG.bam
+samtools sort a1870_UMI_2ndExp_SC2_bc_IgG.bam -o a2170_Sorted_UMI_2ndExp_SC2_bc_IgG.bam
+samtools sort a1871_UMI_3rdExp_SC2_bc_IgG.bam -o a2171_Sorted_UMI_3rdExp_SC2_bc_IgG.bam
+samtools sort a1872_UMI_Med1_SC2_bc_IgG.bam -o a2172_Sorted_UMI_Med1_SC2_bc_IgG.bam
+samtools sort a1873_UMI_5hmC_SC2_bc_IgG.bam -o a2173_Sorted_UMI_5hmC_SC2_bc_IgG.bam
+samtools sort a1874_UMI_1stExp_SC3_bc_IgG.bam -o a2174_Sorted_UMI_1stExp_SC3_bc_IgG.bam
+samtools sort a1875_UMI_2ndExp_SC3_bc_IgG.bam -o a2175_Sorted_UMI_2ndExp_SC3_bc_IgG.bam
+samtools sort a1876_UMI_3rdExp_SC3_bc_IgG.bam -o a2176_Sorted_UMI_3rdExp_SC3_bc_IgG.bam
+samtools sort a1877_UMI_Med1_SC3_bc_IgG.bam -o a2177_Sorted_UMI_Med1_SC3_bc_IgG.bam
+samtools sort a1878_UMI_5hmC_SC3_bc_IgG.bam -o a2178_Sorted_UMI_5hmC_SC3_bc_IgG.bam
+samtools sort a1879_UMI_1stExp_SC4_bc_IgG.bam -o a2179_Sorted_UMI_1stExp_SC4_bc_IgG.bam
+samtools sort a1880_UMI_2ndExp_SC4_bc_IgG.bam -o a2180_Sorted_UMI_2ndExp_SC4_bc_IgG.bam
+samtools sort a1881_UMI_3rdExp_SC4_bc_IgG.bam -o a2181_Sorted_UMI_3rdExp_SC4_bc_IgG.bam
+samtools sort a1882_UMI_Med1_SC4_bc_IgG.bam -o a2182_Sorted_UMI_Med1_SC4_bc_IgG.bam
+samtools sort a1883_UMI_5hmC_SC4_bc_IgG.bam -o a2183_Sorted_UMI_5hmC_SC4_bc_IgG.bam
+samtools sort a1884_UMI_1stExp_SC5_bc_IgG.bam -o a2184_Sorted_UMI_1stExp_SC5_bc_IgG.bam
+samtools sort a1885_UMI_2ndExp_SC5_bc_IgG.bam -o a2185_Sorted_UMI_2ndExp_SC5_bc_IgG.bam
+samtools sort a1886_UMI_3rdExp_SC5_bc_IgG.bam -o a2186_Sorted_UMI_3rdExp_SC5_bc_IgG.bam
+samtools sort a1887_UMI_Med1_SC5_bc_IgG.bam -o a2187_Sorted_UMI_Med1_SC5_bc_IgG.bam
+samtools sort a1888_UMI_5hmC_SC5_bc_IgG.bam -o a2188_Sorted_UMI_5hmC_SC5_bc_IgG.bam
+samtools sort a1889_UMI_1stExp_SC6_bc_IgG.bam -o a2189_Sorted_UMI_1stExp_SC6_bc_IgG.bam
+samtools sort a1890_UMI_2ndExp_SC6_bc_IgG.bam -o a2190_Sorted_UMI_2ndExp_SC6_bc_IgG.bam
+samtools sort a1891_UMI_3rdExp_SC6_bc_IgG.bam -o a2191_Sorted_UMI_3rdExp_SC6_bc_IgG.bam
+samtools sort a1892_UMI_Med1_SC6_bc_IgG.bam -o a2192_Sorted_UMI_Med1_SC6_bc_IgG.bam
+samtools sort a1893_UMI_5hmC_SC6_bc_IgG.bam -o a2193_Sorted_UMI_5hmC_SC6_bc_IgG.bam
+samtools sort a1894_UMI_1stExp_SC7_bc_IgG.bam -o a2194_Sorted_UMI_1stExp_SC7_bc_IgG.bam
+samtools sort a1895_UMI_2ndExp_SC7_bc_IgG.bam -o a2195_Sorted_UMI_2ndExp_SC7_bc_IgG.bam
+samtools sort a1896_UMI_3rdExp_SC7_bc_IgG.bam -o a2196_Sorted_UMI_3rdExp_SC7_bc_IgG.bam
+samtools sort a1897_UMI_Med1_SC7_bc_IgG.bam -o a2197_Sorted_UMI_Med1_SC7_bc_IgG.bam
+samtools sort a1898_UMI_5hmC_SC7_bc_IgG.bam -o a2198_Sorted_UMI_5hmC_SC7_bc_IgG.bam
+samtools sort a1899_UMI_1stExp_SC8_bc_IgG.bam -o a2199_Sorted_UMI_1stExp_SC8_bc_IgG.bam
+samtools sort a1900_UMI_2ndExp_SC8_bc_IgG.bam -o a2200_Sorted_UMI_2ndExp_SC8_bc_IgG.bam
+samtools sort a1901_UMI_3rdExp_SC8_bc_IgG.bam -o a2201_Sorted_UMI_3rdExp_SC8_bc_IgG.bam
+samtools sort a1902_UMI_Med1_SC8_bc_IgG.bam -o a2202_Sorted_UMI_Med1_SC8_bc_IgG.bam
+samtools sort a1903_UMI_5hmC_SC8_bc_IgG.bam -o a2203_Sorted_UMI_5hmC_SC8_bc_IgG.bam
+samtools sort a1904_UMI_1stExp_SC1_bc_H3K27ac.bam -o a2204_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools sort a1905_UMI_2ndExp_SC1_bc_H3K27ac.bam -o a2205_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools sort a1906_UMI_3rdExp_SC1_bc_H3K27ac.bam -o a2206_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools sort a1907_UMI_Med1_SC1_bc_Med1.bam -o a2207_Sorted_UMI_Med1_SC1_bc_Med1.bam
+samtools sort a1908_UMI_5hmC_SC1_bc_5hmC.bam -o a2208_Sorted_UMI_5hmC_SC1_bc_5hmC.bam
+samtools sort a1909_UMI_1stExp_SC2_bc_H3K27ac.bam -o a2209_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools sort a1910_UMI_2ndExp_SC2_bc_H3K27ac.bam -o a2210_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools sort a1911_UMI_3rdExp_SC2_bc_H3K27ac.bam -o a2211_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools sort a1912_UMI_Med1_SC2_bc_Med1.bam -o a2212_Sorted_UMI_Med1_SC2_bc_Med1.bam
+samtools sort a1913_UMI_5hmC_SC2_bc_5hmC.bam -o a2213_Sorted_UMI_5hmC_SC2_bc_5hmC.bam
+samtools sort a1914_UMI_1stExp_SC3_bc_H3K27ac.bam -o a2214_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools sort a1915_UMI_2ndExp_SC3_bc_H3K27ac.bam -o a2215_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools sort a1916_UMI_3rdExp_SC3_bc_H3K27ac.bam -o a2216_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools sort a1917_UMI_Med1_SC3_bc_Med1.bam -o a2217_Sorted_UMI_Med1_SC3_bc_Med1.bam
+samtools sort a1918_UMI_5hmC_SC3_bc_5hmC.bam -o a2218_Sorted_UMI_5hmC_SC3_bc_5hmC.bam
+samtools sort a1919_UMI_1stExp_SC4_bc_H3K27ac.bam -o a2219_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools sort a1920_UMI_2ndExp_SC4_bc_H3K27ac.bam -o a2220_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools sort a1921_UMI_3rdExp_SC4_bc_H3K27ac.bam -o a2221_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools sort a1922_UMI_Med1_SC4_bc_Med1.bam -o a2222_Sorted_UMI_Med1_SC4_bc_Med1.bam
+samtools sort a1923_UMI_5hmC_SC4_bc_5hmC.bam -o a2223_Sorted_UMI_5hmC_SC4_bc_5hmC.bam
+samtools sort a1924_UMI_1stExp_SC5_bc_H3K27ac.bam -o a2224_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools sort a1925_UMI_2ndExp_SC5_bc_H3K27ac.bam -o a2225_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools sort a1926_UMI_3rdExp_SC5_bc_H3K27ac.bam -o a2226_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools sort a1927_UMI_Med1_SC5_bc_Med1.bam -o a2227_Sorted_UMI_Med1_SC5_bc_Med1.bam
+samtools sort a1928_UMI_5hmC_SC5_bc_5hmC.bam -o a2228_Sorted_UMI_5hmC_SC5_bc_5hmC.bam
+samtools sort a1929_UMI_1stExp_SC6_bc_H3K27ac.bam -o a2229_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools sort a1930_UMI_2ndExp_SC6_bc_H3K27ac.bam -o a2230_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools sort a1931_UMI_3rdExp_SC6_bc_H3K27ac.bam -o a2231_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools sort a1932_UMI_Med1_SC6_bc_Med1.bam -o a2232_Sorted_UMI_Med1_SC6_bc_Med1.bam
+samtools sort a1933_UMI_5hmC_SC6_bc_5hmC.bam -o a2233_Sorted_UMI_5hmC_SC6_bc_5hmC.bam
+samtools sort a1934_UMI_1stExp_SC7_bc_H3K27ac.bam -o a2234_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools sort a1935_UMI_2ndExp_SC7_bc_H3K27ac.bam -o a2235_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools sort a1936_UMI_3rdExp_SC7_bc_H3K27ac.bam -o a2236_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools sort a1937_UMI_Med1_SC7_bc_Med1.bam -o a2237_Sorted_UMI_Med1_SC7_bc_Med1.bam
+samtools sort a1938_UMI_5hmC_SC7_bc_5hmC.bam -o a2238_Sorted_UMI_5hmC_SC7_bc_5hmC.bam
+samtools sort a1939_UMI_1stExp_SC8_bc_H3K27ac.bam -o a2239_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools sort a1940_UMI_2ndExp_SC8_bc_H3K27ac.bam -o a2240_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools sort a1941_UMI_3rdExp_SC8_bc_H3K27ac.bam -o a2241_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools sort a1942_UMI_Med1_SC8_bc_Med1.bam -o a2242_Sorted_UMI_Med1_SC8_bc_Med1.bam
+samtools sort a1943_UMI_5hmC_SC8_bc_5hmC.bam -o a2243_Sorted_UMI_5hmC_SC8_bc_5hmC.bam
+samtools sort a1944_UMI_1stExp_SC1_bc_H3K27me3.bam -o a2244_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools sort a1945_UMI_2ndExp_SC1_bc_H3K27me3.bam -o a2245_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools sort a1946_UMI_3rdExp_SC1_bc_H3K27me3.bam -o a2246_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools sort a1947_UMI_1stExp_SC2_bc_H3K27me3.bam -o a2247_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools sort a1948_UMI_2ndExp_SC2_bc_H3K27me3.bam -o a2248_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools sort a1949_UMI_3rdExp_SC2_bc_H3K27me3.bam -o a2249_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools sort a1950_UMI_1stExp_SC3_bc_H3K27me3.bam -o a2250_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools sort a1951_UMI_2ndExp_SC3_bc_H3K27me3.bam -o a2251_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools sort a1952_UMI_3rdExp_SC3_bc_H3K27me3.bam -o a2252_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools sort a1953_UMI_1stExp_SC4_bc_H3K27me3.bam -o a2253_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools sort a1954_UMI_2ndExp_SC4_bc_H3K27me3.bam -o a2254_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools sort a1955_UMI_3rdExp_SC4_bc_H3K27me3.bam -o a2255_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools sort a1956_UMI_1stExp_SC5_bc_H3K27me3.bam -o a2256_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools sort a1957_UMI_2ndExp_SC5_bc_H3K27me3.bam -o a2257_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools sort a1958_UMI_3rdExp_SC5_bc_H3K27me3.bam -o a2258_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools sort a1959_UMI_1stExp_SC6_bc_H3K27me3.bam -o a2259_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools sort a1960_UMI_2ndExp_SC6_bc_H3K27me3.bam -o a2260_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools sort a1961_UMI_3rdExp_SC6_bc_H3K27me3.bam -o a2261_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools sort a1962_UMI_1stExp_SC7_bc_H3K27me3.bam -o a2262_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools sort a1963_UMI_2ndExp_SC7_bc_H3K27me3.bam -o a2263_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools sort a1964_UMI_3rdExp_SC7_bc_H3K27me3.bam -o a2264_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools sort a1965_UMI_1stExp_SC8_bc_H3K27me3.bam -o a2265_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools sort a1966_UMI_2ndExp_SC8_bc_H3K27me3.bam -o a2266_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools sort a1967_UMI_3rdExp_SC8_bc_H3K27me3.bam -o a2267_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools sort a1968_UMI_1stExp_SC1_bc_IgG.bam -o a2268_Sorted_UMI_1stExp_SC1_bc_IgG.bam
+samtools sort a1969_UMI_2ndExp_SC1_bc_IgG.bam -o a2269_Sorted_UMI_2ndExp_SC1_bc_IgG.bam
+samtools sort a1970_UMI_3rdExp_SC1_bc_IgG.bam -o a2270_Sorted_UMI_3rdExp_SC1_bc_IgG.bam
+samtools sort a1971_UMI_Med1_SC1_bc_IgG.bam -o a2271_Sorted_UMI_Med1_SC1_bc_IgG.bam
+samtools sort a1972_UMI_5hmC_SC1_bc_IgG.bam -o a2272_Sorted_UMI_5hmC_SC1_bc_IgG.bam
+samtools sort a1973_UMI_1stExp_SC2_bc_IgG.bam -o a2273_Sorted_UMI_1stExp_SC2_bc_IgG.bam
+samtools sort a1974_UMI_2ndExp_SC2_bc_IgG.bam -o a2274_Sorted_UMI_2ndExp_SC2_bc_IgG.bam
+samtools sort a1975_UMI_3rdExp_SC2_bc_IgG.bam -o a2275_Sorted_UMI_3rdExp_SC2_bc_IgG.bam
+samtools sort a1976_UMI_Med1_SC2_bc_IgG.bam -o a2276_Sorted_UMI_Med1_SC2_bc_IgG.bam
+samtools sort a1977_UMI_5hmC_SC2_bc_IgG.bam -o a2277_Sorted_UMI_5hmC_SC2_bc_IgG.bam
+samtools sort a1978_UMI_1stExp_SC3_bc_IgG.bam -o a2278_Sorted_UMI_1stExp_SC3_bc_IgG.bam
+samtools sort a1979_UMI_2ndExp_SC3_bc_IgG.bam -o a2279_Sorted_UMI_2ndExp_SC3_bc_IgG.bam
+samtools sort a1980_UMI_3rdExp_SC3_bc_IgG.bam -o a2280_Sorted_UMI_3rdExp_SC3_bc_IgG.bam
+samtools sort a1981_UMI_Med1_SC3_bc_IgG.bam -o a2281_Sorted_UMI_Med1_SC3_bc_IgG.bam
+samtools sort a1982_UMI_5hmC_SC3_bc_IgG.bam -o a2282_Sorted_UMI_5hmC_SC3_bc_IgG.bam
+samtools sort a1983_UMI_1stExp_SC4_bc_IgG.bam -o a2283_Sorted_UMI_1stExp_SC4_bc_IgG.bam
+samtools sort a1984_UMI_2ndExp_SC4_bc_IgG.bam -o a2284_Sorted_UMI_2ndExp_SC4_bc_IgG.bam
+samtools sort a1985_UMI_3rdExp_SC4_bc_IgG.bam -o a2285_Sorted_UMI_3rdExp_SC4_bc_IgG.bam
+samtools sort a1986_UMI_Med1_SC4_bc_IgG.bam -o a2286_Sorted_UMI_Med1_SC4_bc_IgG.bam
+samtools sort a1987_UMI_5hmC_SC4_bc_IgG.bam -o a2287_Sorted_UMI_5hmC_SC4_bc_IgG.bam
+samtools sort a1988_UMI_1stExp_SC5_bc_IgG.bam -o a2288_Sorted_UMI_1stExp_SC5_bc_IgG.bam
+samtools sort a1989_UMI_2ndExp_SC5_bc_IgG.bam -o a2289_Sorted_UMI_2ndExp_SC5_bc_IgG.bam
+samtools sort a1990_UMI_3rdExp_SC5_bc_IgG.bam -o a2290_Sorted_UMI_3rdExp_SC5_bc_IgG.bam
+samtools sort a1991_UMI_Med1_SC5_bc_IgG.bam -o a2291_Sorted_UMI_Med1_SC5_bc_IgG.bam
+samtools sort a1992_UMI_5hmC_SC5_bc_IgG.bam -o a2292_Sorted_UMI_5hmC_SC5_bc_IgG.bam
+samtools sort a1993_UMI_1stExp_SC6_bc_IgG.bam -o a2293_Sorted_UMI_1stExp_SC6_bc_IgG.bam
+samtools sort a1994_UMI_2ndExp_SC6_bc_IgG.bam -o a2294_Sorted_UMI_2ndExp_SC6_bc_IgG.bam
+samtools sort a1995_UMI_3rdExp_SC6_bc_IgG.bam -o a2295_Sorted_UMI_3rdExp_SC6_bc_IgG.bam
+samtools sort a1996_UMI_Med1_SC6_bc_IgG.bam -o a2296_Sorted_UMI_Med1_SC6_bc_IgG.bam
+samtools sort a1997_UMI_5hmC_SC6_bc_IgG.bam -o a2297_Sorted_UMI_5hmC_SC6_bc_IgG.bam
+samtools sort a1998_UMI_1stExp_SC7_bc_IgG.bam -o a2298_Sorted_UMI_1stExp_SC7_bc_IgG.bam
+samtools sort a1999_UMI_2ndExp_SC7_bc_IgG.bam -o a2299_Sorted_UMI_2ndExp_SC7_bc_IgG.bam
+samtools sort a2000_UMI_3rdExp_SC7_bc_IgG.bam -o a2300_Sorted_UMI_3rdExp_SC7_bc_IgG.bam
+samtools sort a2001_UMI_Med1_SC7_bc_IgG.bam -o a2301_Sorted_UMI_Med1_SC7_bc_IgG.bam
+samtools sort a2002_UMI_5hmC_SC7_bc_IgG.bam -o a2302_Sorted_UMI_5hmC_SC7_bc_IgG.bam
+samtools sort a2003_UMI_1stExp_SC8_bc_IgG.bam -o a2303_Sorted_UMI_1stExp_SC8_bc_IgG.bam
+samtools sort a2004_UMI_2ndExp_SC8_bc_IgG.bam -o a2304_Sorted_UMI_2ndExp_SC8_bc_IgG.bam
+samtools sort a2005_UMI_3rdExp_SC8_bc_IgG.bam -o a2305_Sorted_UMI_3rdExp_SC8_bc_IgG.bam
+samtools sort a2006_UMI_Med1_SC8_bc_IgG.bam -o a2306_Sorted_UMI_Med1_SC8_bc_IgG.bam
+samtools sort a2007_UMI_5hmC_SC8_bc_IgG.bam -o a2307_Sorted_UMI_5hmC_SC8_bc_IgG.bam
+
+# Step12: Generate index files of BAM files.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+samtools index a2100_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools index a2101_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools index a2102_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools index a2103_Sorted_UMI_Med1_SC1_bc_Med1.bam
+samtools index a2104_Sorted_UMI_5hmC_SC1_bc_5hmC.bam
+samtools index a2105_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools index a2106_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools index a2107_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools index a2108_Sorted_UMI_Med1_SC2_bc_Med1.bam
+samtools index a2109_Sorted_UMI_5hmC_SC2_bc_5hmC.bam
+samtools index a2110_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools index a2111_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools index a2112_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools index a2113_Sorted_UMI_Med1_SC3_bc_Med1.bam
+samtools index a2114_Sorted_UMI_5hmC_SC3_bc_5hmC.bam
+samtools index a2115_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools index a2116_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools index a2117_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools index a2118_Sorted_UMI_Med1_SC4_bc_Med1.bam
+samtools index a2119_Sorted_UMI_5hmC_SC4_bc_5hmC.bam
+samtools index a2120_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools index a2121_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools index a2122_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools index a2123_Sorted_UMI_Med1_SC5_bc_Med1.bam
+samtools index a2124_Sorted_UMI_5hmC_SC5_bc_5hmC.bam
+samtools index a2125_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools index a2126_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools index a2127_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools index a2128_Sorted_UMI_Med1_SC6_bc_Med1.bam
+samtools index a2129_Sorted_UMI_5hmC_SC6_bc_5hmC.bam
+samtools index a2130_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools index a2131_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools index a2132_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools index a2133_Sorted_UMI_Med1_SC7_bc_Med1.bam
+samtools index a2134_Sorted_UMI_5hmC_SC7_bc_5hmC.bam
+samtools index a2135_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools index a2136_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools index a2137_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools index a2138_Sorted_UMI_Med1_SC8_bc_Med1.bam
+samtools index a2139_Sorted_UMI_5hmC_SC8_bc_5hmC.bam
+samtools index a2140_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools index a2141_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools index a2142_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools index a2143_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools index a2144_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools index a2145_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools index a2146_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools index a2147_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools index a2148_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools index a2149_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools index a2150_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools index a2151_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools index a2152_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools index a2153_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools index a2154_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools index a2155_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools index a2156_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools index a2157_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools index a2158_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools index a2159_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools index a2160_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools index a2161_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools index a2162_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools index a2163_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools index a2164_Sorted_UMI_1stExp_SC1_bc_IgG.bam
+samtools index a2165_Sorted_UMI_2ndExp_SC1_bc_IgG.bam
+samtools index a2166_Sorted_UMI_3rdExp_SC1_bc_IgG.bam
+samtools index a2167_Sorted_UMI_Med1_SC1_bc_IgG.bam
+samtools index a2168_Sorted_UMI_5hmC_SC1_bc_IgG.bam
+samtools index a2169_Sorted_UMI_1stExp_SC2_bc_IgG.bam
+samtools index a2170_Sorted_UMI_2ndExp_SC2_bc_IgG.bam
+samtools index a2171_Sorted_UMI_3rdExp_SC2_bc_IgG.bam
+samtools index a2172_Sorted_UMI_Med1_SC2_bc_IgG.bam
+samtools index a2173_Sorted_UMI_5hmC_SC2_bc_IgG.bam
+samtools index a2174_Sorted_UMI_1stExp_SC3_bc_IgG.bam
+samtools index a2175_Sorted_UMI_2ndExp_SC3_bc_IgG.bam
+samtools index a2176_Sorted_UMI_3rdExp_SC3_bc_IgG.bam
+samtools index a2177_Sorted_UMI_Med1_SC3_bc_IgG.bam
+samtools index a2178_Sorted_UMI_5hmC_SC3_bc_IgG.bam
+samtools index a2179_Sorted_UMI_1stExp_SC4_bc_IgG.bam
+samtools index a2180_Sorted_UMI_2ndExp_SC4_bc_IgG.bam
+samtools index a2181_Sorted_UMI_3rdExp_SC4_bc_IgG.bam
+samtools index a2182_Sorted_UMI_Med1_SC4_bc_IgG.bam
+samtools index a2183_Sorted_UMI_5hmC_SC4_bc_IgG.bam
+samtools index a2184_Sorted_UMI_1stExp_SC5_bc_IgG.bam
+samtools index a2185_Sorted_UMI_2ndExp_SC5_bc_IgG.bam
+samtools index a2186_Sorted_UMI_3rdExp_SC5_bc_IgG.bam
+samtools index a2187_Sorted_UMI_Med1_SC5_bc_IgG.bam
+samtools index a2188_Sorted_UMI_5hmC_SC5_bc_IgG.bam
+samtools index a2189_Sorted_UMI_1stExp_SC6_bc_IgG.bam
+samtools index a2190_Sorted_UMI_2ndExp_SC6_bc_IgG.bam
+samtools index a2191_Sorted_UMI_3rdExp_SC6_bc_IgG.bam
+samtools index a2192_Sorted_UMI_Med1_SC6_bc_IgG.bam
+samtools index a2193_Sorted_UMI_5hmC_SC6_bc_IgG.bam
+samtools index a2194_Sorted_UMI_1stExp_SC7_bc_IgG.bam
+samtools index a2195_Sorted_UMI_2ndExp_SC7_bc_IgG.bam
+samtools index a2196_Sorted_UMI_3rdExp_SC7_bc_IgG.bam
+samtools index a2197_Sorted_UMI_Med1_SC7_bc_IgG.bam
+samtools index a2198_Sorted_UMI_5hmC_SC7_bc_IgG.bam
+samtools index a2199_Sorted_UMI_1stExp_SC8_bc_IgG.bam
+samtools index a2200_Sorted_UMI_2ndExp_SC8_bc_IgG.bam
+samtools index a2201_Sorted_UMI_3rdExp_SC8_bc_IgG.bam
+samtools index a2202_Sorted_UMI_Med1_SC8_bc_IgG.bam
+samtools index a2203_Sorted_UMI_5hmC_SC8_bc_IgG.bam
+samtools index a2204_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam
+samtools index a2205_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam
+samtools index a2206_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam
+samtools index a2207_Sorted_UMI_Med1_SC1_bc_Med1.bam
+samtools index a2208_Sorted_UMI_5hmC_SC1_bc_5hmC.bam
+samtools index a2209_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam
+samtools index a2210_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam
+samtools index a2211_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam
+samtools index a2212_Sorted_UMI_Med1_SC2_bc_Med1.bam
+samtools index a2213_Sorted_UMI_5hmC_SC2_bc_5hmC.bam
+samtools index a2214_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam
+samtools index a2215_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam
+samtools index a2216_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam
+samtools index a2217_Sorted_UMI_Med1_SC3_bc_Med1.bam
+samtools index a2218_Sorted_UMI_5hmC_SC3_bc_5hmC.bam
+samtools index a2219_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam
+samtools index a2220_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam
+samtools index a2221_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam
+samtools index a2222_Sorted_UMI_Med1_SC4_bc_Med1.bam
+samtools index a2223_Sorted_UMI_5hmC_SC4_bc_5hmC.bam
+samtools index a2224_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam
+samtools index a2225_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam
+samtools index a2226_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam
+samtools index a2227_Sorted_UMI_Med1_SC5_bc_Med1.bam
+samtools index a2228_Sorted_UMI_5hmC_SC5_bc_5hmC.bam
+samtools index a2229_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam
+samtools index a2230_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam
+samtools index a2231_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam
+samtools index a2232_Sorted_UMI_Med1_SC6_bc_Med1.bam
+samtools index a2233_Sorted_UMI_5hmC_SC6_bc_5hmC.bam
+samtools index a2234_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam
+samtools index a2235_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam
+samtools index a2236_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam
+samtools index a2237_Sorted_UMI_Med1_SC7_bc_Med1.bam
+samtools index a2238_Sorted_UMI_5hmC_SC7_bc_5hmC.bam
+samtools index a2239_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam
+samtools index a2240_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam
+samtools index a2241_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam
+samtools index a2242_Sorted_UMI_Med1_SC8_bc_Med1.bam
+samtools index a2243_Sorted_UMI_5hmC_SC8_bc_5hmC.bam
+samtools index a2244_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam
+samtools index a2245_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam
+samtools index a2246_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam
+samtools index a2247_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam
+samtools index a2248_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam
+samtools index a2249_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam
+samtools index a2250_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam
+samtools index a2251_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam
+samtools index a2252_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam
+samtools index a2253_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam
+samtools index a2254_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam
+samtools index a2255_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam
+samtools index a2256_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam
+samtools index a2257_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam
+samtools index a2258_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam
+samtools index a2259_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam
+samtools index a2260_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam
+samtools index a2261_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam
+samtools index a2262_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam
+samtools index a2263_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam
+samtools index a2264_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam
+samtools index a2265_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam
+samtools index a2266_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam
+samtools index a2267_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam
+samtools index a2268_Sorted_UMI_1stExp_SC1_bc_IgG.bam
+samtools index a2269_Sorted_UMI_2ndExp_SC1_bc_IgG.bam
+samtools index a2270_Sorted_UMI_3rdExp_SC1_bc_IgG.bam
+samtools index a2271_Sorted_UMI_Med1_SC1_bc_IgG.bam
+samtools index a2272_Sorted_UMI_5hmC_SC1_bc_IgG.bam
+samtools index a2273_Sorted_UMI_1stExp_SC2_bc_IgG.bam
+samtools index a2274_Sorted_UMI_2ndExp_SC2_bc_IgG.bam
+samtools index a2275_Sorted_UMI_3rdExp_SC2_bc_IgG.bam
+samtools index a2276_Sorted_UMI_Med1_SC2_bc_IgG.bam
+samtools index a2277_Sorted_UMI_5hmC_SC2_bc_IgG.bam
+samtools index a2278_Sorted_UMI_1stExp_SC3_bc_IgG.bam
+samtools index a2279_Sorted_UMI_2ndExp_SC3_bc_IgG.bam
+samtools index a2280_Sorted_UMI_3rdExp_SC3_bc_IgG.bam
+samtools index a2281_Sorted_UMI_Med1_SC3_bc_IgG.bam
+samtools index a2282_Sorted_UMI_5hmC_SC3_bc_IgG.bam
+samtools index a2283_Sorted_UMI_1stExp_SC4_bc_IgG.bam
+samtools index a2284_Sorted_UMI_2ndExp_SC4_bc_IgG.bam
+samtools index a2285_Sorted_UMI_3rdExp_SC4_bc_IgG.bam
+samtools index a2286_Sorted_UMI_Med1_SC4_bc_IgG.bam
+samtools index a2287_Sorted_UMI_5hmC_SC4_bc_IgG.bam
+samtools index a2288_Sorted_UMI_1stExp_SC5_bc_IgG.bam
+samtools index a2289_Sorted_UMI_2ndExp_SC5_bc_IgG.bam
+samtools index a2290_Sorted_UMI_3rdExp_SC5_bc_IgG.bam
+samtools index a2291_Sorted_UMI_Med1_SC5_bc_IgG.bam
+samtools index a2292_Sorted_UMI_5hmC_SC5_bc_IgG.bam
+samtools index a2293_Sorted_UMI_1stExp_SC6_bc_IgG.bam
+samtools index a2294_Sorted_UMI_2ndExp_SC6_bc_IgG.bam
+samtools index a2295_Sorted_UMI_3rdExp_SC6_bc_IgG.bam
+samtools index a2296_Sorted_UMI_Med1_SC6_bc_IgG.bam
+samtools index a2297_Sorted_UMI_5hmC_SC6_bc_IgG.bam
+samtools index a2298_Sorted_UMI_1stExp_SC7_bc_IgG.bam
+samtools index a2299_Sorted_UMI_2ndExp_SC7_bc_IgG.bam
+samtools index a2300_Sorted_UMI_3rdExp_SC7_bc_IgG.bam
+samtools index a2301_Sorted_UMI_Med1_SC7_bc_IgG.bam
+samtools index a2302_Sorted_UMI_5hmC_SC7_bc_IgG.bam
+samtools index a2303_Sorted_UMI_1stExp_SC8_bc_IgG.bam
+samtools index a2304_Sorted_UMI_2ndExp_SC8_bc_IgG.bam
+samtools index a2305_Sorted_UMI_3rdExp_SC8_bc_IgG.bam
+samtools index a2306_Sorted_UMI_Med1_SC8_bc_IgG.bam
+samtools index a2307_Sorted_UMI_5hmC_SC8_bc_IgG.bam
+
+# Step13: Amplification duplicates were removed based on UMI and mapping coordinates.
+# The following commands were excuted on NIH high performance computer, Biowulf as parallel jobs.
+umi_tools dedup -I a2100_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam --output-stats=a2400_UMI_1stExp_SC1_bc_H3K27ac -S a2700_Deduplicated_UMI_1stExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2101_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam --output-stats=a2401_UMI_2ndExp_SC1_bc_H3K27ac -S a2701_Deduplicated_UMI_2ndExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2102_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam --output-stats=a2402_UMI_3rdExp_SC1_bc_H3K27ac -S a2702_Deduplicated_UMI_3rdExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2103_Sorted_UMI_Med1_SC1_bc_Med1.bam --output-stats=a2403_UMI_Med1_SC1_bc_Med1 -S a2703_Deduplicated_UMI_Med1_SC1_bc_Med1.bam
+umi_tools dedup -I a2104_Sorted_UMI_5hmC_SC1_bc_5hmC.bam --output-stats=a2404_UMI_5hmC_SC1_bc_5hmC -S a2704_Deduplicated_UMI_5hmC_SC1_bc_5hmC.bam
+umi_tools dedup -I a2105_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam --output-stats=a2405_UMI_1stExp_SC2_bc_H3K27ac -S a2705_Deduplicated_UMI_1stExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2106_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam --output-stats=a2406_UMI_2ndExp_SC2_bc_H3K27ac -S a2706_Deduplicated_UMI_2ndExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2107_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam --output-stats=a2407_UMI_3rdExp_SC2_bc_H3K27ac -S a2707_Deduplicated_UMI_3rdExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2108_Sorted_UMI_Med1_SC2_bc_Med1.bam --output-stats=a2408_UMI_Med1_SC2_bc_Med1 -S a2708_Deduplicated_UMI_Med1_SC2_bc_Med1.bam
+umi_tools dedup -I a2109_Sorted_UMI_5hmC_SC2_bc_5hmC.bam --output-stats=a2409_UMI_5hmC_SC2_bc_5hmC -S a2709_Deduplicated_UMI_5hmC_SC2_bc_5hmC.bam
+umi_tools dedup -I a2110_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam --output-stats=a2410_UMI_1stExp_SC3_bc_H3K27ac -S a2710_Deduplicated_UMI_1stExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2111_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam --output-stats=a2411_UMI_2ndExp_SC3_bc_H3K27ac -S a2711_Deduplicated_UMI_2ndExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2112_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam --output-stats=a2412_UMI_3rdExp_SC3_bc_H3K27ac -S a2712_Deduplicated_UMI_3rdExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2113_Sorted_UMI_Med1_SC3_bc_Med1.bam --output-stats=a2413_UMI_Med1_SC3_bc_Med1 -S a2713_Deduplicated_UMI_Med1_SC3_bc_Med1.bam
+umi_tools dedup -I a2114_Sorted_UMI_5hmC_SC3_bc_5hmC.bam --output-stats=a2414_UMI_5hmC_SC3_bc_5hmC -S a2714_Deduplicated_UMI_5hmC_SC3_bc_5hmC.bam
+umi_tools dedup -I a2115_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam --output-stats=a2415_UMI_1stExp_SC4_bc_H3K27ac -S a2715_Deduplicated_UMI_1stExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2116_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam --output-stats=a2416_UMI_2ndExp_SC4_bc_H3K27ac -S a2716_Deduplicated_UMI_2ndExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2117_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam --output-stats=a2417_UMI_3rdExp_SC4_bc_H3K27ac -S a2717_Deduplicated_UMI_3rdExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2118_Sorted_UMI_Med1_SC4_bc_Med1.bam --output-stats=a2418_UMI_Med1_SC4_bc_Med1 -S a2718_Deduplicated_UMI_Med1_SC4_bc_Med1.bam
+umi_tools dedup -I a2119_Sorted_UMI_5hmC_SC4_bc_5hmC.bam --output-stats=a2419_UMI_5hmC_SC4_bc_5hmC -S a2719_Deduplicated_UMI_5hmC_SC4_bc_5hmC.bam
+umi_tools dedup -I a2120_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam --output-stats=a2420_UMI_1stExp_SC5_bc_H3K27ac -S a2720_Deduplicated_UMI_1stExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2121_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam --output-stats=a2421_UMI_2ndExp_SC5_bc_H3K27ac -S a2721_Deduplicated_UMI_2ndExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2122_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam --output-stats=a2422_UMI_3rdExp_SC5_bc_H3K27ac -S a2722_Deduplicated_UMI_3rdExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2123_Sorted_UMI_Med1_SC5_bc_Med1.bam --output-stats=a2423_UMI_Med1_SC5_bc_Med1 -S a2723_Deduplicated_UMI_Med1_SC5_bc_Med1.bam
+umi_tools dedup -I a2124_Sorted_UMI_5hmC_SC5_bc_5hmC.bam --output-stats=a2424_UMI_5hmC_SC5_bc_5hmC -S a2724_Deduplicated_UMI_5hmC_SC5_bc_5hmC.bam
+umi_tools dedup -I a2125_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam --output-stats=a2425_UMI_1stExp_SC6_bc_H3K27ac -S a2725_Deduplicated_UMI_1stExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2126_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam --output-stats=a2426_UMI_2ndExp_SC6_bc_H3K27ac -S a2726_Deduplicated_UMI_2ndExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2127_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam --output-stats=a2427_UMI_3rdExp_SC6_bc_H3K27ac -S a2727_Deduplicated_UMI_3rdExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2128_Sorted_UMI_Med1_SC6_bc_Med1.bam --output-stats=a2428_UMI_Med1_SC6_bc_Med1 -S a2728_Deduplicated_UMI_Med1_SC6_bc_Med1.bam
+umi_tools dedup -I a2129_Sorted_UMI_5hmC_SC6_bc_5hmC.bam --output-stats=a2429_UMI_5hmC_SC6_bc_5hmC -S a2729_Deduplicated_UMI_5hmC_SC6_bc_5hmC.bam
+umi_tools dedup -I a2130_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam --output-stats=a2430_UMI_1stExp_SC7_bc_H3K27ac -S a2730_Deduplicated_UMI_1stExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2131_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam --output-stats=a2431_UMI_2ndExp_SC7_bc_H3K27ac -S a2731_Deduplicated_UMI_2ndExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2132_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam --output-stats=a2432_UMI_3rdExp_SC7_bc_H3K27ac -S a2732_Deduplicated_UMI_3rdExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2133_Sorted_UMI_Med1_SC7_bc_Med1.bam --output-stats=a2433_UMI_Med1_SC7_bc_Med1 -S a2733_Deduplicated_UMI_Med1_SC7_bc_Med1.bam
+umi_tools dedup -I a2134_Sorted_UMI_5hmC_SC7_bc_5hmC.bam --output-stats=a2434_UMI_5hmC_SC7_bc_5hmC -S a2734_Deduplicated_UMI_5hmC_SC7_bc_5hmC.bam
+umi_tools dedup -I a2135_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam --output-stats=a2435_UMI_1stExp_SC8_bc_H3K27ac -S a2735_Deduplicated_UMI_1stExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2136_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam --output-stats=a2436_UMI_2ndExp_SC8_bc_H3K27ac -S a2736_Deduplicated_UMI_2ndExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2137_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam --output-stats=a2437_UMI_3rdExp_SC8_bc_H3K27ac -S a2737_Deduplicated_UMI_3rdExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2138_Sorted_UMI_Med1_SC8_bc_Med1.bam --output-stats=a2438_UMI_Med1_SC8_bc_Med1 -S a2738_Deduplicated_UMI_Med1_SC8_bc_Med1.bam
+umi_tools dedup -I a2139_Sorted_UMI_5hmC_SC8_bc_5hmC.bam --output-stats=a2439_UMI_5hmC_SC8_bc_5hmC -S a2739_Deduplicated_UMI_5hmC_SC8_bc_5hmC.bam
+umi_tools dedup -I a2140_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam --output-stats=a2440_UMI_1stExp_SC1_bc_H3K27me3 -S a2740_Deduplicated_UMI_1stExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2141_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam --output-stats=a2441_UMI_2ndExp_SC1_bc_H3K27me3 -S a2741_Deduplicated_UMI_2ndExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2142_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam --output-stats=a2442_UMI_3rdExp_SC1_bc_H3K27me3 -S a2742_Deduplicated_UMI_3rdExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2143_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam --output-stats=a2443_UMI_1stExp_SC2_bc_H3K27me3 -S a2743_Deduplicated_UMI_1stExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2144_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam --output-stats=a2444_UMI_2ndExp_SC2_bc_H3K27me3 -S a2744_Deduplicated_UMI_2ndExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2145_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam --output-stats=a2445_UMI_3rdExp_SC2_bc_H3K27me3 -S a2745_Deduplicated_UMI_3rdExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2146_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam --output-stats=a2446_UMI_1stExp_SC3_bc_H3K27me3 -S a2746_Deduplicated_UMI_1stExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2147_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam --output-stats=a2447_UMI_2ndExp_SC3_bc_H3K27me3 -S a2747_Deduplicated_UMI_2ndExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2148_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam --output-stats=a2448_UMI_3rdExp_SC3_bc_H3K27me3 -S a2748_Deduplicated_UMI_3rdExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2149_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam --output-stats=a2449_UMI_1stExp_SC4_bc_H3K27me3 -S a2749_Deduplicated_UMI_1stExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2150_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam --output-stats=a2450_UMI_2ndExp_SC4_bc_H3K27me3 -S a2750_Deduplicated_UMI_2ndExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2151_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam --output-stats=a2451_UMI_3rdExp_SC4_bc_H3K27me3 -S a2751_Deduplicated_UMI_3rdExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2152_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam --output-stats=a2452_UMI_1stExp_SC5_bc_H3K27me3 -S a2752_Deduplicated_UMI_1stExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2153_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam --output-stats=a2453_UMI_2ndExp_SC5_bc_H3K27me3 -S a2753_Deduplicated_UMI_2ndExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2154_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam --output-stats=a2454_UMI_3rdExp_SC5_bc_H3K27me3 -S a2754_Deduplicated_UMI_3rdExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2155_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam --output-stats=a2455_UMI_1stExp_SC6_bc_H3K27me3 -S a2755_Deduplicated_UMI_1stExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2156_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam --output-stats=a2456_UMI_2ndExp_SC6_bc_H3K27me3 -S a2756_Deduplicated_UMI_2ndExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2157_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam --output-stats=a2457_UMI_3rdExp_SC6_bc_H3K27me3 -S a2757_Deduplicated_UMI_3rdExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2158_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam --output-stats=a2458_UMI_1stExp_SC7_bc_H3K27me3 -S a2758_Deduplicated_UMI_1stExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2159_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam --output-stats=a2459_UMI_2ndExp_SC7_bc_H3K27me3 -S a2759_Deduplicated_UMI_2ndExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2160_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam --output-stats=a2460_UMI_3rdExp_SC7_bc_H3K27me3 -S a2760_Deduplicated_UMI_3rdExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2161_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam --output-stats=a2461_UMI_1stExp_SC8_bc_H3K27me3 -S a2761_Deduplicated_UMI_1stExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2162_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam --output-stats=a2462_UMI_2ndExp_SC8_bc_H3K27me3 -S a2762_Deduplicated_UMI_2ndExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2163_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam --output-stats=a2463_UMI_3rdExp_SC8_bc_H3K27me3 -S a2763_Deduplicated_UMI_3rdExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2164_Sorted_UMI_1stExp_SC1_bc_IgG.bam --output-stats=a2464_UMI_1stExp_SC1_bc_IgG -S a2764_Deduplicated_UMI_1stExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2165_Sorted_UMI_2ndExp_SC1_bc_IgG.bam --output-stats=a2465_UMI_2ndExp_SC1_bc_IgG -S a2765_Deduplicated_UMI_2ndExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2166_Sorted_UMI_3rdExp_SC1_bc_IgG.bam --output-stats=a2466_UMI_3rdExp_SC1_bc_IgG -S a2766_Deduplicated_UMI_3rdExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2167_Sorted_UMI_Med1_SC1_bc_IgG.bam --output-stats=a2467_UMI_Med1_SC1_bc_IgG -S a2767_Deduplicated_UMI_Med1_SC1_bc_IgG.bam
+umi_tools dedup -I a2168_Sorted_UMI_5hmC_SC1_bc_IgG.bam --output-stats=a2468_UMI_5hmC_SC1_bc_IgG -S a2768_Deduplicated_UMI_5hmC_SC1_bc_IgG.bam
+umi_tools dedup -I a2169_Sorted_UMI_1stExp_SC2_bc_IgG.bam --output-stats=a2469_UMI_1stExp_SC2_bc_IgG -S a2769_Deduplicated_UMI_1stExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2170_Sorted_UMI_2ndExp_SC2_bc_IgG.bam --output-stats=a2470_UMI_2ndExp_SC2_bc_IgG -S a2770_Deduplicated_UMI_2ndExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2171_Sorted_UMI_3rdExp_SC2_bc_IgG.bam --output-stats=a2471_UMI_3rdExp_SC2_bc_IgG -S a2771_Deduplicated_UMI_3rdExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2172_Sorted_UMI_Med1_SC2_bc_IgG.bam --output-stats=a2472_UMI_Med1_SC2_bc_IgG -S a2772_Deduplicated_UMI_Med1_SC2_bc_IgG.bam
+umi_tools dedup -I a2173_Sorted_UMI_5hmC_SC2_bc_IgG.bam --output-stats=a2473_UMI_5hmC_SC2_bc_IgG -S a2773_Deduplicated_UMI_5hmC_SC2_bc_IgG.bam
+umi_tools dedup -I a2174_Sorted_UMI_1stExp_SC3_bc_IgG.bam --output-stats=a2474_UMI_1stExp_SC3_bc_IgG -S a2774_Deduplicated_UMI_1stExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2175_Sorted_UMI_2ndExp_SC3_bc_IgG.bam --output-stats=a2475_UMI_2ndExp_SC3_bc_IgG -S a2775_Deduplicated_UMI_2ndExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2176_Sorted_UMI_3rdExp_SC3_bc_IgG.bam --output-stats=a2476_UMI_3rdExp_SC3_bc_IgG -S a2776_Deduplicated_UMI_3rdExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2177_Sorted_UMI_Med1_SC3_bc_IgG.bam --output-stats=a2477_UMI_Med1_SC3_bc_IgG -S a2777_Deduplicated_UMI_Med1_SC3_bc_IgG.bam
+umi_tools dedup -I a2178_Sorted_UMI_5hmC_SC3_bc_IgG.bam --output-stats=a2478_UMI_5hmC_SC3_bc_IgG -S a2778_Deduplicated_UMI_5hmC_SC3_bc_IgG.bam
+umi_tools dedup -I a2179_Sorted_UMI_1stExp_SC4_bc_IgG.bam --output-stats=a2479_UMI_1stExp_SC4_bc_IgG -S a2779_Deduplicated_UMI_1stExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2180_Sorted_UMI_2ndExp_SC4_bc_IgG.bam --output-stats=a2480_UMI_2ndExp_SC4_bc_IgG -S a2780_Deduplicated_UMI_2ndExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2181_Sorted_UMI_3rdExp_SC4_bc_IgG.bam --output-stats=a2481_UMI_3rdExp_SC4_bc_IgG -S a2781_Deduplicated_UMI_3rdExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2182_Sorted_UMI_Med1_SC4_bc_IgG.bam --output-stats=a2482_UMI_Med1_SC4_bc_IgG -S a2782_Deduplicated_UMI_Med1_SC4_bc_IgG.bam
+umi_tools dedup -I a2183_Sorted_UMI_5hmC_SC4_bc_IgG.bam --output-stats=a2483_UMI_5hmC_SC4_bc_IgG -S a2783_Deduplicated_UMI_5hmC_SC4_bc_IgG.bam
+umi_tools dedup -I a2184_Sorted_UMI_1stExp_SC5_bc_IgG.bam --output-stats=a2484_UMI_1stExp_SC5_bc_IgG -S a2784_Deduplicated_UMI_1stExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2185_Sorted_UMI_2ndExp_SC5_bc_IgG.bam --output-stats=a2485_UMI_2ndExp_SC5_bc_IgG -S a2785_Deduplicated_UMI_2ndExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2186_Sorted_UMI_3rdExp_SC5_bc_IgG.bam --output-stats=a2486_UMI_3rdExp_SC5_bc_IgG -S a2786_Deduplicated_UMI_3rdExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2187_Sorted_UMI_Med1_SC5_bc_IgG.bam --output-stats=a2487_UMI_Med1_SC5_bc_IgG -S a2787_Deduplicated_UMI_Med1_SC5_bc_IgG.bam
+umi_tools dedup -I a2188_Sorted_UMI_5hmC_SC5_bc_IgG.bam --output-stats=a2488_UMI_5hmC_SC5_bc_IgG -S a2788_Deduplicated_UMI_5hmC_SC5_bc_IgG.bam
+umi_tools dedup -I a2189_Sorted_UMI_1stExp_SC6_bc_IgG.bam --output-stats=a2489_UMI_1stExp_SC6_bc_IgG -S a2789_Deduplicated_UMI_1stExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2190_Sorted_UMI_2ndExp_SC6_bc_IgG.bam --output-stats=a2490_UMI_2ndExp_SC6_bc_IgG -S a2790_Deduplicated_UMI_2ndExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2191_Sorted_UMI_3rdExp_SC6_bc_IgG.bam --output-stats=a2491_UMI_3rdExp_SC6_bc_IgG -S a2791_Deduplicated_UMI_3rdExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2192_Sorted_UMI_Med1_SC6_bc_IgG.bam --output-stats=a2492_UMI_Med1_SC6_bc_IgG -S a2792_Deduplicated_UMI_Med1_SC6_bc_IgG.bam
+umi_tools dedup -I a2193_Sorted_UMI_5hmC_SC6_bc_IgG.bam --output-stats=a2493_UMI_5hmC_SC6_bc_IgG -S a2793_Deduplicated_UMI_5hmC_SC6_bc_IgG.bam
+umi_tools dedup -I a2194_Sorted_UMI_1stExp_SC7_bc_IgG.bam --output-stats=a2494_UMI_1stExp_SC7_bc_IgG -S a2794_Deduplicated_UMI_1stExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2195_Sorted_UMI_2ndExp_SC7_bc_IgG.bam --output-stats=a2495_UMI_2ndExp_SC7_bc_IgG -S a2795_Deduplicated_UMI_2ndExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2196_Sorted_UMI_3rdExp_SC7_bc_IgG.bam --output-stats=a2496_UMI_3rdExp_SC7_bc_IgG -S a2796_Deduplicated_UMI_3rdExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2197_Sorted_UMI_Med1_SC7_bc_IgG.bam --output-stats=a2497_UMI_Med1_SC7_bc_IgG -S a2797_Deduplicated_UMI_Med1_SC7_bc_IgG.bam
+umi_tools dedup -I a2198_Sorted_UMI_5hmC_SC7_bc_IgG.bam --output-stats=a2498_UMI_5hmC_SC7_bc_IgG -S a2798_Deduplicated_UMI_5hmC_SC7_bc_IgG.bam
+umi_tools dedup -I a2199_Sorted_UMI_1stExp_SC8_bc_IgG.bam --output-stats=a2499_UMI_1stExp_SC8_bc_IgG -S a2799_Deduplicated_UMI_1stExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2200_Sorted_UMI_2ndExp_SC8_bc_IgG.bam --output-stats=a2500_UMI_2ndExp_SC8_bc_IgG -S a2800_Deduplicated_UMI_2ndExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2201_Sorted_UMI_3rdExp_SC8_bc_IgG.bam --output-stats=a2501_UMI_3rdExp_SC8_bc_IgG -S a2801_Deduplicated_UMI_3rdExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2202_Sorted_UMI_Med1_SC8_bc_IgG.bam --output-stats=a2502_UMI_Med1_SC8_bc_IgG -S a2802_Deduplicated_UMI_Med1_SC8_bc_IgG.bam
+umi_tools dedup -I a2203_Sorted_UMI_5hmC_SC8_bc_IgG.bam --output-stats=a2503_UMI_5hmC_SC8_bc_IgG -S a2803_Deduplicated_UMI_5hmC_SC8_bc_IgG.bam
+umi_tools dedup -I a2204_Sorted_UMI_1stExp_SC1_bc_H3K27ac.bam --output-stats=a2504_UMI_1stExp_SC1_bc_H3K27ac -S a2804_Deduplicated_UMI_1stExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2205_Sorted_UMI_2ndExp_SC1_bc_H3K27ac.bam --output-stats=a2505_UMI_2ndExp_SC1_bc_H3K27ac -S a2805_Deduplicated_UMI_2ndExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2206_Sorted_UMI_3rdExp_SC1_bc_H3K27ac.bam --output-stats=a2506_UMI_3rdExp_SC1_bc_H3K27ac -S a2806_Deduplicated_UMI_3rdExp_SC1_bc_H3K27ac.bam
+umi_tools dedup -I a2207_Sorted_UMI_Med1_SC1_bc_Med1.bam --output-stats=a2507_UMI_Med1_SC1_bc_Med1 -S a2807_Deduplicated_UMI_Med1_SC1_bc_Med1.bam
+umi_tools dedup -I a2208_Sorted_UMI_5hmC_SC1_bc_5hmC.bam --output-stats=a2508_UMI_5hmC_SC1_bc_5hmC -S a2808_Deduplicated_UMI_5hmC_SC1_bc_5hmC.bam
+umi_tools dedup -I a2209_Sorted_UMI_1stExp_SC2_bc_H3K27ac.bam --output-stats=a2509_UMI_1stExp_SC2_bc_H3K27ac -S a2809_Deduplicated_UMI_1stExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2210_Sorted_UMI_2ndExp_SC2_bc_H3K27ac.bam --output-stats=a2510_UMI_2ndExp_SC2_bc_H3K27ac -S a2810_Deduplicated_UMI_2ndExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2211_Sorted_UMI_3rdExp_SC2_bc_H3K27ac.bam --output-stats=a2511_UMI_3rdExp_SC2_bc_H3K27ac -S a2811_Deduplicated_UMI_3rdExp_SC2_bc_H3K27ac.bam
+umi_tools dedup -I a2212_Sorted_UMI_Med1_SC2_bc_Med1.bam --output-stats=a2512_UMI_Med1_SC2_bc_Med1 -S a2812_Deduplicated_UMI_Med1_SC2_bc_Med1.bam
+umi_tools dedup -I a2213_Sorted_UMI_5hmC_SC2_bc_5hmC.bam --output-stats=a2513_UMI_5hmC_SC2_bc_5hmC -S a2813_Deduplicated_UMI_5hmC_SC2_bc_5hmC.bam
+umi_tools dedup -I a2214_Sorted_UMI_1stExp_SC3_bc_H3K27ac.bam --output-stats=a2514_UMI_1stExp_SC3_bc_H3K27ac -S a2814_Deduplicated_UMI_1stExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2215_Sorted_UMI_2ndExp_SC3_bc_H3K27ac.bam --output-stats=a2515_UMI_2ndExp_SC3_bc_H3K27ac -S a2815_Deduplicated_UMI_2ndExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2216_Sorted_UMI_3rdExp_SC3_bc_H3K27ac.bam --output-stats=a2516_UMI_3rdExp_SC3_bc_H3K27ac -S a2816_Deduplicated_UMI_3rdExp_SC3_bc_H3K27ac.bam
+umi_tools dedup -I a2217_Sorted_UMI_Med1_SC3_bc_Med1.bam --output-stats=a2517_UMI_Med1_SC3_bc_Med1 -S a2817_Deduplicated_UMI_Med1_SC3_bc_Med1.bam
+umi_tools dedup -I a2218_Sorted_UMI_5hmC_SC3_bc_5hmC.bam --output-stats=a2518_UMI_5hmC_SC3_bc_5hmC -S a2818_Deduplicated_UMI_5hmC_SC3_bc_5hmC.bam
+umi_tools dedup -I a2219_Sorted_UMI_1stExp_SC4_bc_H3K27ac.bam --output-stats=a2519_UMI_1stExp_SC4_bc_H3K27ac -S a2819_Deduplicated_UMI_1stExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2220_Sorted_UMI_2ndExp_SC4_bc_H3K27ac.bam --output-stats=a2520_UMI_2ndExp_SC4_bc_H3K27ac -S a2820_Deduplicated_UMI_2ndExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2221_Sorted_UMI_3rdExp_SC4_bc_H3K27ac.bam --output-stats=a2521_UMI_3rdExp_SC4_bc_H3K27ac -S a2821_Deduplicated_UMI_3rdExp_SC4_bc_H3K27ac.bam
+umi_tools dedup -I a2222_Sorted_UMI_Med1_SC4_bc_Med1.bam --output-stats=a2522_UMI_Med1_SC4_bc_Med1 -S a2822_Deduplicated_UMI_Med1_SC4_bc_Med1.bam
+umi_tools dedup -I a2223_Sorted_UMI_5hmC_SC4_bc_5hmC.bam --output-stats=a2523_UMI_5hmC_SC4_bc_5hmC -S a2823_Deduplicated_UMI_5hmC_SC4_bc_5hmC.bam
+umi_tools dedup -I a2224_Sorted_UMI_1stExp_SC5_bc_H3K27ac.bam --output-stats=a2524_UMI_1stExp_SC5_bc_H3K27ac -S a2824_Deduplicated_UMI_1stExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2225_Sorted_UMI_2ndExp_SC5_bc_H3K27ac.bam --output-stats=a2525_UMI_2ndExp_SC5_bc_H3K27ac -S a2825_Deduplicated_UMI_2ndExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2226_Sorted_UMI_3rdExp_SC5_bc_H3K27ac.bam --output-stats=a2526_UMI_3rdExp_SC5_bc_H3K27ac -S a2826_Deduplicated_UMI_3rdExp_SC5_bc_H3K27ac.bam
+umi_tools dedup -I a2227_Sorted_UMI_Med1_SC5_bc_Med1.bam --output-stats=a2527_UMI_Med1_SC5_bc_Med1 -S a2827_Deduplicated_UMI_Med1_SC5_bc_Med1.bam
+umi_tools dedup -I a2228_Sorted_UMI_5hmC_SC5_bc_5hmC.bam --output-stats=a2528_UMI_5hmC_SC5_bc_5hmC -S a2828_Deduplicated_UMI_5hmC_SC5_bc_5hmC.bam
+umi_tools dedup -I a2229_Sorted_UMI_1stExp_SC6_bc_H3K27ac.bam --output-stats=a2529_UMI_1stExp_SC6_bc_H3K27ac -S a2829_Deduplicated_UMI_1stExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2230_Sorted_UMI_2ndExp_SC6_bc_H3K27ac.bam --output-stats=a2530_UMI_2ndExp_SC6_bc_H3K27ac -S a2830_Deduplicated_UMI_2ndExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2231_Sorted_UMI_3rdExp_SC6_bc_H3K27ac.bam --output-stats=a2531_UMI_3rdExp_SC6_bc_H3K27ac -S a2831_Deduplicated_UMI_3rdExp_SC6_bc_H3K27ac.bam
+umi_tools dedup -I a2232_Sorted_UMI_Med1_SC6_bc_Med1.bam --output-stats=a2532_UMI_Med1_SC6_bc_Med1 -S a2832_Deduplicated_UMI_Med1_SC6_bc_Med1.bam
+umi_tools dedup -I a2233_Sorted_UMI_5hmC_SC6_bc_5hmC.bam --output-stats=a2533_UMI_5hmC_SC6_bc_5hmC -S a2833_Deduplicated_UMI_5hmC_SC6_bc_5hmC.bam
+umi_tools dedup -I a2234_Sorted_UMI_1stExp_SC7_bc_H3K27ac.bam --output-stats=a2534_UMI_1stExp_SC7_bc_H3K27ac -S a2834_Deduplicated_UMI_1stExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2235_Sorted_UMI_2ndExp_SC7_bc_H3K27ac.bam --output-stats=a2535_UMI_2ndExp_SC7_bc_H3K27ac -S a2835_Deduplicated_UMI_2ndExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2236_Sorted_UMI_3rdExp_SC7_bc_H3K27ac.bam --output-stats=a2536_UMI_3rdExp_SC7_bc_H3K27ac -S a2836_Deduplicated_UMI_3rdExp_SC7_bc_H3K27ac.bam
+umi_tools dedup -I a2237_Sorted_UMI_Med1_SC7_bc_Med1.bam --output-stats=a2537_UMI_Med1_SC7_bc_Med1 -S a2837_Deduplicated_UMI_Med1_SC7_bc_Med1.bam
+umi_tools dedup -I a2238_Sorted_UMI_5hmC_SC7_bc_5hmC.bam --output-stats=a2538_UMI_5hmC_SC7_bc_5hmC -S a2838_Deduplicated_UMI_5hmC_SC7_bc_5hmC.bam
+umi_tools dedup -I a2239_Sorted_UMI_1stExp_SC8_bc_H3K27ac.bam --output-stats=a2539_UMI_1stExp_SC8_bc_H3K27ac -S a2839_Deduplicated_UMI_1stExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2240_Sorted_UMI_2ndExp_SC8_bc_H3K27ac.bam --output-stats=a2540_UMI_2ndExp_SC8_bc_H3K27ac -S a2840_Deduplicated_UMI_2ndExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2241_Sorted_UMI_3rdExp_SC8_bc_H3K27ac.bam --output-stats=a2541_UMI_3rdExp_SC8_bc_H3K27ac -S a2841_Deduplicated_UMI_3rdExp_SC8_bc_H3K27ac.bam
+umi_tools dedup -I a2242_Sorted_UMI_Med1_SC8_bc_Med1.bam --output-stats=a2542_UMI_Med1_SC8_bc_Med1 -S a2842_Deduplicated_UMI_Med1_SC8_bc_Med1.bam
+umi_tools dedup -I a2243_Sorted_UMI_5hmC_SC8_bc_5hmC.bam --output-stats=a2543_UMI_5hmC_SC8_bc_5hmC -S a2843_Deduplicated_UMI_5hmC_SC8_bc_5hmC.bam
+umi_tools dedup -I a2244_Sorted_UMI_1stExp_SC1_bc_H3K27me3.bam --output-stats=a2544_UMI_1stExp_SC1_bc_H3K27me3 -S a2844_Deduplicated_UMI_1stExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2245_Sorted_UMI_2ndExp_SC1_bc_H3K27me3.bam --output-stats=a2545_UMI_2ndExp_SC1_bc_H3K27me3 -S a2845_Deduplicated_UMI_2ndExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2246_Sorted_UMI_3rdExp_SC1_bc_H3K27me3.bam --output-stats=a2546_UMI_3rdExp_SC1_bc_H3K27me3 -S a2846_Deduplicated_UMI_3rdExp_SC1_bc_H3K27me3.bam
+umi_tools dedup -I a2247_Sorted_UMI_1stExp_SC2_bc_H3K27me3.bam --output-stats=a2547_UMI_1stExp_SC2_bc_H3K27me3 -S a2847_Deduplicated_UMI_1stExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2248_Sorted_UMI_2ndExp_SC2_bc_H3K27me3.bam --output-stats=a2548_UMI_2ndExp_SC2_bc_H3K27me3 -S a2848_Deduplicated_UMI_2ndExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2249_Sorted_UMI_3rdExp_SC2_bc_H3K27me3.bam --output-stats=a2549_UMI_3rdExp_SC2_bc_H3K27me3 -S a2849_Deduplicated_UMI_3rdExp_SC2_bc_H3K27me3.bam
+umi_tools dedup -I a2250_Sorted_UMI_1stExp_SC3_bc_H3K27me3.bam --output-stats=a2550_UMI_1stExp_SC3_bc_H3K27me3 -S a2850_Deduplicated_UMI_1stExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2251_Sorted_UMI_2ndExp_SC3_bc_H3K27me3.bam --output-stats=a2551_UMI_2ndExp_SC3_bc_H3K27me3 -S a2851_Deduplicated_UMI_2ndExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2252_Sorted_UMI_3rdExp_SC3_bc_H3K27me3.bam --output-stats=a2552_UMI_3rdExp_SC3_bc_H3K27me3 -S a2852_Deduplicated_UMI_3rdExp_SC3_bc_H3K27me3.bam
+umi_tools dedup -I a2253_Sorted_UMI_1stExp_SC4_bc_H3K27me3.bam --output-stats=a2553_UMI_1stExp_SC4_bc_H3K27me3 -S a2853_Deduplicated_UMI_1stExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2254_Sorted_UMI_2ndExp_SC4_bc_H3K27me3.bam --output-stats=a2554_UMI_2ndExp_SC4_bc_H3K27me3 -S a2854_Deduplicated_UMI_2ndExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2255_Sorted_UMI_3rdExp_SC4_bc_H3K27me3.bam --output-stats=a2555_UMI_3rdExp_SC4_bc_H3K27me3 -S a2855_Deduplicated_UMI_3rdExp_SC4_bc_H3K27me3.bam
+umi_tools dedup -I a2256_Sorted_UMI_1stExp_SC5_bc_H3K27me3.bam --output-stats=a2556_UMI_1stExp_SC5_bc_H3K27me3 -S a2856_Deduplicated_UMI_1stExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2257_Sorted_UMI_2ndExp_SC5_bc_H3K27me3.bam --output-stats=a2557_UMI_2ndExp_SC5_bc_H3K27me3 -S a2857_Deduplicated_UMI_2ndExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2258_Sorted_UMI_3rdExp_SC5_bc_H3K27me3.bam --output-stats=a2558_UMI_3rdExp_SC5_bc_H3K27me3 -S a2858_Deduplicated_UMI_3rdExp_SC5_bc_H3K27me3.bam
+umi_tools dedup -I a2259_Sorted_UMI_1stExp_SC6_bc_H3K27me3.bam --output-stats=a2559_UMI_1stExp_SC6_bc_H3K27me3 -S a2859_Deduplicated_UMI_1stExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2260_Sorted_UMI_2ndExp_SC6_bc_H3K27me3.bam --output-stats=a2560_UMI_2ndExp_SC6_bc_H3K27me3 -S a2860_Deduplicated_UMI_2ndExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2261_Sorted_UMI_3rdExp_SC6_bc_H3K27me3.bam --output-stats=a2561_UMI_3rdExp_SC6_bc_H3K27me3 -S a2861_Deduplicated_UMI_3rdExp_SC6_bc_H3K27me3.bam
+umi_tools dedup -I a2262_Sorted_UMI_1stExp_SC7_bc_H3K27me3.bam --output-stats=a2562_UMI_1stExp_SC7_bc_H3K27me3 -S a2862_Deduplicated_UMI_1stExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2263_Sorted_UMI_2ndExp_SC7_bc_H3K27me3.bam --output-stats=a2563_UMI_2ndExp_SC7_bc_H3K27me3 -S a2863_Deduplicated_UMI_2ndExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2264_Sorted_UMI_3rdExp_SC7_bc_H3K27me3.bam --output-stats=a2564_UMI_3rdExp_SC7_bc_H3K27me3 -S a2864_Deduplicated_UMI_3rdExp_SC7_bc_H3K27me3.bam
+umi_tools dedup -I a2265_Sorted_UMI_1stExp_SC8_bc_H3K27me3.bam --output-stats=a2565_UMI_1stExp_SC8_bc_H3K27me3 -S a2865_Deduplicated_UMI_1stExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2266_Sorted_UMI_2ndExp_SC8_bc_H3K27me3.bam --output-stats=a2566_UMI_2ndExp_SC8_bc_H3K27me3 -S a2866_Deduplicated_UMI_2ndExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2267_Sorted_UMI_3rdExp_SC8_bc_H3K27me3.bam --output-stats=a2567_UMI_3rdExp_SC8_bc_H3K27me3 -S a2867_Deduplicated_UMI_3rdExp_SC8_bc_H3K27me3.bam
+umi_tools dedup -I a2268_Sorted_UMI_1stExp_SC1_bc_IgG.bam --output-stats=a2568_UMI_1stExp_SC1_bc_IgG -S a2868_Deduplicated_UMI_1stExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2269_Sorted_UMI_2ndExp_SC1_bc_IgG.bam --output-stats=a2569_UMI_2ndExp_SC1_bc_IgG -S a2869_Deduplicated_UMI_2ndExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2270_Sorted_UMI_3rdExp_SC1_bc_IgG.bam --output-stats=a2570_UMI_3rdExp_SC1_bc_IgG -S a2870_Deduplicated_UMI_3rdExp_SC1_bc_IgG.bam
+umi_tools dedup -I a2271_Sorted_UMI_Med1_SC1_bc_IgG.bam --output-stats=a2571_UMI_Med1_SC1_bc_IgG -S a2871_Deduplicated_UMI_Med1_SC1_bc_IgG.bam
+umi_tools dedup -I a2272_Sorted_UMI_5hmC_SC1_bc_IgG.bam --output-stats=a2572_UMI_5hmC_SC1_bc_IgG -S a2872_Deduplicated_UMI_5hmC_SC1_bc_IgG.bam
+umi_tools dedup -I a2273_Sorted_UMI_1stExp_SC2_bc_IgG.bam --output-stats=a2573_UMI_1stExp_SC2_bc_IgG -S a2873_Deduplicated_UMI_1stExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2274_Sorted_UMI_2ndExp_SC2_bc_IgG.bam --output-stats=a2574_UMI_2ndExp_SC2_bc_IgG -S a2874_Deduplicated_UMI_2ndExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2275_Sorted_UMI_3rdExp_SC2_bc_IgG.bam --output-stats=a2575_UMI_3rdExp_SC2_bc_IgG -S a2875_Deduplicated_UMI_3rdExp_SC2_bc_IgG.bam
+umi_tools dedup -I a2276_Sorted_UMI_Med1_SC2_bc_IgG.bam --output-stats=a2576_UMI_Med1_SC2_bc_IgG -S a2876_Deduplicated_UMI_Med1_SC2_bc_IgG.bam
+umi_tools dedup -I a2277_Sorted_UMI_5hmC_SC2_bc_IgG.bam --output-stats=a2577_UMI_5hmC_SC2_bc_IgG -S a2877_Deduplicated_UMI_5hmC_SC2_bc_IgG.bam
+umi_tools dedup -I a2278_Sorted_UMI_1stExp_SC3_bc_IgG.bam --output-stats=a2578_UMI_1stExp_SC3_bc_IgG -S a2878_Deduplicated_UMI_1stExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2279_Sorted_UMI_2ndExp_SC3_bc_IgG.bam --output-stats=a2579_UMI_2ndExp_SC3_bc_IgG -S a2879_Deduplicated_UMI_2ndExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2280_Sorted_UMI_3rdExp_SC3_bc_IgG.bam --output-stats=a2580_UMI_3rdExp_SC3_bc_IgG -S a2880_Deduplicated_UMI_3rdExp_SC3_bc_IgG.bam
+umi_tools dedup -I a2281_Sorted_UMI_Med1_SC3_bc_IgG.bam --output-stats=a2581_UMI_Med1_SC3_bc_IgG -S a2881_Deduplicated_UMI_Med1_SC3_bc_IgG.bam
+umi_tools dedup -I a2282_Sorted_UMI_5hmC_SC3_bc_IgG.bam --output-stats=a2582_UMI_5hmC_SC3_bc_IgG -S a2882_Deduplicated_UMI_5hmC_SC3_bc_IgG.bam
+umi_tools dedup -I a2283_Sorted_UMI_1stExp_SC4_bc_IgG.bam --output-stats=a2583_UMI_1stExp_SC4_bc_IgG -S a2883_Deduplicated_UMI_1stExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2284_Sorted_UMI_2ndExp_SC4_bc_IgG.bam --output-stats=a2584_UMI_2ndExp_SC4_bc_IgG -S a2884_Deduplicated_UMI_2ndExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2285_Sorted_UMI_3rdExp_SC4_bc_IgG.bam --output-stats=a2585_UMI_3rdExp_SC4_bc_IgG -S a2885_Deduplicated_UMI_3rdExp_SC4_bc_IgG.bam
+umi_tools dedup -I a2286_Sorted_UMI_Med1_SC4_bc_IgG.bam --output-stats=a2586_UMI_Med1_SC4_bc_IgG -S a2886_Deduplicated_UMI_Med1_SC4_bc_IgG.bam
+umi_tools dedup -I a2287_Sorted_UMI_5hmC_SC4_bc_IgG.bam --output-stats=a2587_UMI_5hmC_SC4_bc_IgG -S a2887_Deduplicated_UMI_5hmC_SC4_bc_IgG.bam
+umi_tools dedup -I a2288_Sorted_UMI_1stExp_SC5_bc_IgG.bam --output-stats=a2588_UMI_1stExp_SC5_bc_IgG -S a2888_Deduplicated_UMI_1stExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2289_Sorted_UMI_2ndExp_SC5_bc_IgG.bam --output-stats=a2589_UMI_2ndExp_SC5_bc_IgG -S a2889_Deduplicated_UMI_2ndExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2290_Sorted_UMI_3rdExp_SC5_bc_IgG.bam --output-stats=a2590_UMI_3rdExp_SC5_bc_IgG -S a2890_Deduplicated_UMI_3rdExp_SC5_bc_IgG.bam
+umi_tools dedup -I a2291_Sorted_UMI_Med1_SC5_bc_IgG.bam --output-stats=a2591_UMI_Med1_SC5_bc_IgG -S a2891_Deduplicated_UMI_Med1_SC5_bc_IgG.bam
+umi_tools dedup -I a2292_Sorted_UMI_5hmC_SC5_bc_IgG.bam --output-stats=a2592_UMI_5hmC_SC5_bc_IgG -S a2892_Deduplicated_UMI_5hmC_SC5_bc_IgG.bam
+umi_tools dedup -I a2293_Sorted_UMI_1stExp_SC6_bc_IgG.bam --output-stats=a2593_UMI_1stExp_SC6_bc_IgG -S a2893_Deduplicated_UMI_1stExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2294_Sorted_UMI_2ndExp_SC6_bc_IgG.bam --output-stats=a2594_UMI_2ndExp_SC6_bc_IgG -S a2894_Deduplicated_UMI_2ndExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2295_Sorted_UMI_3rdExp_SC6_bc_IgG.bam --output-stats=a2595_UMI_3rdExp_SC6_bc_IgG -S a2895_Deduplicated_UMI_3rdExp_SC6_bc_IgG.bam
+umi_tools dedup -I a2296_Sorted_UMI_Med1_SC6_bc_IgG.bam --output-stats=a2596_UMI_Med1_SC6_bc_IgG -S a2896_Deduplicated_UMI_Med1_SC6_bc_IgG.bam
+umi_tools dedup -I a2297_Sorted_UMI_5hmC_SC6_bc_IgG.bam --output-stats=a2597_UMI_5hmC_SC6_bc_IgG -S a2897_Deduplicated_UMI_5hmC_SC6_bc_IgG.bam
+umi_tools dedup -I a2298_Sorted_UMI_1stExp_SC7_bc_IgG.bam --output-stats=a2598_UMI_1stExp_SC7_bc_IgG -S a2898_Deduplicated_UMI_1stExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2299_Sorted_UMI_2ndExp_SC7_bc_IgG.bam --output-stats=a2599_UMI_2ndExp_SC7_bc_IgG -S a2899_Deduplicated_UMI_2ndExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2300_Sorted_UMI_3rdExp_SC7_bc_IgG.bam --output-stats=a2600_UMI_3rdExp_SC7_bc_IgG -S a2900_Deduplicated_UMI_3rdExp_SC7_bc_IgG.bam
+umi_tools dedup -I a2301_Sorted_UMI_Med1_SC7_bc_IgG.bam --output-stats=a2601_UMI_Med1_SC7_bc_IgG -S a2901_Deduplicated_UMI_Med1_SC7_bc_IgG.bam
+umi_tools dedup -I a2302_Sorted_UMI_5hmC_SC7_bc_IgG.bam --output-stats=a2602_UMI_5hmC_SC7_bc_IgG -S a2902_Deduplicated_UMI_5hmC_SC7_bc_IgG.bam
+umi_tools dedup -I a2303_Sorted_UMI_1stExp_SC8_bc_IgG.bam --output-stats=a2603_UMI_1stExp_SC8_bc_IgG -S a2903_Deduplicated_UMI_1stExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2304_Sorted_UMI_2ndExp_SC8_bc_IgG.bam --output-stats=a2604_UMI_2ndExp_SC8_bc_IgG -S a2904_Deduplicated_UMI_2ndExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2305_Sorted_UMI_3rdExp_SC8_bc_IgG.bam --output-stats=a2605_UMI_3rdExp_SC8_bc_IgG -S a2905_Deduplicated_UMI_3rdExp_SC8_bc_IgG.bam
+umi_tools dedup -I a2306_Sorted_UMI_Med1_SC8_bc_IgG.bam --output-stats=a2606_UMI_Med1_SC8_bc_IgG -S a2906_Deduplicated_UMI_Med1_SC8_bc_IgG.bam
+umi_tools dedup -I a2307_Sorted_UMI_5hmC_SC8_bc_IgG.bam --output-stats=a2607_UMI_5hmC_SC8_bc_IgG -S a2907_Deduplicated_UMI_5hmC_SC8_bc_IgG.bam
+
+
