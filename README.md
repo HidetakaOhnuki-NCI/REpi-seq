@@ -1,4 +1,4 @@
-# RscEpi-seq
+# A reusable signle cell for epigenomic analysis (REpi-seq)
 
 We provide all codes used in the manuscript of "RscEpi-seq".
 Most of data analyses were perfomed on NIH High Performace Computer (HPC), Biowulf.
