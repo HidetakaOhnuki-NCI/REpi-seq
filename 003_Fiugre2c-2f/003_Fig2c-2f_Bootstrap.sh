@@ -27,7 +27,7 @@ samtools merge a4026_uniqueR_Rep1-3_SC6_IgG.bam a2789_Deduplicated_UMI_1stExp_SC
 samtools merge a4027_uniqueR_Rep1-3_SC7_IgG.bam a2794_Deduplicated_UMI_1stExp_SC7_bc_IgG.bam a2795_Deduplicated_UMI_2ndExp_SC7_bc_IgG.bam a2796_Deduplicated_UMI_3rdExp_SC7_bc_IgG.bam a2898_Deduplicated_UMI_1stExp_SC7_bc_IgG.bam a2899_Deduplicated_UMI_2ndExp_SC7_bc_IgG.bam a2900_Deduplicated_UMI_3rdExp_SC7_bc_IgG.bam
 samtools merge a4028_uniqueR_Rep1-3_SC8_IgG.bam a2799_Deduplicated_UMI_1stExp_SC8_bc_IgG.bam a2800_Deduplicated_UMI_2ndExp_SC8_bc_IgG.bam a2801_Deduplicated_UMI_3rdExp_SC8_bc_IgG.bam a2903_Deduplicated_UMI_1stExp_SC8_bc_IgG.bam a2904_Deduplicated_UMI_2ndExp_SC8_bc_IgG.bam a2905_Deduplicated_UMI_3rdExp_SC8_bc_IgG.bam
 
-# Step2: Convert the combined BAM files to BED files.
+# Step2: Convert the combined BAM file to a BED file.
 module load bedtools
 bedtools bamtobed -i a4001_uniqueR_Rep1-3_SC1_H3K27ac.bam >a4101_uniqueR_Rep1-3_SC1_H3K27ac.bed
 bedtools bamtobed -i a4002_uniqueR_Rep1-3_SC2_H3K27ac.bam >a4102_uniqueR_Rep1-3_SC2_H3K27ac.bed
@@ -80,7 +80,7 @@ bedtools shuffle -i a4126_uniqueR_Rep1-3_SC6_IgG.bed -g GRCh38.genome >a4226_Ran
 bedtools shuffle -i a4127_uniqueR_Rep1-3_SC7_IgG.bed -g GRCh38.genome >a4227_Randomized_control_Rep1-3_SC7_IgG.bed
 bedtools shuffle -i a4128_uniqueR_Rep1-3_SC8_IgG.bed -g GRCh38.genome >a4228_Randomized_control_Rep1-3_SC8_IgG.bed
 
-# Step4: Generate genome bins, 500bp bin sliding 250 bp.
+# Step4: Generate genome bins, 500bp bin sliding 250 bp each.
 bedtools makewindows -g GRCh38.genome -w 500 -s 250 >b300_Genome_bin_500bp_250bp_sliding_GRCh38.bed
 
 # Step5: Count reads in the bins.
@@ -169,7 +169,7 @@ cat b0079.bed | awk '$4>0' >b0116_Rep1-3_SC6_H3K27me3_IgG_counts_in_bins.bed
 cat b0080.bed | awk '$4>0' >b0117_Rep1-3_SC7_H3K27me3_IgG_counts_in_bins.bed
 cat b0081.bed | awk '$4>0' >b0118_Rep1-3_SC8_H3K27me3_IgG_counts_in_bins.bed
 
-# Step7: Calculate Ab-IgG, Ab-Random IgG, Random Ab-IgG, Random Ab-Random IgG.
+# Step7: Calculate Ab minus IgG, Ab minus Random IgG, Random Ab minus IgG, Random Ab minus Random IgG.
 cat b0101_Rep1-3_SC1_H3K27ac_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $4-$5, $4-$7, $6-$5, $6-$7}' >b0121_SC1_H3K27ac-delta-IgG_counts_in_bins.bed
 cat b0102_Rep1-3_SC2_H3K27ac_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $4-$5, $4-$7, $6-$5, $6-$7}' >b0122_SC2_H3K27ac-delta-IgG_counts_in_bins.bed
 cat b0103_Rep1-3_SC3_H3K27ac_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $4-$5, $4-$7, $6-$5, $6-$7}' >b0123_SC3_H3K27ac-delta-IgG_counts_in_bins.bed
@@ -188,7 +188,7 @@ cat b0116_Rep1-3_SC6_H3K27me3_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {
 cat b0117_Rep1-3_SC7_H3K27me3_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $4-$5, $4-$7, $6-$5, $6-$7}' >b0137_SC7_H3K27me3-delta-IgG_counts_in_bins.bed
 cat b0118_Rep1-3_SC8_H3K27me3_IgG_counts_in_bins.bed | awk  'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $4-$5, $4-$7, $6-$5, $6-$7}' >b0138_SC8_H3K27me3-delta-IgG_counts_in_bins.bed
 
-# Step8: Add header to the BED files for the subsequent bootstrap test.
+# Step8: Add a header to the BED files for the subsequent bootstrap test.
 cat b0121_SC1_H3K27ac-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tEnd\tAb\tIgG\tRandAb\tRandIgG\tAbDIgG\tAbDRandIgG\tRandAbDIgG\tRandAbDRandIgG\n"/  >b0141_SC1_H3K27ac-delta-IgG_header.bed
 cat b0122_SC2_H3K27ac-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tEnd\tAb\tIgG\tRandAb\tRandIgG\tAbDIgG\tAbDRandIgG\tRandAbDIgG\tRandAbDRandIgG\n"/  >b0142_SC2_H3K27ac-delta-IgG_header.bed
 cat b0123_SC3_H3K27ac-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tEnd\tAb\tIgG\tRandAb\tRandIgG\tAbDIgG\tAbDRandIgG\tRandAbDIgG\tRandAbDRandIgG\n"/  >b0143_SC3_H3K27ac-delta-IgG_header.bed
@@ -207,7 +207,7 @@ cat b0136_SC6_H3K27me3-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tE
 cat b0137_SC7_H3K27me3-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tEnd\tAb\tIgG\tRandAb\tRandIgG\tAbDIgG\tAbDRandIgG\tRandAbDIgG\tRandAbDRandIgG\n"/  >b0157_SC7_H3K27me3-delta-IgG_header.bed
 cat b0138_SC8_H3K27me3-delta-IgG_counts_in_bins.bed | sed 1s/^/"Chr\tStart\tEnd\tAb\tIgG\tRandAb\tRandIgG\tAbDIgG\tAbDRandIgG\tRandAbDIgG\tRandAbDRandIgG\n"/  >b0158_SC8_H3K27me3-delta-IgG_header.bed
 
-# Step9: Make directories for bootstrap test.
+# Step9: Make directories for the bootstrap statistical test.
 mkdir c100_H3K27a_Delta_IgG_SC1_Rep1-3
 mkdir c101_H3K27a_Delta_IgG_SC2_Rep1-3
 mkdir c102_H3K27a_Delta_IgG_SC3_Rep1-3
@@ -228,7 +228,7 @@ mkdir c116_Med1_Delta_IgG_SC1-8
 mkdir c117_HP1g_Delta_IgG_SC1-8
 mkdir c118_5hmC_Delta_IgG_SC1-8
 
-# Step10: Copy the BED files into the directories with unified file name.
+# Step10: Copy the BED files into the directories with a unified file name.
 cp b0141_SC1_H3K27ac-delta-IgG_header.bed c100_H3K27a_Delta_IgG_SC1_Rep1-3/Input.bed
 cp b0142_SC2_H3K27ac-delta-IgG_header.bed c101_H3K27a_Delta_IgG_SC2_Rep1-3/Input.bed
 cp b0143_SC3_H3K27ac-delta-IgG_header.bed c102_H3K27a_Delta_IgG_SC3_Rep1-3/Input.bed
@@ -248,7 +248,7 @@ cp b0157_SC7_H3K27me3-delta-IgG_header.bed c114_H3K27me3Delta_IgG_SC7_Rep1-3/Inp
 cp b0158_SC8_H3K27me3-delta-IgG_header.bed c115_H3K27me3Delta_IgG_SC8_Rep1-3/Input.bed
 
 
-# Step11: Copy a R script file of bootstrap test into the directories.
+# Step11: Copy an R script file of the bootstrap statistical test into the directories.
 cp c200_Rscript_boot.r c100_H3K27a_Delta_IgG_SC1_Rep1-3/c200_Rscript_boot.r
 cp c200_Rscript_boot.r c101_H3K27a_Delta_IgG_SC2_Rep1-3/c200_Rscript_boot.r
 cp c200_Rscript_boot.r c102_H3K27a_Delta_IgG_SC3_Rep1-3/c200_Rscript_boot.r
@@ -267,7 +267,7 @@ cp c200_Rscript_boot.r c114_H3K27me3Delta_IgG_SC7_Rep1-3/c200_Rscript_boot.r
 cp c200_Rscript_boot.r c115_H3K27me3Delta_IgG_SC8_Rep1-3/c200_Rscript_boot.r
 
 
-# Step12: Adjust bin number to 200,000 bins for bootstrap test.
+# Step12: Adjust bin number to 200,000 bins for the bootstrap statistical test.
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c100_H3K27a_Delta_IgG_SC1_Rep1-3 ; head -n 200000 Input.bed >Input_200000L.bed
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c101_H3K27a_Delta_IgG_SC2_Rep1-3 ; head -n 200000 Input.bed >Input_200000L.bed
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c102_H3K27a_Delta_IgG_SC3_Rep1-3 ; head -n 200000 Input.bed >Input_200000L.bed
@@ -288,8 +288,8 @@ cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c116_Med1_Delta_IgG_SC1-8 ; head 
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c117_HP1g_Delta_IgG_SC1-8 ; head -n 200000 Input.bed >Input_200000L.bed
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c118_5hmC_Delta_IgG_SC1-8 ; head -n 200000 Input.bed >Input_200000L.bed
 
-# Step13: Run swarm command for excuting Rscript in each directory.
-# The following Bootstrap tests were excuted in parallel on NIH high perofrmance computer, Biowulf with 240 GB memory and 50 threads per job.
+# Step13: Run swarm command for executing Rscript in each directory.
+# The following Bootstrap tests were executed in parallel on NIH high-performance computer, Biowulf with 240 GB memory and 50 threads per job.
 # It took at least 4 hours per job.
 module load R/3.5
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c100_H3K27a_Delta_IgG_SC1_Rep1-3 ; Rscript c200_Rscript_boot.r
@@ -309,7 +309,7 @@ cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c113_H3K27me3Delta_IgG_SC6_Rep1-3
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c114_H3K27me3Delta_IgG_SC7_Rep1-3 ; Rscript c200_Rscript_boot.r
 cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c115_H3K27me3Delta_IgG_SC8_Rep1-3 ; Rscript c200_Rscript_boot.r
 
-# Step14: Extract putative signal regions using upper side of 99.9% confidence interval determined by bootstrap test.
+# Step14: Extract putative signal regions using the upper endpoint of 99.9% confidence interval determined by the bootstrap statistical test.
 cat b0141_SC1_H3K27ac-delta-IgG_header.bed | awk '$8>1' >C400_H3K27a_Delta_IgG_SC1_Rep1-3_PutativeSignalRegions_CI0.99.bed
 cat b0142_SC2_H3K27ac-delta-IgG_header.bed | awk '$8>1' >C401_H3K27a_Delta_IgG_SC2_Rep1-3_PutativeSignalRegions_CI0.99.bed
 cat b0143_SC3_H3K27ac-delta-IgG_header.bed | awk '$8>3' >C402_H3K27a_Delta_IgG_SC3_Rep1-3_PutativeSignalRegions_CI0.99.bed
@@ -329,7 +329,7 @@ cat b0157_SC7_H3K27me3-delta-IgG_header.bed | awk '$8>1' >C414_H3K27me3_Delt
 cat b0158_SC8_H3K27me3-delta-IgG_header.bed | awk '$8>3' >C415_H3K27me3_Delta_IgG_SC8_Rep1-3_PutativeSignalRegions_CI0.99.bed
 
 
-# Step15: Count region number of putative signals extracted in previous step.
+# Step15: Count region number of putative signals extracted in the previous step.
 find -name 'C4*_PutativeSignalRegions_CI*.bed' -exec wc -l {} \; >C500_Summary_region_number_of_putative_signals.csv
 
 # Step16: Count read number of putative signals.
@@ -353,5 +353,5 @@ cat C416_Med1_Delta_IgG_SC1-8_PutativeSignalRegions_CI0.99.bed | awk '{s += $8} 
 cat C417_HP1g_Delta_IgG_SC1-8_PutativeSignalRegions_CI0.99.bed | awk '{s += $8} END {print s}' >C617_HP1g_Delta_IgG_SC1-8_Putative_Signal_Reads_CI0.999.bed
 cat C418_5hmC_Delta_IgG_SC1-8_PutativeSignalRegions_CI0.99.bed | awk '{s += $8} END {print s}' >C618_5hmC_Delta_IgG_SC1-8_Putative_Signal_Reads_CI0.999.bed
 
-# Step17: Count read number of putative signals extracted in previous step.
+# Step17: Count read number of putative signals extracted in the previous step.
 find -name 'C6*_Putative_Signal_Reads_CI*.bed' -exec wc -l {} \; >C699_Summary_read_number_of_putative_signals.csv
