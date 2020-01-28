@@ -58,10 +58,10 @@ bedtools merge -i d002_0015_5hmC_SC8_putative_signal_reads.bed >d003_0015_5hmC_S
 # Step4: Download enhancer datasets and enhancer interactions.
 wget http://bioinfo.vanderbilt.edu/AE/HACER/download/T1.txt -O D200_HANCER_hg19.txt
 
-# Step5: Change the file format of promoter dataset to BED file format.
+# Step5: Change the file format of the promoter dataset to the BED file format.
 cat D200_HANCER_hg19.txt | awk 'BEGIN {OFS="\t"}; {print $2, $3, $4, $1, $13, $9}' >D201_Enhancers_hg19.bed
 
-# Step6: HANCER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
+# Step6: HACER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
 # Download the chain file for the conversion.
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz
 
@@ -189,13 +189,13 @@ V15=$(cat D2014_015_Sorted_H3K27me3_Delta_IgG_SC7_Rep1-3_PutativeSignalRegions_C
 V16=$(cat D2014_016_Sorted_H3K27me3_Delta_IgG_SC8_Rep1-3_PutativeSignalRegions_CI0.99.bed | awk '{a += $8} END {print a}')
 echo $V1 $V2 $V3 $V4 $V5 $V6 $V7 $V8 $V9 $V10 $V11 $V12 $V13 $V14 $V15 $V16 >D2016_Input_number.txt
 
-# Step13: Calculate RPKM, reads per killobase per million reads.
+# Step13: Calculate RPKM, reads per kilobase per million reads.
 cat D2015_019.bed | awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$6,$7,$8/$7*1000/394563*1000000,$9/$7*1000/394563*1000000,$10/$7*1000/541522*1000000,$11/$7*1000/541522*1000000,$12/$7*1000/381122*1000000,$13/$7*1000/381122*1000000,$14/$7*1000/532945*1000000,$15/$7*1000/532945*1000000,$16/$7*1000/785915*1000000,$17/$7*1000/785915*1000000,$18/$7*1000/637931*1000000,$19/$7*1000/637931*1000000,$20/$7*1000/510544*1000000,$21/$7*1000/510544*1000000,$22/$7*1000/666917*1000000,$23/$7*1000/666917*1000000,$24/$7*1000/183195*1000000,$25/$7*1000/183195*1000000,$26/$7*1000/297070*1000000,$27/$7*1000/297070*1000000,$28/$7*1000/761663*1000000,$29/$7*1000/761663*1000000,$30/$7*1000/296671*1000000,$31/$7*1000/296671*1000000,$32/$7*1000/421622*1000000,$33/$7*1000/421622*1000000,$34/$7*1000/553100*1000000,$35/$7*1000/553100*1000000,$36/$7*1000/332088*1000000,$37/$7*1000/332088*1000000,$38/$7*1000/160641*1000000,$39/$7*1000/160641*1000000, ""}' >D2017_Ab-IgG_RPKM_in_AEs.bed
 
 # Step14: Remove enhancers, which were not detected in any of H3K27ac or H3K27me3 of single cells 1-8.
 cat D2017_Ab-IgG_RPKM_in_AEs.bed | awk '{if($8>0 || $10>0 || $12>0 || $14>0 || $16>0 || $18>0 || $20>0 || $22>0 || $24>0 || $26>0 || $28>0 || $30>0 || $32>0 || $34>0 || $36>0 || $38>0) {print}}' >D2018_Ab-IgG_RPKM_in_AEs_detected.bed
 
-# Step15. Convert 0 value to 0.01 in H3K27ac and H3K27me3 to avoid error in calculation of ration H3K27ac/H3K27me3.
+# Step15. Convert 0 value to 0.01 in H3K27ac and H3K27me3 to avoid error in the calculation of ratio H3K27ac/H3K27me3.
 # The lowest value of H3K27ac (RPKM) excluding 0 is 0.0140724
 # The lowest value of H3K27me3 (RPKM) excluding 0 is 0.0109569
 # The conversion value 0.01 is determined based on the lowest value of H3K27me3.
@@ -219,7 +219,7 @@ awk '$18>0' D2021_Log2_ratio_H3K27ac_H3K27me3_in_AEs.bed >D2022_SC6_over0_enhanc
 awk '$20>0' D2021_Log2_ratio_H3K27ac_H3K27me3_in_AEs.bed >D2022_SC7_over0_enhancers.bed
 awk '$22>0' D2021_Log2_ratio_H3K27ac_H3K27me3_in_AEs.bed >D2022_SC8_over0_enhancers.bed
 
-# Step19. Add header (column name) to perform bootstrap test.
+# Step19. Add a header (column name) to perform the bootstrap statistical test.
 cat D2022_SC1_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenome\tLength\tSC1\tRandSC1\tSC2\tRandSC2\tSC3\tRandSC3\tSC4\tRandSC4\tSC5\tRandSC5\tSC6\tRandSC6\tSC7\tRandSC7\tSC8\tRandSC8\tBulk\tRandBulk\t \n"/ >D2022_a1_SC1_over0_enhancers_w_header.bed
 cat D2022_SC2_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenome\tLength\tSC1\tRandSC1\tSC2\tRandSC2\tSC3\tRandSC3\tSC4\tRandSC4\tSC5\tRandSC5\tSC6\tRandSC6\tSC7\tRandSC7\tSC8\tRandSC8\tBulk\tRandBulk\t \n"/ >D2022_a1_SC2_over0_enhancers_w_header.bed
 cat D2022_SC3_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenome\tLength\tSC1\tRandSC1\tSC2\tRandSC2\tSC3\tRandSC3\tSC4\tRandSC4\tSC5\tRandSC5\tSC6\tRandSC6\tSC7\tRandSC7\tSC8\tRandSC8\tBulk\tRandBulk\t \n"/ >D2022_a1_SC3_over0_enhancers_w_header.bed
@@ -229,7 +229,7 @@ cat D2022_SC6_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenom
 cat D2022_SC7_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenome\tLength\tSC1\tRandSC1\tSC2\tRandSC2\tSC3\tRandSC3\tSC4\tRandSC4\tSC5\tRandSC5\tSC6\tRandSC6\tSC7\tRandSC7\tSC8\tRandSC8\tBulk\tRandBulk\t \n"/ >D2022_a1_SC7_over0_enhancers_w_header.bed
 cat D2022_SC8_over0_enhancers.bed | sed 1s/^/"Chr\tStart\tEnd\tID\tgene\t4DGenome\tLength\tSC1\tRandSC1\tSC2\tRandSC2\tSC3\tRandSC3\tSC4\tRandSC4\tSC5\tRandSC5\tSC6\tRandSC6\tSC7\tRandSC7\tSC8\tRandSC8\tBulk\tRandBulk\t \n"/ >D2022_a1_SC8_over0_enhancers_w_header.bed
 
-# Step20. Add line number to the first column.
+# Step20. Add the line number to the first column.
 cat -n D2022_a1_SC1_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_SC1_over0_enhancers_w_header.bed
 cat -n D2022_a1_SC2_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_SC2_over0_enhancers_w_header.bed
 cat -n D2022_a1_SC3_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_SC3_over0_enhancers_w_header.bed
@@ -239,7 +239,7 @@ cat -n D2022_a1_SC6_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_S
 cat -n D2022_a1_SC7_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_SC7_over0_enhancers_w_header.bed
 cat -n D2022_a1_SC8_over0_enhancers_w_header.bed | awk '!a[$2,$3,$4]++' >D2023_SC8_over0_enhancers_w_header.bed
 
-# Step21. Perform bootstrap test for the random controls.
+# Step21. Perform the bootstrap statistical test for the random controls.
 swarm -f D2023_Boot.swarm --module R/3.5 --time 24:00:00 --partition=ccr,norm -g 240 -t 50
 # Inside the file of D2023_Boot.swarm are shown below.
 # Rscript D2023_SC1_Rscript_boot.r
