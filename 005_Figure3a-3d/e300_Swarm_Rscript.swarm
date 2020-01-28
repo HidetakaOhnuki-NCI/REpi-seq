@@ -1,0 +1,5 @@
+Rscript e311_Enhancer_Rand_bulk_H3K27ac.r
+Rscript e311_Enhancer_Rand_SC_H3K27ac.r
+Rscript e321_Promoter_Rand_bulk_H3K27ac.r
+Rscript e321_Promoter_Rand_SC_H3K27ac.r
+
