@@ -5,10 +5,10 @@
 # Step1: Download enhancer datasets and enhancer interactions.
 wget http://bioinfo.vanderbilt.edu/AE/HACER/download/T1.txt -O D200_HACER_hg19.txt
 
-# Step2: Change the file format of promoter dataset to BED file format.
+# Step2: Change the file format of the promoter dataset to the BED file format.
 cat D200_HACER_hg19.txt | awk 'BEGIN {OFS="\t"}; {print $2, $3, $4, $1, $13, $4-$3}' >D201_Enhancers_hg19.bed
 
-# Step3: HANCER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
+# Step3: HACER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
 # Download the chain file for the conversion.
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz
 
@@ -65,13 +65,13 @@ cat E026.bed | awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$6,$7/$6*1000/445145
 # Step12: Remove enhancers, which were not detected by H3K27ac, H3K27me3, Med1 and 5hmC.
 cat E101_Ab-IgG_RPKM_in_enhancers.bed | awk '{if($7>0 || $9>0 || $11>0 || $13>0) {print}}' >E201_000_Ab-IgG_RPKM_in_enhancers_0removed.bed
 
-# Step13: To avoid error in calculation of ratio H3K27ac/H3K27me3, 0 value were converted to 0.01 in H3K27ac and H3K27me3.
+# Step13: To avoid error in calculation of ratio H3K27ac/H3K27me3, 0 value was converted to 0.01 in H3K27ac and H3K27me3.
 # The lowest value of H3K27ac (RPKM) excluding 0 is 0.014072
 # The lowest value of H3K27me3 (RPKM) excluding 0 is 0.010957
 # The conversion value 0.01 is determined based on the lowest value of H3K27me3.
 sed 's/\t0\t/\t0.01\t/g' E201_000_Ab-IgG_RPKM_in_enhancers_0removed.bed | sed 's/\t0\t/\t0.01\t/g' >E201_001_Ab-IgG_RPKM_in_enhancers_0converted.bed 
 
-# Step14: Calculate log2(H3K27ac/H3K27me3)
+# Step14: Calculate log2(H3K27ac/H3K27me3).
 cat E201_001_Ab-IgG_RPKM_in_enhancers_0converted.bed | awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$6, log($7/$9)/log(2),$7,$8,$9,$10,$11,$12,$13,$14}' >E201_002_Log2_ratio_H3K27ac_H3k27me3_of_enhancers.bed
 # memo: data labels after the calculation are shown below.
 # $1:chr   $2:start   $3:end   $4:length   $5:Enhancer_ID   $6:Target_gene   $7:Log2(H3K27ac/H3K27me3)   $8:H3K27ac   $9:H2K37ac_Rand   $10:H3K27me3   $11:H3K27me3_Rand   $12:Med1   $13:Med1_Rand   $14:5hmC   $15:5hmC_Rand    
@@ -143,7 +143,7 @@ awk '$7 >-19.5 && $7 <=-19' E201_002_Log2_ratio_H3K27ac_H3k27me3_of_enhancers.be
 awk '$7 >-20 && $7 <=-19.5' E201_002_Log2_ratio_H3K27ac_H3k27me3_of_enhancers.bed >E201_163_Enhancers_range_-19.5_-20.bed
 awk '$7 >-20.5 && $7 <=-20' E201_002_Log2_ratio_H3K27ac_H3k27me3_of_enhancers.bed >E201_164_Enhancers_range_-20_-20.5.bed
 
-# Step16: Calculate average of H3K27ac RPKM in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step16: Calculate the average of H3K27ac RPKM in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$8} END {print sum/NR}' > E201_200_H3K27ac_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$8} END {print sum/NR}' > E201_201_H3K27ac_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$8} END {print sum/NR}' > E201_202_H3K27ac_RPKM_average_Range_11_10.5.txt
@@ -205,7 +205,7 @@ find -name 'E201_2*.txt' -exec cat {} \; >E201_260_average.csv
 find -name 'E201_2*.txt' >E201_261_filename.csv
 paste E201_260_average.csv E201_261_filename.csv >E201_262_Average_of_H3K27ac_RPKM_in_ranges.csv
 
-# Step18: Calculate average of H3K27ac random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step18: Calculate the average of H3K27ac random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$9} END {print sum/NR}' > E201_300_RandH3K27ac_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$9} END {print sum/NR}' > E201_301_RandH3K27ac_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$9} END {print sum/NR}' > E201_302_RandH3K27ac_RPKM_average_Range_11_10.5.txt
@@ -267,7 +267,7 @@ find -name 'E201_3*.txt' -exec cat {} \; >E201_360_average.csv
 find -name 'E201_3*.txt' >E201_361_filename.csv
 paste E201_360_average.csv E201_361_filename.csv >E201_362_Average_of_H3K27ac_random_control_RPKM_in_ranges.csv
 
-# Step20: Calculate average of H3K27me3 (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step20: Calculate the average of H3K27me3 (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$10} END {print sum/NR}' > E201_400_H3K27me3_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$10} END {print sum/NR}' > E201_401_H3K27me3_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$10} END {print sum/NR}' > E201_402_H3K27me3_RPKM_average_Range_11_10.5.txt
@@ -329,7 +329,7 @@ find -name 'E201_4*.txt' -exec cat {} \; >E201_460_average.csv
 find -name 'E201_4*.txt' >E201_461_filename.csv
 paste E201_460_average.csv E201_461_filename.csv >E201_462_Average_of_H3K27me3_RPKM_in_ranges.csv
 
-# Step22: Calculate average of H3K27me3 random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step22: Calculate the average of H3K27me3 random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$11} END {print sum/NR}' > E201_500_RandH3K27me3_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$11} END {print sum/NR}' > E201_501_RandH3K27me3_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$11} END {print sum/NR}' > E201_502_RandH3K27me3_RPKM_average_Range_11_10.5.txt
@@ -391,7 +391,7 @@ find -name 'E201_5*.txt' -exec cat {} \; >E201_560_average.csv
 find -name 'E201_5*.txt' >E201_561_filename.csv
 paste E201_560_average.csv E201_561_filename.csv >E201_562_Average_of_H3K27me3_random_control_RPKM_in_ranges.csv
  
-# Step24: Calculate average of Med1 (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step24: Calculate the average of Med1 (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$12} END {print sum/NR}' > E201_600_Med1_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$12} END {print sum/NR}' > E201_601_Med1_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$12} END {print sum/NR}' > E201_602_Med1_RPKM_average_Range_11_10.5.txt
@@ -453,7 +453,7 @@ find -name 'E201_6*.txt' -exec cat {} \; >E201_660_average.csv
 find -name 'E201_6*.txt' >E201_661_filename.csv
 paste E201_660_average.csv E201_661_filename.csv >E201_662_Average_of_Med1_RPKM_in_ranges.csv
 
-# Step26: Calculate average of Med1 random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step26: Calculate the average of Med1 random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$13} END {print sum/NR}' > E201_700_RandMed1_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$13} END {print sum/NR}' > E201_701_RandMed1_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$13} END {print sum/NR}' > E201_702_RandMed1_RPKM_average_Range_11_10.5.txt
@@ -515,7 +515,7 @@ find -name 'E201_7*.txt' -exec cat {} \; >E201_760_average.csv
 find -name 'E201_7*.txt' >E201_761_filename.csv
 paste E201_760_average.csv E201_761_filename.csv >E201_762_Average_of_Med1_random_control_RPKM_in_ranges.csv
 
-# Step28: Calculate average of 5hmC (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step28: Calculate the average of 5hmC (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$14} END {print sum/NR}' > E201_a000_5hmC_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$14} END {print sum/NR}' > E201_a001_5hmC_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$14} END {print sum/NR}' > E201_a002_5hmC_RPKM_average_Range_11_10.5.txt
@@ -577,7 +577,7 @@ find -name 'E201_a0*.txt' -exec cat {} \; >E201_a060_average.csv
 find -name 'E201_a0*.txt' >E201_a061_filename.csv
 paste E201_a060_average.csv E201_a061_filename.csv >E201_a062_Average_of_5hmC_RPKM_in_ranges.csv
 
-# Step30: Calculate average of 5hmC random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
+# Step30: Calculate the average of 5hmC random control (RPKM) in enhancers at each Log2(H3K27ac/H3K27me3) range.
 cat E201_100_Enhancers_range_12_11.5.bed | awk '{sum+=$15} END {print sum/NR}' > E201_a100_Rand5hmC_RPKM_average_Range_12_11.5.txt
 cat E201_101_Enhancers_range_11.5_11.bed | awk '{sum+=$15} END {print sum/NR}' > E201_a101_Rand5hmC_RPKM_average_Range_11.5_11.txt
 cat E201_102_Enhancers_range_11_10.5.bed | awk '{sum+=$15} END {print sum/NR}' > E201_a102_Rand5hmC_RPKM_average_Range_11_10.5.txt
