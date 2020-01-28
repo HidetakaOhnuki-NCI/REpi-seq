@@ -260,7 +260,7 @@ wget https://www.encodeproject.org/files/ENCFF391OGS/@@download/ENCFF391OGS.bam 
 wget https://www.encodeproject.org/files/ENCFF797ECK/@@download/ENCFF797ECK.bam -O a257_iPS-20b_ENCFF797ECK.bam
 wget https://www.encodeproject.org/files/ENCFF289WQP/@@download/ENCFF289WQP.bam -O a258_iPS-20b_ENCFF289WQP.bam
 
-# Step2. Convet the donwloaded BAM files to BED files.
+# Step2. Convert the downloaded BAM files to BED files.
 bedtools bamtobed -i a001_K562_ENCFF301TVL.bam >b001_K562_H3K27ac_ENCFF301TVL.bed
 bedtools bamtobed -i a002_K562_ENCFF190OWE.bam >b002_K562_H3K27me3_ENCFF190OWE.bed
 bedtools bamtobed -i a003_K562_ENCFF879BWC.bam >b003_K562_H3K27ac_ENCFF879BWC.bed
@@ -525,10 +525,10 @@ bedtools bamtobed -i a258_iPS-20b_ENCFF289WQP.bam >b258_iPS-20b_H3K27me3_ENCFF28
 # Step3: Download enhancer datasets and enhancer interactions.
 wget http://bioinfo.vanderbilt.edu/AE/HACER/download/T1.txt
 
-# Step4: Change the file format of promoter dataset to BED file format.
+# Step4: Change the file format of the promoter dataset to the BED file format.
 cat T1.txt | awk 'BEGIN {OFS="\t"}; {print $2, $3, $4, $1, $13, $9, ""}' >c001_Enhancers.bed
 
-# Step5: HANCER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
+# Step5: HACER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
 # Download the chain file for the conversion.
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz
 
@@ -553,13 +553,13 @@ sed 's/_.*//g' c006.bed >c007.bed
 # Step11: Add the target gene symbols to the promoter BED file.
 paste c005.bed c007.bed >c008_Promoters.bed
 
-# Step12: Adjust length of a promoter region to +/-1000 bp.
+# Step12: Adjust the length of a promoter region to +/-1000 bp.
 cat c008_Promoters.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2-970, $3+970, $4, $5}' >c009_Promoters.bed
 
 # Step13: Add length info of promoter regions in column 6.
 cat c009_Promoters.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $3-$2 }' >d002_Promoters.bed
 
-# Step14. Remove header in single-cell data.
+# Step14. Remove the header in single-cell data.
 grep chr C400_H3K27a_Delta_IgG_SC1_Rep1-3_PutativeSignalRegions_CI0.99.bed >C500_H3K27a_Delta_IgG_SC1_Rep1-3_PutativeSignalRegions_CI0.99.bed
 grep chr C401_H3K27a_Delta_IgG_SC2_Rep1-3_PutativeSignalRegions_CI0.99.bed >C501_H3K27a_Delta_IgG_SC2_Rep1-3_PutativeSignalRegions_CI0.99.bed
 grep chr C402_H3K27a_Delta_IgG_SC3_Rep1-3_PutativeSignalRegions_CI0.99.bed >C502_H3K27a_Delta_IgG_SC3_Rep1-3_PutativeSignalRegions_CI0.99.bed
@@ -852,7 +852,7 @@ bedtools intersect -a e270_promoters.bed -b b255_iPS-18a_H3K27ac_ENCFF124TRP.bed
 bedtools intersect -a e271_promoters.bed -b b256_iPS-18a_H3K27me3_ENCFF391OGS.bed -c >e272_promoters.bed
 bedtools intersect -a e272_promoters.bed -b b257_iPS-20b_H3K27ac_ENCFF797ECK.bed -c >e273_promoters.bed
 bedtools intersect -a e273_promoters.bed -b b258_iPS-20b_H3K27me3_ENCFF289WQP.bed -c >e274_promoters.bed
-# Run the commands above on Biowulf using swwarm commands below.
+# Run the commands above on NIH high-performance computer, Biowulf using swarm commands below.
 # swarm -f 003_bedtools_map_intersect_promoters_1-100.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101
 # swarm -f 003_bedtools_map_intersect_promoters_101-200.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101 --dependency afterany:44052588
 # swarm -f 003_bedtools_map_intersect_promoters_201-274.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101 --dependency afterany:44052608
@@ -1154,7 +1154,7 @@ bedtools intersect -a e770_enhancers.bed -b b255_iPS-18a_H3K27ac_ENCFF124TRP.bed
 bedtools intersect -a e771_enhancers.bed -b b256_iPS-18a_H3K27me3_ENCFF391OGS.bed -c >e772_enhancers.bed
 bedtools intersect -a e772_enhancers.bed -b b257_iPS-20b_H3K27ac_ENCFF797ECK.bed -c >e773_enhancers.bed
 bedtools intersect -a e773_enhancers.bed -b b258_iPS-20b_H3K27me3_ENCFF289WQP.bed -c >e774_enhancers.bed
-# Run the commands above on Biowulf using swwarm commands below.
+# Run the commands above on NIH high-performance computer, Biowulf using swarm commands below.
 # swarm -f 004_bedtools_map_intersect_enhancers_1-100.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101
 # swarm -f 004_bedtools_map_intersect_enhancers_101-200.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101 --dependency afterany:44052794
 # swarm -f 004_bedtools_map_intersect_enhancers_201-274.swarm --module bedtools --time 2:00:00 --partition largemem -g 500 -t 100 -b 101 --dependency afterany:44052828
@@ -1164,7 +1164,7 @@ bedtools intersect -a e773_enhancers.bed -b b258_iPS-20b_H3K27me3_ENCFF289WQP.be
 # swarm -f 004_bedtools_map_intersect_enhancers_201-274.swarm --module bedtools --time 2:00:00 --partition=ccr,norm -g 240 -t 50 -b 101 --dependency afterany:44058052
 
 
-# Step17. Count number of reads in input BED files.
+# Step17. Count the number of reads in input BED files.
 cat C500_H3K27a_Delta_IgG_SC1_Rep1-3_PutativeSignalRegions_CI0.99.bed | awk '{a +=$8} END{print a;}' >f000_Input_counts_H3K27a_Delta_IgG_SC1_Rep1-3_PutativeSignalRegions_CI0.99.bed
 cat C501_H3K27a_Delta_IgG_SC2_Rep1-3_PutativeSignalRegions_CI0.99.bed | awk '{a +=$8} END{print a;}' >f001_Input_counts_H3K27a_Delta_IgG_SC2_Rep1-3_PutativeSignalRegions_CI0.99.bed
 cat C502_H3K27a_Delta_IgG_SC3_Rep1-3_PutativeSignalRegions_CI0.99.bed | awk '{a +=$8} END{print a;}' >f002_Input_counts_H3K27a_Delta_IgG_SC3_Rep1-3_PutativeSignalRegions_CI0.99.bed
