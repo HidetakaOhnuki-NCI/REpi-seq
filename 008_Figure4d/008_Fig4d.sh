@@ -24,7 +24,7 @@ sed 's/_*//g' a004.bed >a005.bed
 # Step7: Add the extracted gene symbol to the Promoter BED file.
 paste a003.bed a005.bed >a006.bed
 
-# Step8: Adjust length of each promoter region to +/-1,000 bp.
+# Step8: Adjust the length of each promoter region to +/-1,000 bp.
 cat a006.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2-970, $3+970, $4, $5}' >a007.bed
 
 # Step9: Combine the HACER BED file and the Promoter BED file.
@@ -60,7 +60,7 @@ bedtools intersect -a z300.bed -b z101_H3K27me3_Rep1-3_SC1-8_PutativeSignals.bed
 # Input reads of z101_H3K27me3_Rep1-3_SC1-8_PutativeSignals.bed : 3,198,454 
 cat z301.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7/$6*1000/9761907*1000000, $8/$6*1000/20135251*1000000, $9/$6*1000/4462017*1000000, $10/$6*1000/3198454*1000000, "" }' >a012.bed
 
-# Step17: Convert 0 to 0.01 to avoid errors in calculation of H3K27ac/H3K27me3.
+# Step17: Convert 0 to 0.01 to avoid errors in the calculation of H3K27ac/H3K27me3.
 sed "s/\t0\t/\t0.01\t/g" a012.bed >b001.bed
 sed "s/\t0\t/\t0.01\t/g" b001.bed >b002.bed
 
