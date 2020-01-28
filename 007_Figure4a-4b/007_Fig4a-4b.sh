@@ -1,11 +1,12 @@
 #!/usr/bin/bash
+
 # Step1: Download enhancer datasets and enhancer interactions.
 wget http://bioinfo.vanderbilt.edu/AE/HACER/download/T1.txt
 
-# Step2: Change the file format of promoter dataset to BED file format.
+# Step2: Change the file format of the promoter dataset to the BED file format.
 cat T1.txt | awk 'BEGIN {OFS="\t"}; {print $2, $3, $4, $1, $13, $9, ""}' >a001_Enhancers.bed
 
-# Step3: HANCER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
+# Step3: HACER dataset uses hg19 genome assembly. To convert the genome assembly to hg38, we use crossmap.
 # Download the chain file for the conversion.
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz
 
@@ -13,13 +14,13 @@ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.cha
 module load crossmap
 crossmap bed hg19ToHg38.over.chain.gz a001_Enhancers.bed a002_Enhancers.bed
 
-# Step5: Extract K562-cell specific active enhancers.
+# Step5: Extract K562-cell-type-specific, active enhancers.
 grep K562 a002_Enhancers.bed >a003_K562-specific_active_enhancers.bed
 
-# Step6: Extract Non-K562 active enhancers.
+# Step6: Extract K562-cell-type NON-specific, active enhancers.
 cat a002_Enhancers.bed | grep -v "K562" >a004_Non-K562_active_enhancers.bed
 
-# Step7: Add length information.
+# Step7: Add length information of enhancers.
 cat a003_K562-specific_active_enhancers.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $3-$2, "" }' >a005_K562-specific_active_enhancers.bed
 cat a004_Non-K562_active_enhancers.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $3-$2, "" }' >a006_Non-K562_active_enhancers.bed
 
@@ -60,7 +61,7 @@ bedtools map -a b007.bed -b a012_H3K27me3_SC1-8_Rep1-3_PutativeSignalRegions_Sor
 cat b004_Bulk_and_SC_signal_counts_in_K562-specific_active_enhancers.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $8/$7*1000/9761907*1000000, $9/$7*1000/20135251*1000000, $10/$7*1000/1004010*1000000, $11/$7*1000/1037584*1000000, "" }' >b009_Bulk_and_SC_signal_RPKM_in_K562-specific_active_enhancers.bed
 cat b008_Bulk_and_SC_signal_counts_in_Non-K562_active_enhancers.bed | awk 'BEGIN {OFS="\t"}; {print $1, $2, $3, $4, $5, $6, $7, $8/$7*1000/9761907*1000000, $9/$7*1000/20135251*1000000, $10/$7*1000/1004010*1000000, $11/$7*1000/1037584*1000000, "" }' >b010_Bulk_and_SC_signal_RPKM_in_Non-K562_active_enhancers.bed
 
-# Step13. Convert 0 value to 0.01 in H3K27ac and H3K27me3 to avoid error in calculation of ration H3K27ac/H3K27me3.
+# Step13. Convert 0 value to 0.01 in H3K27ac and H3K27me3 to avoid error in calculation of ratio H3K27ac/H3K27me3.
 # The lowest value of H3K27ac (RPKM) excluding 0 is 0.014072
 # The lowest value of H3K27me3 (RPKM) excluding 0 is 0.010957
 # The conversion value 0.01 is determined based on the lowest value of H3K27me3.
