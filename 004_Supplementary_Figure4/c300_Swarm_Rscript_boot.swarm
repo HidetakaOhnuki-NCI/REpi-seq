@@ -1,3 +1,0 @@
-cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c116_Med1_Delta_IgG_SC1-8 ; Rscript c200_Rscript_boot.r
-cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c117_HP1g_Delta_IgG_SC1-8 ; Rscript c200_Rscript_boot.r
-cd /data/ohnukih/Nature_Methods/c001_Bootstrap/c118_5hm_Delta_IgG_SC1-8 ; Rscript c200_Rscript_boot.r
